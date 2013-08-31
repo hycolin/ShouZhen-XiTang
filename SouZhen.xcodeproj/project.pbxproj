@@ -34,7 +34,6 @@
 		6640FACC17C8529700474152 /* icon_train.png in Resources */ = {isa = PBXBuildFile; fileRef = 6640FAC817C8529700474152 /* icon_train.png */; };
 		6640FACF17C854BC00474152 /* SGTrafficCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FACE17C854BC00474152 /* SGTrafficCell.m */; };
 		6640FAD117C854CF00474152 /* SGTrafficCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6640FAD017C854CF00474152 /* SGTrafficCell.xib */; };
-		6640FAD617C85CB500474152 /* bg_tableviewline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6640FAD517C85CB500474152 /* bg_tableviewline.png */; };
 		6640FADC17C85E4900474152 /* SGTrafficDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FADA17C85E4900474152 /* SGTrafficDetailViewController.m */; };
 		6640FAE717C868B700474152 /* SGSceneryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FAE517C868B700474152 /* SGSceneryViewController.m */; };
 		6640FAE817C868B700474152 /* SGSceneryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6640FAE617C868B700474152 /* SGSceneryViewController.xib */; };
@@ -356,6 +355,7 @@
 		66D773FE17D248F100DCB3D3 /* 自助烧烤.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D773E117D248F100DCB3D3 /* 自助烧烤.png */; };
 		66D773FF17D248F100DCB3D3 /* 自行车租赁.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D773E217D248F100DCB3D3 /* 自行车租赁.png */; };
 		66D7740017D248F100DCB3D3 /* 迷你电影院.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D773E317D248F100DCB3D3 /* 迷你电影院.png */; };
+		66D7740617D2693100DCB3D3 /* bg_tableviewline.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D7740517D2693100DCB3D3 /* bg_tableviewline.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -394,7 +394,6 @@
 		6640FACD17C854BC00474152 /* SGTrafficCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTrafficCell.h; sourceTree = "<group>"; };
 		6640FACE17C854BC00474152 /* SGTrafficCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTrafficCell.m; sourceTree = "<group>"; };
 		6640FAD017C854CF00474152 /* SGTrafficCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGTrafficCell.xib; sourceTree = "<group>"; };
-		6640FAD517C85CB500474152 /* bg_tableviewline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_tableviewline.png; path = "../../../../../../视觉/（切图和标注）首页＋交通＋攻略＋线路/切图和标注/切图/bg_tableviewline.png"; sourceTree = "<group>"; };
 		6640FAD917C85E4900474152 /* SGTrafficDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTrafficDetailViewController.h; sourceTree = "<group>"; };
 		6640FADA17C85E4900474152 /* SGTrafficDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTrafficDetailViewController.m; sourceTree = "<group>"; };
 		6640FAE417C868B700474152 /* SGSceneryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSceneryViewController.h; sourceTree = "<group>"; };
@@ -803,6 +802,7 @@
 		66D773E117D248F100DCB3D3 /* 自助烧烤.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "自助烧烤.png"; sourceTree = "<group>"; };
 		66D773E217D248F100DCB3D3 /* 自行车租赁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "自行车租赁.png"; sourceTree = "<group>"; };
 		66D773E317D248F100DCB3D3 /* 迷你电影院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "迷你电影院.png"; sourceTree = "<group>"; };
+		66D7740517D2693100DCB3D3 /* bg_tableviewline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_tableviewline.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1453,7 +1453,7 @@
 			children = (
 				6698DC5F17C3C2E8006E486B /* bg_title-bar.png */,
 				6698DC6117C3C3CD006E486B /* bg_title-bar@2x.png */,
-				6640FAD517C85CB500474152 /* bg_tableviewline.png */,
+				66D7740517D2693100DCB3D3 /* bg_tableviewline.png */,
 				6640FBC517C8EAD800474152 /* icon_star_d.png */,
 				6640FBC617C8EAD800474152 /* icon_star_u.png */,
 				6640FBDA17C8F75600474152 /* Arrow_Left.png */,
@@ -1743,7 +1743,6 @@
 				6640FACB17C8529700474152 /* icon_plane.png in Resources */,
 				6640FACC17C8529700474152 /* icon_train.png in Resources */,
 				6640FAD117C854CF00474152 /* SGTrafficCell.xib in Resources */,
-				6640FAD617C85CB500474152 /* bg_tableviewline.png in Resources */,
 				6640FAE817C868B700474152 /* SGSceneryViewController.xib in Resources */,
 				6640FAF217C86EAC00474152 /* button_bottom.png in Resources */,
 				6640FAF317C86EAC00474152 /* icon_address.png in Resources */,
@@ -1934,6 +1933,7 @@
 				66D773FE17D248F100DCB3D3 /* 自助烧烤.png in Resources */,
 				66D773FF17D248F100DCB3D3 /* 自行车租赁.png in Resources */,
 				66D7740017D248F100DCB3D3 /* 迷你电影院.png in Resources */,
+				66D7740617D2693100DCB3D3 /* bg_tableviewline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
