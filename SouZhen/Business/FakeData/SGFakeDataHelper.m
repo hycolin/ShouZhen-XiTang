@@ -297,8 +297,9 @@ static SGFakeDataHelper *_instance;
             data.intro = [self getStringAtColumn:2 stmt:stmt];
             data.imageUrl = [self getStringAtColumn:3 stmt:stmt];
             data.categoryName = [self getStringAtColumn:4 stmt:stmt];
-            data.material = [self getStringAtColumn:5 stmt:stmt];
-            data.cookbook = [self getStringAtColumn:6 stmt:stmt];
+            data.price = [self getDoubleAtColumn:5 stmt:stmt];
+            data.material = [self getStringAtColumn:6 stmt:stmt];
+            data.cookbook = [self getStringAtColumn:7 stmt:stmt];
 		}
 	}
 	sqlite3_finalize(stmt);
@@ -325,8 +326,9 @@ static SGFakeDataHelper *_instance;
             data.intro = [self getStringAtColumn:2 stmt:stmt];
             data.imageUrl = [self getStringAtColumn:3 stmt:stmt];
             data.categoryName = [self getStringAtColumn:4 stmt:stmt];
-            data.material = [self getStringAtColumn:5 stmt:stmt];
-            data.cookbook = [self getStringAtColumn:6 stmt:stmt];
+            data.price = [self getDoubleAtColumn:5 stmt:stmt];
+            data.material = [self getStringAtColumn:6 stmt:stmt];
+            data.cookbook = [self getStringAtColumn:7 stmt:stmt];
             [array addObject:data];
 		}
 	}

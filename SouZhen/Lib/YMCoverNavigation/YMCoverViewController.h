@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YMCoverNavigationViewController.h"
 
-@interface YMCoverViewController : UIViewController
+@interface YMCoverViewController : YMViewController
 
 @property (nonatomic, assign) YMCoverNavigationViewController *navigationController;
 

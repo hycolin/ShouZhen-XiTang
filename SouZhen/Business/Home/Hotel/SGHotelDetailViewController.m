@@ -9,6 +9,7 @@
 #import "SGHotelDetailViewController.h"
 #import "SGHouseTypeDetailView.h"
 #import "SGHotelDetailView.h"
+#import "SGFavoriteHelper.h"
 
 @interface SGHotelDetailViewController ()
 
@@ -25,6 +26,7 @@
     NSInteger _type;
     SGHouseTypeDetailView *_houseTypeDetailView;
     SGHotelDetailView *_hotelDetailView;
+    UIButton *_favoButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -82,7 +84,37 @@
         _type = 1;
     }
     [self switchType:_type];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 25, 25);
+    [button addTarget:self action:@selector(favoriteAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    _favoButton = button;
+    [self updateFavoriteState];
 }
+
+- (void)updateFavoriteState
+{
+    if ([[SGFavoriteHelper instance] isFavorite:self.hotelData.uid]) {
+        [_favoButton setImage:[UIImage imageNamed:@"icon_collection_d"] forState:UIControlStateNormal];
+    } else {
+        [_favoButton setImage:[UIImage imageNamed:@"icon_collection"] forState:UIControlStateNormal];
+    }
+}
+
+- (void)favoriteAction
+{
+    if ([[SGFavoriteHelper instance] isFavorite:self.hotelData.uid]) {
+        [[SGFavoriteHelper instance] delFavorite:self.hotelData.uid type:FavoriteTypeHotel];
+        [self showSplash:@"删除收藏成功"];
+    } else {
+        [[SGFavoriteHelper instance] addFavoriteWithHotel:self.hotelData];
+        [self showSplash:@"添加收藏成功"];
+    }
+    [self updateFavoriteState];
+}
+
 
 - (void)action:(id)sender
 {

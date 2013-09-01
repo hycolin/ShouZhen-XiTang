@@ -26,7 +26,7 @@
 @end
 
 //客栈
-@interface SGHotelData : NSObject
+@interface SGHotelData : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;
@@ -46,7 +46,7 @@
 @end
 
 //房型
-@interface SGHouseTypeData : NSObject
+@interface SGHouseTypeData : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;
@@ -61,7 +61,7 @@
 
 
 //美食
-@interface SGFoodData : NSObject
+@interface SGFoodData : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;
@@ -76,7 +76,7 @@
 
 
 //娱乐
-@interface SGEntertainmentData : NSObject
+@interface SGEntertainmentData : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *name;

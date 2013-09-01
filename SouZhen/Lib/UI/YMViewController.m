@@ -42,6 +42,7 @@
 - (void)showSplash:(NSString *)text detailText:(NSString *)detailText delegate:(id<MBProgressHUDDelegate>)delegate tag:(NSInteger)tag {
     REMOVESUBVIEW_SAFELY(hud);
     hud = [[MBProgressHUD alloc] initWithView:self.view];
+    hud.userInteractionEnabled = NO;
     [self.view addSubview:hud];
     hud.tag = tag;
     hud.delegate = delegate;
