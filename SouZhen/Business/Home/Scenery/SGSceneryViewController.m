@@ -35,11 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if (self.categoryName.length > 0) {
-        self.title = self.categoryName;
-    } else {
-        self.title = @"景点";
-    }
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.rowHeight = 80;

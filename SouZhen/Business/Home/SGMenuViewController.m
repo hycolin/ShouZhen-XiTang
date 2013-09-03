@@ -91,7 +91,7 @@
         [list addObject:anno];
     }
     NSArray *entertainmentList = [[SGFakeDataHelper instance] getAllEntertainment];
-    for (SGHotelData *entertainment in entertainmentList) {
+    for (SGEntertainmentData *entertainment in entertainmentList) {
         SGAnnotation *anno = [[SGAnnotation alloc] initWithId:entertainment.uid lat:entertainment.lat lng:entertainment.lng address:entertainment.address title:entertainment.name subTitle:entertainment.intro leftImage:entertainment.imageUrl type:AnnotationTypeEntertainment];
         [list addObject:anno];
     }

@@ -70,6 +70,7 @@
 - (IBAction)categoryAction:(id)sender {
     SGSceneryViewController *viewController = [[SGSceneryViewController alloc] init];
     viewController.categoryName = self.sceneryData.categoryName;
+    viewController.title = self.sceneryData.categoryName;
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

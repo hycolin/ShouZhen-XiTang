@@ -16,6 +16,9 @@ static SGFavoriteHelper *_instance;
     NSMutableArray *_favoriteFoodList;
     NSMutableArray *_favoriteEntertainmentList;
 }
+@synthesize favoriteFoodList = _favoriteFoodList;
+@synthesize favoriteHotelList = _favoriteHotelList;
+@synthesize favoriteEntertainmentList = _favoriteEntertainmentList;
 
 + (void)initialize {
     _instance = [[SGFavoriteHelper alloc] init];

@@ -14,6 +14,8 @@
 #import "SGStrategyViewController.h"
 #import "SGHotelViewController.h"
 #import "SGFoodViewController.h"
+#import "SGEntertainmentViewController.h"
+#import "SGNewsViewController.h"
 
 typedef enum {
     HomeIndexRoute = 1000,
@@ -85,6 +87,7 @@ typedef enum {
         case HomeIndexScenery: //景点
         {
             SGSceneryViewController *viewController = [[SGSceneryViewController alloc] init];
+            viewController.title = @"景点";
             [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
@@ -102,14 +105,15 @@ typedef enum {
             break;
         case HomeIndexEntertainment: //娱乐
         {
-//            SGRouteViewController *viewController = [[SGRouteViewController alloc] init];
-//            [self.navigationController pushViewController:viewController animated:YES];
+            SGEntertainmentViewController *viewController = [[SGEntertainmentViewController alloc] init];
+            viewController.title = @"娱乐";
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case HomeIndexNews: //资讯
         {
-//            SGRouteViewController *viewController = [[SGRouteViewController alloc] init];
-//            [self.navigationController pushViewController:viewController animated:YES];
+            SGNewsViewController *viewController = [[SGNewsViewController alloc] init];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;            
         default:

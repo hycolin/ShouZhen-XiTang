@@ -350,9 +350,10 @@ static SGFakeDataHelper *_instance;
             SGNewsData *data = [[SGNewsData alloc] init];
             data.uid = [self getStringAtColumn:0 stmt:stmt];
             data.title = [self getStringAtColumn:1 stmt:stmt];
-            data.newsType = [self getStringAtColumn:2 stmt:stmt];
-            data.content = [self getStringAtColumn:4 stmt:stmt];
+            data.time = [self getStringAtColumn:2 stmt:stmt];
+            data.content = [self getStringAtColumn:3 stmt:stmt];
             data.thumbImageUrl = [self getStringAtColumn:4 stmt:stmt];
+            data.newsType = [self getStringAtColumn:5 stmt:stmt];
             [array addObject:data];
 		}
 	}

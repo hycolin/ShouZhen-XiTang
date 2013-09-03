@@ -56,7 +56,7 @@
     _cellList = [NSArray arrayWithObjects:self.photoCell, self.introCell, self.materialCell, self.cookbookCell, nil];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 25, 25);
+    button.frame = CGRectMake(0, 0, 44, 44);
     [button addTarget:self action:@selector(favoriteAction) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     

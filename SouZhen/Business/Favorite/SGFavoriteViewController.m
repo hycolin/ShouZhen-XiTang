@@ -10,9 +10,11 @@
 #import "SGFavoriteHelper.h"
 #import "SGHotelCell.h"
 #import "SGFoodCell.h"
+#import "SGEntertainmentCell.h"
 #import "SGHotelHouseTypeViewController.h"
 #import "SGHotelDetailViewController.h"
 #import "SGFoodDetailViewController.h"
+#import "SGEntertainmentDetailViewController.h"
 
 @interface SGFavoriteViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -21,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *yuleButton;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *emptyCell;
 
 @end
 
@@ -50,7 +54,14 @@
     [self.meshiButton addTarget:self action:@selector(action:) forControlEvents:UIControlEventAllEvents];
     [self.yuleButton addTarget:self action:@selector(action:) forControlEvents:UIControlEventAllEvents];
     
-    [self switchFavoriteType:FavoriteTypeHotel];
+    _type = FavoriteTypeHotel;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self switchFavoriteType:_type];
 }
 
 - (void)action:(id)sender
@@ -77,7 +88,7 @@
     _type = type;
     if (type == FavoriteTypeHotel) {
         _list = [SGFavoriteHelper instance].favoriteHotelList;
-    } else if (type == FavoriteTypeHotel) {
+    } else if (type == FavoriteTypeFood) {
         _list = [SGFavoriteHelper instance].favoriteFoodList;
     } else {
         _list = [SGFavoriteHelper instance].favoriteEntertainmentList;
@@ -88,11 +99,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if ([_list count] == 0) {
+        return 1;
+    }
     return [_list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == [_list count]) {
+        return self.emptyCell;
+    }
     switch (_type) {
         case FavoriteTypeHotel:
         {
@@ -117,7 +134,13 @@
             break;
         case FavoriteTypeEntertainment:
         {
-            
+            SGEntertainmentCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"SGEntertainmentCell"];
+            if (!cell) {
+                NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGEntertainmentCell" owner:nil options:nil];
+                cell = [views objectAtIndex:0];
+            }
+            [cell showData:[_list objectAtIndex:indexPath.row]];
+            return cell;
         }
             break;
     }
@@ -126,6 +149,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+    if (indexPath.row == [_list count]) {
+        return CGRectGetHeight(self.tableView.frame);
+    }
     switch (_type) {
         case FavoriteTypeHotel:
         {
@@ -139,7 +165,7 @@
             break;
         case FavoriteTypeEntertainment:
         {
-            
+            return 80;
         }
             break;
     }
@@ -149,6 +175,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == [_list count]) {
+        return;
+    }
     switch (_type) {
         case FavoriteTypeHotel:
         {
@@ -177,7 +206,9 @@
             break;
         case FavoriteTypeEntertainment:
         {
-            
+            SGEntertainmentDetailViewController *viewController = [[SGEntertainmentDetailViewController alloc] init];
+            viewController.entertainmentData = [_list objectAtIndex:indexPath.row];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
     }
@@ -195,6 +226,7 @@
     [self setMeshiButton:nil];
     [self setYuleButton:nil];
     [self setTableView:nil];
+    [self setEmptyCell:nil];
     [super viewDidUnload];
 }
 @end

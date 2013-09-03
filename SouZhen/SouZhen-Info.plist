@@ -3,11 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
 	<string>西塘</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon@2x.png</string>
+		<string>Icon.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.songguo.xitang</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -22,8 +27,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
