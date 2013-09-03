@@ -24,4 +24,6 @@
 
 - (void)showData:(SGRouteUIInfo *)data;
 
+- (IBAction)foldAction:(id)sender;
+
 @end

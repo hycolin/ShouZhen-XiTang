@@ -58,6 +58,7 @@ typedef enum {
     self.title = @"西塘"; 
     
     self.bannerView.cellClass = [SGBannerViewCell class];
+    self.bannerView.autoFliper = YES;
     self.bannerView.dataArray = [NSArray arrayWithObjects:
                                  [NSDictionary dictionaryWithObjectsAndKeys:@"banner_0.png", @"image", @"s0004", @"uid", nil],
                                  [NSDictionary dictionaryWithObjectsAndKeys:@"banner_1.png", @"image", @"s0014", @"uid", nil],

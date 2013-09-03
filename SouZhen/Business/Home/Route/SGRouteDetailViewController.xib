@@ -285,10 +285,18 @@
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">YMCoverViewController</string>
-					<string key="superclassName">UIViewController</string>
+					<string key="superclassName">YMViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/YMCoverViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">YMViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/YMViewController.h</string>
 					</object>
 				</object>
 			</array>

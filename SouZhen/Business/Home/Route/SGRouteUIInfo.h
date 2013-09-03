@@ -23,6 +23,7 @@
 @property (nonatomic) BOOL fold;
 @property (nonatomic) BOOL showFoldButton;
 @property (nonatomic) NSInteger height;
+@property (nonatomic) NSInteger titleHeight;
 @property (nonatomic) NSInteger descriptionHeight;
 
 @end

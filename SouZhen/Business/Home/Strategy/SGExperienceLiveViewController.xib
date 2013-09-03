@@ -48,7 +48,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">pic_ex_route.png</string>
+							<string key="NSResourceName">pic_ex_live.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="888533194">
@@ -57,6 +57,7 @@
 						<string key="NSFrame">{{20, 159}, {293, 808}}</string>
 						<reference key="NSSuperview" ref="1057616005"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="163087542">
 							<int key="NSColorSpace">3</int>
@@ -263,54 +264,13 @@ vu+8jOe5geW/meaXtuautemcgOaPkOWJjemihOe6puS4lOS7t+agvOS8muS4iua1ruOAggoK56ys5LiJ
 			<nil key="sourceID"/>
 			<int key="maxID">22</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">SGExperienceDetailViewController</string>
-					<string key="superclassName">SGViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SGExperienceDetailViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SGViewController</string>
-					<string key="superclassName">YMCoverViewController</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="contentView">UIView</string>
-						<string key="navigationBar">UINavigationBar</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="contentView">
-							<string key="name">contentView</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="navigationBar">
-							<string key="name">navigationBar</string>
-							<string key="candidateClassName">UINavigationBar</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SGViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">YMCoverViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/YMCoverViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">pic_ex_route.png</string>
+			<string key="NS.key.0">pic_ex_live.png</string>
 			<string key="NS.object.0">{265, 216}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">2083</string>

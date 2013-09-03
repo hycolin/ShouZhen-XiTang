@@ -41,7 +41,12 @@
 
 - (void)updateUI
 {
-    CGRect frame = self.descriptionLabel.frame;
+    CGRect frame = self.titleLabel.frame;
+    frame.size.height = self.data.titleHeight;
+    self.titleLabel.frame = frame;
+    
+    frame = self.descriptionLabel.frame;
+    frame.origin.y = CGRectGetMaxY(self.titleLabel.frame) + 3;
     frame.size.height = self.data.descriptionHeight;
     self.descriptionLabel.frame = frame;
     
@@ -82,8 +87,8 @@
         [backgroundImage drawAtPoint:CGPointMake(0, 0)];
         CGContextSetRGBFillColor(cgContextRef, 1.0, 1.0, 1.0, 1.0);
         NSString *pinNumber = [NSString stringWithFormat:@"%d", data.index  + 1];
-        CGSize size = [pinNumber sizeWithFont:[UIFont systemFontOfSize:13]];
-        [pinNumber drawAtPoint:CGPointMake((int)((backgroundImage.size.width - size.width)/2)+1, 4) withFont:[UIFont systemFontOfSize:13]];
+        CGSize size = [pinNumber sizeWithFont:[UIFont systemFontOfSize:11]];
+        [pinNumber drawAtPoint:CGPointMake((int)((backgroundImage.size.width - size.width)/2), 6) withFont:[UIFont systemFontOfSize:11]];
         self.markImageView.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
@@ -105,24 +110,39 @@
         NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGRouteCell" owner:nil options:nil];
         cell = [views objectAtIndex:0];
     }
-    CGFloat offset = 0;
+    CGFloat offsetTitle = 0;
+    CGFloat offsetDetail = 0;
+    
+    CGSize size = [data.title sizeWithFont:cell.titleLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.titleLabel.frame), INT_MAX)];
+    
+    if (size.height > CGRectGetHeight(cell.titleLabel.frame)) {
+        data.titleHeight = size.height;
+        offsetTitle = (data.titleHeight - CGRectGetHeight(cell.titleLabel.frame));
+    } else {
+        data.titleHeight = CGRectGetHeight(cell.titleLabel.frame);
+    }
 
-    CGSize size = [data.intro sizeWithFont:cell.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.descriptionLabel.frame), INT_MAX)];
+    size = [data.intro sizeWithFont:cell.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.descriptionLabel.frame), INT_MAX)];
     if (size.height > CGRectGetHeight(cell.descriptionLabel.frame)) {
         data.showFoldButton = YES;
         if (!fold) {
-            offset += (size.height - CGRectGetHeight(cell.descriptionLabel.frame));
+            offsetDetail += (size.height - CGRectGetHeight(cell.descriptionLabel.frame));
         }
     } else {
         data.showFoldButton = NO;
     }
-    data.descriptionHeight = CGRectGetHeight(cell.descriptionLabel.frame) + offset;
+    if (data.intro.length == 0) {
+        data.descriptionHeight = 0;
+        offsetDetail = -CGRectGetHeight(cell.descriptionLabel.frame);
+    } else {
+        data.descriptionHeight = CGRectGetHeight(cell.descriptionLabel.frame) + offsetDetail;
+    }
     
     if (data.imageUrl.length == 0) {
-        offset -= (CGRectGetHeight(cell.descriptionImageView.frame) + 20);
+        offsetDetail -= (CGRectGetHeight(cell.descriptionImageView.frame) + 20);
     }
     data.fold = fold;
-    data.height = CGRectGetHeight(cell.frame) + offset;
+    data.height = CGRectGetHeight(cell.frame) + offsetTitle + offsetDetail;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
