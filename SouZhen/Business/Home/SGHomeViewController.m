@@ -16,6 +16,10 @@
 #import "SGFoodViewController.h"
 #import "SGEntertainmentViewController.h"
 #import "SGNewsViewController.h"
+#import "SimpleFliperView.h"
+#import "SGBannerViewCell.h"
+#import "SGSceneryDetailViewController.h"
+#import "SGFakeDataHelper.h"
 
 typedef enum {
     HomeIndexRoute = 1000,
@@ -32,6 +36,8 @@ typedef enum {
 
 @property (weak, nonatomic) IBOutlet UIScrollView *bannerScrollview;
 @property (weak, nonatomic) IBOutlet UIPageControl *bannerPageControl;
+@property (weak, nonatomic) IBOutlet SimpleFliperView *bannerView;
+
 
 @end
 
@@ -51,8 +57,27 @@ typedef enum {
     [super viewDidLoad];
     self.title = @"西塘"; 
     
+    self.bannerView.cellClass = [SGBannerViewCell class];
+    self.bannerView.dataArray = [NSArray arrayWithObjects:
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_0.png", @"image", @"s0004", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_1.png", @"image", @"s0014", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_2.png", @"image", @"s0003", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_3.png", @"image", @"s0002", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_4.png", @"image", @"s0004", @"uid", nil],
+                                 nil];
+    [self.bannerView setSelectedTarget:self selector:@selector(bannerSelected:)];
+    
     self.bannerScrollview.contentSize = CGSizeMake(1600, CGRectGetHeight(self.bannerScrollview.frame));
     self.bannerScrollview.delegate = self;
+}
+
+- (void)bannerSelected:(NSDictionary*)banner
+{
+    NSString *sceneryId = [banner objectForKey:@"uid"];
+    SGSceneryDetailViewController *viewController = [[SGSceneryDetailViewController alloc] init];
+    viewController.sceneryData = [[SGFakeDataHelper instance] getSceneryByID:sceneryId];
+    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -130,6 +155,7 @@ typedef enum {
 - (void)viewDidUnload {
     [self setBannerScrollview:nil];
     [self setBannerPageControl:nil];
+    [self setBannerView:nil];
     [super viewDidUnload];
 }
 @end
