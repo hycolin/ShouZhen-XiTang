@@ -34,7 +34,9 @@
 
 - (void)awakeFromNib
 {
+   self.titleLabel.userInteractionEnabled = YES;
     self.descriptionLabel.userInteractionEnabled = YES;
+    [self.titleLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(foldAction:)]];
     [self.descriptionLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(foldAction:)]];
 }
 
