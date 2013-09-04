@@ -91,7 +91,6 @@
 		6640FB9B17C8A1BB00474152 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB5817C8A1BB00474152 /* NSDate+Util.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6640FB9C17C8A1BB00474152 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB5A17C8A1BB00474152 /* NSString+Util.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6640FB9D17C8A1BB00474152 /* CustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB5E17C8A1BB00474152 /* CustomSegmentedControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6640FB9E17C8A1BB00474152 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB6017C8A1BB00474152 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6640FB9F17C8A1BB00474152 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6640FB6217C8A1BB00474152 /* PickerView.xib */; };
 		6640FBA017C8A1BB00474152 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB6417C8A1BB00474152 /* PickerViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6640FBA117C8A1BB00474152 /* YMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640FB6617C8A1BB00474152 /* YMImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -384,6 +383,12 @@
 		6698DC8D17C3D133006E486B /* SGMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6698DC8B17C3D133006E486B /* SGMapViewController.xib */; };
 		6698DC9117C3D13C006E486B /* SGMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6698DC8F17C3D13C006E486B /* SGMoreViewController.m */; };
 		6698DC9217C3D13C006E486B /* SGMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6698DC9017C3D13C006E486B /* SGMoreViewController.xib */; };
+		669C7C8A17D76EBB00F0442C /* SGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669C7C8817D76EBB00F0442C /* SGTableViewController.m */; };
+		669C7C8E17D76F9300F0442C /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 669C7C8C17D76F9300F0442C /* DownArrow.png */; };
+		669C7C8F17D76F9300F0442C /* DownArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 669C7C8D17D76F9300F0442C /* DownArrow@2x.png */; };
+		669C7C9517D7784300F0442C /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 669C7C9417D7784200F0442C /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		669C7C9817D778CD00F0442C /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 669C7C9617D778CD00F0442C /* UpArrow.png */; };
+		669C7C9917D778CD00F0442C /* UpArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 669C7C9717D778CD00F0442C /* UpArrow@2x.png */; };
 		66ADC69517CE424200685296 /* bg_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 66ADC69317CE424200685296 /* bg_90.png */; };
 		66ADC69617CE424200685296 /* bg_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 66ADC69417CE424200685296 /* bg_120.png */; };
 		66BC1A8F17C66BF4001E7305 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BC1A8E17C66BF4001E7305 /* CoreLocation.framework */; };
@@ -612,8 +617,6 @@
 		6640FB5A17C8A1BB00474152 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
 		6640FB5D17C8A1BB00474152 /* CustomSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentedControl.h; sourceTree = "<group>"; };
 		6640FB5E17C8A1BB00474152 /* CustomSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentedControl.m; sourceTree = "<group>"; };
-		6640FB5F17C8A1BB00474152 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		6640FB6017C8A1BB00474152 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		6640FB6217C8A1BB00474152 /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		6640FB6317C8A1BB00474152 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		6640FB6417C8A1BB00474152 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
@@ -944,6 +947,14 @@
 		6698DC8E17C3D13C006E486B /* SGMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMoreViewController.h; sourceTree = "<group>"; };
 		6698DC8F17C3D13C006E486B /* SGMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMoreViewController.m; sourceTree = "<group>"; };
 		6698DC9017C3D13C006E486B /* SGMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGMoreViewController.xib; sourceTree = "<group>"; };
+		669C7C8717D76EBB00F0442C /* SGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTableViewController.h; sourceTree = "<group>"; };
+		669C7C8817D76EBB00F0442C /* SGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTableViewController.m; sourceTree = "<group>"; };
+		669C7C8C17D76F9300F0442C /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		669C7C8D17D76F9300F0442C /* DownArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownArrow@2x.png"; sourceTree = "<group>"; };
+		669C7C9317D7784200F0442C /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		669C7C9417D7784200F0442C /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		669C7C9617D778CD00F0442C /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
+		669C7C9717D778CD00F0442C /* UpArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpArrow@2x.png"; sourceTree = "<group>"; };
 		66ADC69317CE424200685296 /* bg_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_90.png; sourceTree = "<group>"; };
 		66ADC69417CE424200685296 /* bg_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_120.png; sourceTree = "<group>"; };
 		66BC1A8E17C66BF4001E7305 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1381,8 +1392,6 @@
 				6640FB5C17C8A1BB00474152 /* coverflow */,
 				6640FB5D17C8A1BB00474152 /* CustomSegmentedControl.h */,
 				6640FB5E17C8A1BB00474152 /* CustomSegmentedControl.m */,
-				6640FB5F17C8A1BB00474152 /* EGORefreshTableHeaderView.h */,
-				6640FB6017C8A1BB00474152 /* EGORefreshTableHeaderView.m */,
 				6640FB6117C8A1BB00474152 /* PickerView */,
 				6640FB6517C8A1BB00474152 /* YMImageView.h */,
 				6640FB6617C8A1BB00474152 /* YMImageView.m */,
@@ -1780,6 +1789,8 @@
 				6698DC0017C3B452006E486B /* SGViewController.h */,
 				6698DC0117C3B452006E486B /* SGViewController.m */,
 				6698DC0217C3B452006E486B /* SGViewController.xib */,
+				669C7C8717D76EBB00F0442C /* SGTableViewController.h */,
+				669C7C8817D76EBB00F0442C /* SGTableViewController.m */,
 				6698DC8117C3D096006E486B /* SGBaseHomeViewController.h */,
 				6698DC8217C3D096006E486B /* SGBaseHomeViewController.m */,
 				6640FBC917C8EAEF00474152 /* SGStarView.h */,
@@ -1791,6 +1802,8 @@
 				6640FBEC17C904F500474152 /* DrapCapTextView.m */,
 				66D7743117D2CBA900DCB3D3 /* SGFavoriteHelper.h */,
 				66D7743217D2CBA900DCB3D3 /* SGFavoriteHelper.m */,
+				669C7C9317D7784200F0442C /* EGORefreshTableHeaderView.h */,
+				669C7C9417D7784200F0442C /* EGORefreshTableHeaderView.m */,
 				6698DC5E17C3C2E8006E486B /* Images */,
 			);
 			path = Base;
@@ -1951,6 +1964,10 @@
 		6698DC5E17C3C2E8006E486B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				669C7C8C17D76F9300F0442C /* DownArrow.png */,
+				669C7C8D17D76F9300F0442C /* DownArrow@2x.png */,
+				669C7C9617D778CD00F0442C /* UpArrow.png */,
+				669C7C9717D778CD00F0442C /* UpArrow@2x.png */,
 				6698DC5F17C3C2E8006E486B /* bg_title-bar.png */,
 				6698DC6117C3C3CD006E486B /* bg_title-bar@2x.png */,
 				66D7740517D2693100DCB3D3 /* bg_tableviewline.png */,
@@ -2482,6 +2499,10 @@
 				667D66BE17D64B98002FCEC4 /* e0011.jpg in Resources */,
 				667D66BF17D64B98002FCEC4 /* e0012.jpg in Resources */,
 				667D66C017D64B98002FCEC4 /* e0013.jpg in Resources */,
+				669C7C8E17D76F9300F0442C /* DownArrow.png in Resources */,
+				669C7C8F17D76F9300F0442C /* DownArrow@2x.png in Resources */,
+				669C7C9817D778CD00F0442C /* UpArrow.png in Resources */,
+				669C7C9917D778CD00F0442C /* UpArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2550,7 +2571,6 @@
 				6640FB9B17C8A1BB00474152 /* NSDate+Util.m in Sources */,
 				6640FB9C17C8A1BB00474152 /* NSString+Util.m in Sources */,
 				6640FB9D17C8A1BB00474152 /* CustomSegmentedControl.m in Sources */,
-				6640FB9E17C8A1BB00474152 /* EGORefreshTableHeaderView.m in Sources */,
 				6640FBA017C8A1BB00474152 /* PickerViewController.m in Sources */,
 				6640FBA117C8A1BB00474152 /* YMImageView.m in Sources */,
 				6640FBA217C8A1BB00474152 /* YMMailComposeViewController.m in Sources */,
@@ -2593,6 +2613,8 @@
 				66D60B2117D6130100D183C6 /* SimpleFliperViewCell.m in Sources */,
 				66D60B2417D6135800D183C6 /* SGBannerViewCell.m in Sources */,
 				66D60B3317D6187A00D183C6 /* YMPageControl.m in Sources */,
+				669C7C8A17D76EBB00F0442C /* SGTableViewController.m in Sources */,
+				669C7C9517D7784300F0442C /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

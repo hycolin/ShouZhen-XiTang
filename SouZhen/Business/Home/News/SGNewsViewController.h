@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 songguo. All rights reserved.
 //
 
-#import "SGViewController.h"
+#import "SGTableViewController.h"
 
-@interface SGNewsViewController : SGViewController
+@interface SGNewsViewController : SGTableViewController
 
 @end

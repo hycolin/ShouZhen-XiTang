@@ -24,14 +24,10 @@
 //  THE SOFTWARE.
 //
 
-#define  RefreshViewHight 65
-#define  RefreshViewHightForPullUp 130.0f
-
 #import "EGORefreshTableHeaderView.h"
 
-//#import "YMAppDelegate.h"
 
-#define TEXT_COLOR	 [UIColor colorWithRed:87.0/255.0 green:108.0/255.0 blue:137.0/255.0 alpha:1.0]
+#define TEXT_COLOR	 [UIColor colorWithRed:120/255.0 green:118/255.0 blue:123/255.0 alpha:1.0]
 #define FLIP_ANIMATION_DURATION 0.18f
 
 
@@ -44,6 +40,7 @@
 @synthesize delegate=_delegate;
 @synthesize statusText;
 @synthesize style = _style;
+@synthesize state=_state;
 
 - (id)initWithFrame:(CGRect)frame withStyle:(EGOStyle)style {
     self = [super initWithFrame: frame];
@@ -52,13 +49,13 @@
         
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		self.backgroundColor = [UIColor clearColor]; // [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
-
+        
 		UILabel *label = [[UILabel alloc] init];
 		label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-		label.font = [UIFont systemFontOfSize:12.0f];
-		label.textColor = TEXT_COLOR;
-		label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
-		label.shadowOffset = CGSizeMake(0.0f, 1.0f);
+		label.font = [UIFont systemFontOfSize:13.0f];
+		label.textColor = [UIColor colorWithRed:120/255.f green:118/255.f blue:123/255.f alpha:1];
+		//label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+		//label.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		label.backgroundColor = [UIColor clearColor];
 		label.textAlignment = UITextAlignmentCenter;
 		[self addSubview:label];
@@ -68,9 +65,9 @@
 		label = [[UILabel alloc] init];
 		label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		label.font = [UIFont boldSystemFontOfSize:13.0f];
-		label.textColor = TEXT_COLOR;
-		label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
-		label.shadowOffset = CGSizeMake(0.0f, 1.0f);
+		label.textColor = [UIColor colorWithRed:120/255.f green:118/255.f blue:123/255.f alpha:1];
+		//label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+		//label.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		label.backgroundColor = [UIColor clearColor];
 		label.textAlignment = UITextAlignmentCenter;
 		[self addSubview:label];
@@ -80,7 +77,11 @@
 		CALayer *layer = [CALayer layer];
 		
 		layer.contentsGravity = kCAGravityResizeAspect;
-		layer.contents = (id)[UIImage imageNamed:@"tableview_pulltorefresh_arrow.png"].CGImage;
+        if (_style == EGOPullDown) {
+            layer.contents = (id)[UIImage imageNamed:@"DownArrow.png"].CGImage;
+        } else {
+            layer.contents = (id)[UIImage imageNamed:@"UpArrow.png"].CGImage;
+        }
 		
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 40000
 		if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
@@ -97,24 +98,36 @@
 		
 		
         if (_style == EGOPullDown) {
-            _statusLabel.frame = CGRectMake(0.0f, self.frame.size.height - 38, self.frame.size.width, 20.0f);
-            _activityView.frame = CGRectMake(35.0f, self.frame.size.height - 38.0f, 20.0f, 20.0f);
-            _arrowImage.frame = CGRectMake(35.0f, self.frame.size.height - RefreshViewHight + 5.0f, 30.0f, 60.0f);
+            if (!hiddenUpdatedStatus) {
+                _lastUpdatedLabel.frame = CGRectMake(0.0f, self.frame.size.height - 50, self.frame.size.width, 20.0f);
+                _statusLabel.frame = CGRectMake(0.0f, self.frame.size.height - 68.0f, self.frame.size.width, 20.0f);
+            } else {
+                self.statusText = @"刷新";
+                _statusLabel.frame = CGRectMake(0.0f, self.frame.size.height - 58.0f, self.frame.size.width, 20.0f);
+            }
+            _activityView.frame = CGRectMake(35.0f, self.frame.size.height - 58.0f, 20.0f, 20.0f);
+            _arrowImage.frame = CGRectMake(25.0f, self.frame.size.height - RefreshViewHight + 10.0f, 30.0f, 55.0f);
         } else {
-            _lastUpdatedLabel.frame = CGRectMake(0.0f, RefreshViewHight - 50.0f, self.frame.size.width, 20.0f);
-            _statusLabel.frame = CGRectMake(0.0f, RefreshViewHight - 68.0f, self.frame.size.width, 20.0f);
-            _activityView.frame = CGRectMake(25.0f, RefreshViewHight - 58.0f, 20.0f, 20.0f);
-            _arrowImage.frame = CGRectMake(15.0f, 10.0f, 30.0f, 60.0f);
+            if (!hiddenUpdatedStatus) {
+                _lastUpdatedLabel.frame = CGRectMake(0.0f, RefreshViewHight - 50.0f, self.frame.size.width, 20.0f);
+                _statusLabel.frame = CGRectMake(0.0f, RefreshViewHight - 68.0f, self.frame.size.width, 20.0f);
+            } else {
+                _statusLabel.frame = CGRectMake(0.0f, RefreshViewHight - 58.0f, self.frame.size.width, 20.0f);
+            }
+            _activityView.frame = CGRectMake(35.0f, RefreshViewHight - 58.0f, 20.0f, 20.0f);
+            _arrowImage.frame = CGRectMake(25.0f, 10.0f, 30.0f, 55.0f);
         }
         
-        self.statusText = @"刷新";
-        
-        _state = EGOOPullRefreshNormal;
 		[self setState:EGOOPullRefreshNormal];
     }
 	
     return self;
 	
+}
+
+- (id)initWithFrame:(CGRect)frame withStyle:(EGOStyle)style hiddenUpdatedStatus:(BOOL)aHiddenUpdatedStatus {
+    hiddenUpdatedStatus = aHiddenUpdatedStatus;
+    return [self initWithFrame:frame withStyle:style];
 }
 
 
@@ -126,9 +139,11 @@
 		NSString *updateText = [_delegate egoRefreshTableHeaderDataSourceLastUpdated:self];
 		_lastUpdatedLabel.text = [NSString stringWithFormat:@"%@", updateText];
 	} else {
+		
 		_lastUpdatedLabel.text = nil;
+		
 	}
-
+    
 }
 
 - (void)setState:(EGOPullRefreshState)aState{
@@ -140,8 +155,10 @@
 			[CATransaction setAnimationDuration:FLIP_ANIMATION_DURATION];
 			_arrowImage.transform = CATransform3DMakeRotation((M_PI / 180.0) * 180.0f, 0.0f, 0.0f, 1.0f);
 			[CATransaction commit];
+			
 			break;
 		case EGOOPullRefreshNormal:
+			
 			if (_state == EGOOPullRefreshPulling) {
 				[CATransaction begin];
 				[CATransaction setAnimationDuration:FLIP_ANIMATION_DURATION];
@@ -154,17 +171,23 @@
                 _statusLabel.text = [NSString stringWithFormat:@"上拉%@", self.statusText];
             }
 			[_activityView stopAnimating];
+            _activityView.hidden = YES;
 			[CATransaction begin];
-			[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; 
+			[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
 			_arrowImage.hidden = NO;
 			_arrowImage.transform = CATransform3DIdentity;
-			[CATransaction commit];			
+			[CATransaction commit];
+			
+			[self refreshLastUpdatedText];
+			
 			break;
 		case EGOOPullRefreshLoading:
+			
 			_statusLabel.text = NSLocalizedString(@"加载中...", @"加载中...");
 			[_activityView startAnimating];
+            _activityView.hidden = NO;
 			[CATransaction begin];
-			[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; 
+			[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
 			_arrowImage.hidden = YES;
 			[CATransaction commit];
 			
@@ -173,13 +196,6 @@
 			break;
 	}
 	
-//    if (_state != aState) {
-//        if (aState == EGOOPullRefreshPulling) {
-//            [[YMAppDelegate instance] playPullAudio];
-//        } else if (aState == EGOOPullRefreshNormal) {
-//            [[YMAppDelegate instance] playReleaseAudio];
-//        }
-//    }
 	_state = aState;
 }
 
@@ -188,15 +204,15 @@
 #pragma mark ScrollView Methods
 
 //手指屏幕上不断拖动调用此方法
-- (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView {	
+- (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView {
 	
-//	if (_state == EGOOPullRefreshLoading) {
-//		
-//		CGFloat offset = MAX(scrollView.contentOffset.y * -1, 0);
-//		offset = MIN(offset, 60);
-//		scrollView.contentInset = UIEdgeInsetsMake(0.0, 0.0f, RefreshViewHight, 0.0f);
-//		
-//	} else 
+    //	if (_state == EGOOPullRefreshLoading) {
+    //
+    //		CGFloat offset = MAX(scrollView.contentOffset.y * -1, 0);
+    //		offset = MIN(offset, 60);
+    //		scrollView.contentInset = UIEdgeInsetsMake(0.0, 0.0f, RefreshViewHight, 0.0f);
+    //
+    //	} else
     if (scrollView.isDragging) {
 		BOOL _loading = NO;
 		if ([_delegate respondsToSelector:@selector(egoRefreshTableHeaderDataSourceIsLoading:)]) {
@@ -235,26 +251,25 @@
 	if (((_style == EGOPullUp && (scrollView.contentOffset.y + (scrollView.frame.size.height) > scrollView.contentSize.height + RefreshViewHightForPullUp)) || (_style == EGOPullDown && scrollView.contentOffset.y < -RefreshViewHight))
         && !_loading) {
 		
-		if ([_delegate respondsToSelector:@selector(egoRefreshTableHeaderDidTriggerRefresh:)]) {
-			[_delegate egoRefreshTableHeaderDidTriggerRefresh:self];
-		}
-		
 		[self setState:EGOOPullRefreshLoading];
 		[UIView beginAnimations:nil context:NULL];
 		[UIView setAnimationDuration:0.2];
         if (_style == EGOPullUp) {
-        		scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, RefreshViewHight, 0.0f);
+            scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, RefreshViewHight, 0.0f);
         } else {
-            	scrollView.contentInset = UIEdgeInsetsMake(RefreshViewHight, 0.0f, 0.0f, 0.0f);
+            scrollView.contentInset = UIEdgeInsetsMake(RefreshViewHight, 0.0f, 0.0f, 0.0f);
         }
 		[UIView commitAnimations];
 		
+        if ([_delegate respondsToSelector:@selector(egoRefreshTableHeaderDidTriggerRefresh:)]) {
+			[_delegate egoRefreshTableHeaderDidTriggerRefresh:self];
+		}
 	}
 	
 }
 
 //当开发者页面页面刷新完毕调用此方法，[delegate egoRefreshScrollViewDataSourceDidFinishedLoading: scrollView];
-- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {	
+- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {
 	
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:.3];
@@ -262,7 +277,7 @@
 	[UIView commitAnimations];
 	
 	[self setState:EGOOPullRefreshNormal];
-
+    
 }
 
 

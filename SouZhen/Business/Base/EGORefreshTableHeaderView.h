@@ -28,10 +28,13 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
+#define  RefreshViewHight 85.0f
+#define  RefreshViewHightForPullUp 65.f
+
 typedef enum{
 	EGOOPullRefreshPulling = 0,
 	EGOOPullRefreshNormal,
-	EGOOPullRefreshLoading,	
+	EGOOPullRefreshLoading,
 } EGOPullRefreshState;
 
 typedef enum {
@@ -43,20 +46,25 @@ typedef enum {
 	
 	id _delegate;
 	EGOPullRefreshState _state;
-
+    
 	UILabel *_lastUpdatedLabel;
 	UILabel *_statusLabel;
 	CALayer *_arrowImage;
 	UIActivityIndicatorView *_activityView;
 	
     EGOStyle _style;
+    
+    BOOL hiddenUpdatedStatus;
 }
 
 @property (nonatomic, assign) id <EGORefreshTableHeaderDelegate> delegate;
 @property (nonatomic, retain) NSString *statusText;
 @property (nonatomic, assign) EGOStyle style;
+@property(nonatomic,assign) EGOPullRefreshState state;
 
-- (id)initWithFrame:(CGRect)frame withStyle:(EGOStyle)style; 
+- (id)initWithFrame:(CGRect)frame withStyle:(EGOStyle)style;
+- (id)initWithFrame:(CGRect)frame withStyle:(EGOStyle)style hiddenUpdatedStatus:(BOOL)hiddenUpdatedStatus;
+
 - (void)refreshLastUpdatedText;
 - (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;

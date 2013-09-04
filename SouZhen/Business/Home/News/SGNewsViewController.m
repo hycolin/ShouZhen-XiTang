@@ -18,13 +18,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *yyzxButton;
 @property (weak, nonatomic) IBOutlet UIButton *zthdButton;
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation SGNewsViewController
 {
-    NSArray *_list;
     NSString *_type;
 }
 
@@ -74,13 +71,8 @@
 - (void)switchNewsType:(NSString *)type
 {
     _type = type;
-    _list = [[SGFakeDataHelper instance] getNewsByType:_type];
+    self.list = [[SGFakeDataHelper instance] getNewsByType:_type];
     [self.tableView reloadData];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [_list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,7 +82,7 @@
         NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGNewsCell" owner:nil options:nil];
         cell = [views objectAtIndex:0];
     }
-    [cell showData:[_list objectAtIndex:indexPath.row]];
+    [cell showData:[self.list objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -98,7 +90,7 @@
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     SGNewsDetailViewController *viewController = [[SGNewsDetailViewController alloc] init];
-    viewController.news = [_list objectAtIndex:indexPath.row];
+    viewController.news = [self.list objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

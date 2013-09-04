@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 songguo. All rights reserved.
 //
 
-#import "SGViewController.h"
+#import "SGTableViewController.h"
 
-@interface SGEntertainmentViewController : SGViewController
+@interface SGEntertainmentViewController : SGTableViewController
 
 @property (nonatomic, strong) NSString *categoryName;
 

@@ -7,8 +7,9 @@
 //
 
 #import "SGViewController.h"
+#import "SGTableViewController.h"
 
-@interface SGSceneryViewController : SGViewController
+@interface SGSceneryViewController : SGTableViewController
 
 @property (nonatomic, strong) NSString *categoryName;
 

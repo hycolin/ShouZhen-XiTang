@@ -15,23 +15,10 @@
 
 @interface SGHotelViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation SGHotelViewController
-{
-    NSArray *_list;
-}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -42,7 +29,7 @@
     self.tableView.delegate = self;
     self.tableView.rowHeight = 100;
     
-    _list = [[SGFakeDataHelper instance] getAllHotel];
+    self.list = [[SGFakeDataHelper instance] getAllHotel];
     
     UIButton *_mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _mapButton.frame = CGRectMake(0, 0, 25, 25);
@@ -55,19 +42,13 @@
 - (void)switchMapAction
 {
     SGMapViewController *_mapViewController = [[SGMapViewController alloc] init];
-    NSMutableArray *list = [NSMutableArray arrayWithCapacity:[_list count]];
-    for (SGHotelData *hotel in _list) {
+    NSMutableArray *list = [NSMutableArray arrayWithCapacity:[self.list count]];
+    for (SGHotelData *hotel in self.list) {
         SGAnnotation *anno = [[SGAnnotation alloc] initWithId:hotel.uid lat:hotel.lat lng:hotel.lng address:hotel.address title:hotel.name subTitle:hotel.intro leftImage:hotel.imageUrl type:AnnotationTypeHotel];
         [list addObject:anno];
     }
     [_mapViewController setAnnotations:list];
     [self.navigationController pushViewController:_mapViewController animated:YES];
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [_list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,7 +58,7 @@
         NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGHotelCell" owner:nil options:nil];
         cell = [views objectAtIndex:0];
     }
-    [cell showData:[_list objectAtIndex:indexPath.row]];
+    [cell showData:[self.list objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -85,7 +66,7 @@
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    SGHotelData *hotel = (SGHotelData *)[_list objectAtIndex:indexPath.row];
+    SGHotelData *hotel = (SGHotelData *)[self.list objectAtIndex:indexPath.row];
     if (hotel.houseList.count > 0) {
         SGHotelHouseTypeViewController *viewController = [[SGHotelHouseTypeViewController alloc] init];
         viewController.title = hotel.name;

@@ -6,9 +6,8 @@
 //  Copyright (c) 2013年 songguo. All rights reserved.
 //
 
-#import "SGViewController.h"
-#import "SGBaseHomeViewController.h"
+#import "SGTableViewController.h"
 
-@interface SGFavoriteViewController : SGBaseHomeViewController
+@interface SGFavoriteViewController : SGTableViewController
 
 @end

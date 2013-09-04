@@ -16,13 +16,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *specialtyButton;
 @property (weak, nonatomic) IBOutlet UIButton *snacksButton;
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation SGFoodViewController
-{
-    NSArray *_list;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,15 +58,10 @@
 
 - (void)switchCategory:(NSString *)categoryName
 {
-    _list = [[SGFakeDataHelper instance] getFoodListByCategory:categoryName];
+    self.list = [[SGFakeDataHelper instance] getFoodListByCategory:categoryName];
     
     [self.tableView reloadData];
     self.tableView.contentOffset = CGPointZero;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [_list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,7 +71,7 @@
         NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGFoodCell" owner:nil options:nil];
         cell = [views objectAtIndex:0];
     }
-    [cell showFood:[_list objectAtIndex:indexPath.row]];
+    [cell showFood:[self.list objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -88,7 +79,7 @@
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     SGFoodDetailViewController *viewController = [[SGFoodDetailViewController alloc] init];
-    viewController.food = [_list objectAtIndex:indexPath.row];
+    viewController.food = [self.list objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

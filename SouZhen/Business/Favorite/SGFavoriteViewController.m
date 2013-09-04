@@ -15,6 +15,7 @@
 #import "SGHotelDetailViewController.h"
 #import "SGFoodDetailViewController.h"
 #import "SGEntertainmentDetailViewController.h"
+#import "SGAppDelegate.h"
 
 @interface SGFavoriteViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -22,15 +23,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *meshiButton;
 @property (weak, nonatomic) IBOutlet UIButton *yuleButton;
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @property (strong, nonatomic) IBOutlet UITableViewCell *emptyCell;
 
 @end
 
 @implementation SGFavoriteViewController
 {
-    NSArray *_list;
     FavoriteType _type;
 }
 
@@ -55,7 +53,24 @@
     [self.yuleButton addTarget:self action:@selector(action:) forControlEvents:UIControlEventAllEvents];
     
     _type = FavoriteTypeHotel;
+    
+    UIImage *menuImage = [UIImage imageNamed:@"icon_menu"];
+    UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    menuButton.frame = CGRectMake(0, 0, 50, 44);
+    [menuButton setImage:menuImage forState:UIControlStateNormal];
+    [menuButton addTarget:self action:@selector(menuAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
 }
+
+- (void)menuAction
+{
+    if ([[SGAppDelegate instance].drawerController openSide] == MMDrawerSideNone) {
+        [[SGAppDelegate instance].drawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    } else {
+        [[SGAppDelegate instance].drawerController closeDrawerAnimated:YES completion:nil];
+    }
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -87,11 +102,11 @@
 {
     _type = type;
     if (type == FavoriteTypeHotel) {
-        _list = [SGFavoriteHelper instance].favoriteHotelList;
+        self.list = [SGFavoriteHelper instance].favoriteHotelList;
     } else if (type == FavoriteTypeFood) {
-        _list = [SGFavoriteHelper instance].favoriteFoodList;
+        self.list = [SGFavoriteHelper instance].favoriteFoodList;
     } else {
-        _list = [SGFavoriteHelper instance].favoriteEntertainmentList;
+        self.list = [SGFavoriteHelper instance].favoriteEntertainmentList;
     }
     [self.tableView reloadData];
     self.tableView.contentOffset = CGPointZero;
@@ -99,15 +114,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([_list count] == 0) {
+    if ([self.list count] == 0) {
         return 1;
     }
-    return [_list count];
+    return [super tableView:tableView numberOfRowsInSection:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == [_list count]) {
+    if (indexPath.row == [self.list count]) {
         return self.emptyCell;
     }
     switch (_type) {
@@ -118,7 +133,7 @@
                 NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGHotelCell" owner:nil options:nil];
                 cell = [views objectAtIndex:0];
             }
-            [cell showData:[_list objectAtIndex:indexPath.row]];
+            [cell showData:[self.list objectAtIndex:indexPath.row]];
             return cell;
         }
         case FavoriteTypeFood:
@@ -128,7 +143,7 @@
                 NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGFoodCell" owner:nil options:nil];
                 cell = [views objectAtIndex:0];
             }
-            [cell showFood:[_list objectAtIndex:indexPath.row]];
+            [cell showFood:[self.list objectAtIndex:indexPath.row]];
             return cell;
         }
             break;
@@ -139,7 +154,7 @@
                 NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGEntertainmentCell" owner:nil options:nil];
                 cell = [views objectAtIndex:0];
             }
-            [cell showData:[_list objectAtIndex:indexPath.row]];
+            [cell showData:[self.list objectAtIndex:indexPath.row]];
             return cell;
         }
             break;
@@ -149,7 +164,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    if (indexPath.row == [_list count]) {
+    if (indexPath.row == [self.list count]) {
         return CGRectGetHeight(self.tableView.frame);
     }
     switch (_type) {
@@ -175,13 +190,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row == [_list count]) {
+    if (indexPath.row == [self.list count]) {
         return;
     }
     switch (_type) {
         case FavoriteTypeHotel:
         {
-            SGHotelData *hotel = (SGHotelData *)[_list objectAtIndex:indexPath.row];
+            SGHotelData *hotel = (SGHotelData *)[self.list objectAtIndex:indexPath.row];
             if (hotel.houseList.count > 0) {
                 SGHotelHouseTypeViewController *viewController = [[SGHotelHouseTypeViewController alloc] init];
                 viewController.title = hotel.name;
@@ -200,14 +215,14 @@
         {
             [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
             SGFoodDetailViewController *viewController = [[SGFoodDetailViewController alloc] init];
-            viewController.food = [_list objectAtIndex:indexPath.row];
+            viewController.food = [self.list objectAtIndex:indexPath.row];
             [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case FavoriteTypeEntertainment:
         {
             SGEntertainmentDetailViewController *viewController = [[SGEntertainmentDetailViewController alloc] init];
-            viewController.entertainmentData = [_list objectAtIndex:indexPath.row];
+            viewController.entertainmentData = [self.list objectAtIndex:indexPath.row];
             [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
