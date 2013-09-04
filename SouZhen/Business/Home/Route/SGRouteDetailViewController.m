@@ -85,6 +85,7 @@
         data.lat = scenery.lat;
         data.lng = scenery.lng;
         data.sceneryId = sceneryId;
+        data.sceneryName = scenery.name;
         data.intro = scenery.intro;
         data.imageUrl = scenery.imageUrl;
         [_routeList addObject:data];
@@ -163,15 +164,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    SGRouteCell *cell = (SGRouteCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-    [cell foldAction:nil];
-//    SGRouteUIInfo *routeUIInfo = [_routeList objectAtIndex:indexPath.row];
-//    SGSceneryData *sceneryData = [[SGFakeDataHelper instance] getSceneryByID:routeUIInfo.sceneryId];
-//    if (sceneryData) {
-//        SGSceneryDetailViewController *viewController = [[SGSceneryDetailViewController alloc] init];
-//        viewController.sceneryData = sceneryData;
-//        [self.navigationController pushViewController:viewController animated:YES];
-//    }
+//    SGRouteCell *cell = (SGRouteCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+//    [cell foldAction:nil];
+    SGRouteUIInfo *routeUIInfo = [_routeList objectAtIndex:indexPath.row];
+    SGSceneryData *sceneryData = [[SGFakeDataHelper instance] getSceneryByID:routeUIInfo.sceneryId];
+    if (sceneryData) {
+        SGSceneryDetailViewController *viewController = [[SGSceneryDetailViewController alloc] init];
+        viewController.sceneryData = sceneryData;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 #pragma mark - MapViewDelegate

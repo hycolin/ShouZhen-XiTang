@@ -23,7 +23,7 @@
 
 - (NSString *)title
 {
-    return self.route.title;
+    return self.route.sceneryName;
 }
 
 - (NSString *)subtitle

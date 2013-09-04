@@ -32,6 +32,12 @@
     return self;
 }
 
+- (void)awakeFromNib
+{
+    self.descriptionLabel.userInteractionEnabled = YES;
+    [self.descriptionLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(foldAction:)]];
+}
+
 - (IBAction)foldAction:(id)sender {
     [SGRouteCell calcRouteCelHeight:self.data fold:!self.data.fold];
     [self updateUI];

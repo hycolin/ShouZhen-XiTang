@@ -17,6 +17,7 @@
 @property (nonatomic) NSString *intro;
 @property (nonatomic) NSString *imageUrl;
 @property (nonatomic) NSString *sceneryId;
+@property (nonatomic) NSString *sceneryName;
 @property (nonatomic) NSInteger index;
 
 @property (nonatomic) BOOL header;
