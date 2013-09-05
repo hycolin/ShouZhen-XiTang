@@ -529,6 +529,13 @@
 		66D7744B17D2E5B300DCB3D3 /* icon_yule_d.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D7743F17D2E5B300DCB3D3 /* icon_yule_d.png */; };
 		66D7744C17D2E5B300DCB3D3 /* icon_yule_d@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D7744017D2E5B300DCB3D3 /* icon_yule_d@2x.png */; };
 		66D7744E17D2E71300DCB3D3 /* vline.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D7744D17D2E71300DCB3D3 /* vline.png */; };
+		66F6630317D8C759008384E6 /* SGOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F6630117D8C758008384E6 /* SGOrderViewController.m */; };
+		66F6630417D8C759008384E6 /* SGOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F6630217D8C758008384E6 /* SGOrderViewController.xib */; };
+		66F6630717D8C8D9008384E6 /* button_radio1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F6630517D8C8D9008384E6 /* button_radio1@2x.png */; };
+		66F6630817D8C8D9008384E6 /* button_radio2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F6630617D8C8D9008384E6 /* button_radio2@2x.png */; };
+		66F6630C17D8D4B0008384E6 /* SGOrderStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F6630A17D8D4B0008384E6 /* SGOrderStatusViewController.m */; };
+		66F6630D17D8D4B0008384E6 /* SGOrderStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F6630B17D8D4B0008384E6 /* SGOrderStatusViewController.xib */; };
+		66F6630F17D8E641008384E6 /* button_xiadan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F6630E17D8E641008384E6 /* button_xiadan@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1166,6 +1173,15 @@
 		66D7743F17D2E5B300DCB3D3 /* icon_yule_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_yule_d.png; sourceTree = "<group>"; };
 		66D7744017D2E5B300DCB3D3 /* icon_yule_d@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_yule_d@2x.png"; sourceTree = "<group>"; };
 		66D7744D17D2E71300DCB3D3 /* vline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vline.png; sourceTree = "<group>"; };
+		66F6630017D8C758008384E6 /* SGOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOrderViewController.h; sourceTree = "<group>"; };
+		66F6630117D8C758008384E6 /* SGOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGOrderViewController.m; sourceTree = "<group>"; };
+		66F6630217D8C758008384E6 /* SGOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGOrderViewController.xib; sourceTree = "<group>"; };
+		66F6630517D8C8D9008384E6 /* button_radio1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_radio1@2x.png"; sourceTree = "<group>"; };
+		66F6630617D8C8D9008384E6 /* button_radio2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_radio2@2x.png"; sourceTree = "<group>"; };
+		66F6630917D8D4B0008384E6 /* SGOrderStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOrderStatusViewController.h; sourceTree = "<group>"; };
+		66F6630A17D8D4B0008384E6 /* SGOrderStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGOrderStatusViewController.m; sourceTree = "<group>"; };
+		66F6630B17D8D4B0008384E6 /* SGOrderStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGOrderStatusViewController.xib; sourceTree = "<group>"; };
+		66F6630E17D8E641008384E6 /* button_xiadan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_xiadan@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1597,7 +1613,10 @@
 				6640FC3F17CD10B400474152 /* bg_title@2x.png */,
 				6640FC4017CD10B400474152 /* button_radio1.png */,
 				6640FC4117CD10B400474152 /* button_radio2.png */,
+				66F6630517D8C8D9008384E6 /* button_radio1@2x.png */,
+				66F6630617D8C8D9008384E6 /* button_radio2@2x.png */,
 				6640FC4217CD10B400474152 /* button_xiadan.png */,
+				66F6630E17D8E641008384E6 /* button_xiadan@2x.png */,
 				6640FC4317CD10B400474152 /* icon_ok.png */,
 				6640FC4417CD10B400474152 /* input-box@2x.png */,
 			);
@@ -1980,6 +1999,12 @@
 				6698DC0417C3B452006E486B /* SGBookViewController.h */,
 				6698DC0517C3B452006E486B /* SGBookViewController.m */,
 				6698DC0617C3B452006E486B /* SGBookViewController.xib */,
+				66F6630017D8C758008384E6 /* SGOrderViewController.h */,
+				66F6630117D8C758008384E6 /* SGOrderViewController.m */,
+				66F6630217D8C758008384E6 /* SGOrderViewController.xib */,
+				66F6630917D8D4B0008384E6 /* SGOrderStatusViewController.h */,
+				66F6630A17D8D4B0008384E6 /* SGOrderStatusViewController.m */,
+				66F6630B17D8D4B0008384E6 /* SGOrderStatusViewController.xib */,
 				6640FC3C17CD10B400474152 /* Images */,
 			);
 			path = Book;
@@ -2723,6 +2748,11 @@
 				669C7D0317D78A9C00F0442C /* n0015-7.jpg in Resources */,
 				66960B4617D81E3D003A2D07 /* button_fw.png in Resources */,
 				66960B4817D82475003A2D07 /* button_dw.png in Resources */,
+				66F6630417D8C759008384E6 /* SGOrderViewController.xib in Resources */,
+				66F6630717D8C8D9008384E6 /* button_radio1@2x.png in Resources */,
+				66F6630817D8C8D9008384E6 /* button_radio2@2x.png in Resources */,
+				66F6630D17D8D4B0008384E6 /* SGOrderStatusViewController.xib in Resources */,
+				66F6630F17D8E641008384E6 /* button_xiadan@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2835,6 +2865,8 @@
 				66D60B3317D6187A00D183C6 /* YMPageControl.m in Sources */,
 				669C7C8A17D76EBB00F0442C /* SGTableViewController.m in Sources */,
 				669C7C9517D7784300F0442C /* EGORefreshTableHeaderView.m in Sources */,
+				66F6630317D8C759008384E6 /* SGOrderViewController.m in Sources */,
+				66F6630C17D8D4B0008384E6 /* SGOrderStatusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

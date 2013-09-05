@@ -48,13 +48,12 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    [self.topViewController viewWillDisappear:NO];
+    [self.topViewController viewDidDisappear:NO];
+   
     ((YMCoverViewController *)viewController).navigationController = self;
     [self addChildViewController:viewController];
     
-    viewController.view.layer.masksToBounds = NO;
-    viewController.view.layer.shadowRadius = 10.f;
-    viewController.view.layer.shadowOpacity = 0.8f;
-    viewController.view.layer.shadowPath = [[UIBezierPath bezierPathWithRect:viewController.view.bounds] CGPath];
     
     if ([self.childViewControllers count] > 1) {
         
@@ -66,11 +65,20 @@
         [((YMCoverViewController *)viewController).navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:backButton]];
     }
     
+    
+    viewController.view.layer.masksToBounds = NO;
+    viewController.view.layer.shadowRadius = 10.f;
+    viewController.view.layer.shadowOpacity = 0.8f;
+    viewController.view.layer.shadowPath = [[UIBezierPath bezierPathWithRect:viewController.view.bounds] CGPath];
+
+    
     CGRect newFrame = self.view.bounds;
     newFrame.origin.x = CGRectGetMaxX(newFrame);
     viewController.view.frame = newFrame;
     
     [self.view addSubview:viewController.view];
+    [viewController viewWillAppear:NO];
+    [viewController viewDidAppear:NO];
     
     newFrame.origin.x = 0;
     
@@ -93,30 +101,55 @@
     [[self topViewController].navigationController popViewControllerAnimated:YES];
 }
 
+- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
+{
+    int count = [self.childViewControllers count] - 1;
+    for (int i=0; i<count; i++) {
+        [self popViewControllerAnimated:NO];
+    }
+    return nil;
+}
+
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
     if (self.childViewControllers.count == 1) {
         return nil;
     }
     UIViewController *popViewController = [self.childViewControllers lastObject];
-    
     CGRect newFrame = self.view.bounds;
     newFrame.origin.x = CGRectGetMaxX(newFrame);
     
-    [UIView
-     animateWithDuration:animated?0.3f:0
-     delay:0.0
-     options:UIViewAnimationOptionCurveEaseOut
-     animations:^{
-         popViewController.view.frame = newFrame;
-     }
-     completion:^(BOOL finished) {
-         [popViewController.view removeFromSuperview];
-         [popViewController removeFromParentViewController];
-         if ([self.childViewControllers count] == 1) {
-             [self.view removeGestureRecognizer:_panGestureRecognizer];
+    if (!animated) {
+        popViewController.view.frame = newFrame;
+        [popViewController.view removeFromSuperview];
+        [popViewController removeFromParentViewController];
+        [popViewController  viewWillDisappear:NO];
+        [popViewController  viewDidDisappear:NO];
+        if ([self.childViewControllers count] == 1) {
+            [self.view removeGestureRecognizer:_panGestureRecognizer];
+        }
+        [self.topViewController viewWillAppear:NO];
+        [self.topViewController viewDidAppear:NO];
+    } else {
+        [UIView
+         animateWithDuration:animated?0.3f:0
+         delay:0.0
+         options:UIViewAnimationOptionCurveEaseOut
+         animations:^{
+             popViewController.view.frame = newFrame;
          }
-     }];
+         completion:^(BOOL finished) {
+             [popViewController.view removeFromSuperview];
+             [popViewController removeFromParentViewController];
+             [popViewController  viewWillDisappear:NO];
+             [popViewController  viewDidDisappear:NO];
+             if ([self.childViewControllers count] == 1) {
+                 [self.view removeGestureRecognizer:_panGestureRecognizer];
+             }
+             [self.topViewController viewWillAppear:NO];
+             [self.topViewController viewDidAppear:NO];
+         }];
+    }
 
 
     return popViewController;

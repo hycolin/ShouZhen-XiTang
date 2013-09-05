@@ -13,5 +13,6 @@
 - (id)initWithRootViewController:(UIViewController *)rootViewController;
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated;
+- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated;
 
 @end
