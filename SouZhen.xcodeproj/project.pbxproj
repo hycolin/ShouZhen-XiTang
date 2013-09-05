@@ -338,6 +338,8 @@
 		668D659217BF025700109886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 668D659117BF025700109886 /* main.m */; };
 		668D659617BF025700109886 /* SGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 668D659517BF025700109886 /* SGAppDelegate.m */; };
 		668D65BA17BF0F7400109886 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D65B917BF0F7400109886 /* QuartzCore.framework */; };
+		66960B4617D81E3D003A2D07 /* button_fw.png in Resources */ = {isa = PBXBuildFile; fileRef = 66960B4517D81E3D003A2D07 /* button_fw.png */; };
+		66960B4817D82475003A2D07 /* button_dw.png in Resources */ = {isa = PBXBuildFile; fileRef = 66960B4717D82475003A2D07 /* button_dw.png */; };
 		6698DC2617C3B452006E486B /* SGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6698DC0117C3B452006E486B /* SGViewController.m */; };
 		6698DC2717C3B452006E486B /* SGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6698DC0217C3B452006E486B /* SGViewController.xib */; };
 		6698DC2817C3B452006E486B /* SGBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6698DC0517C3B452006E486B /* SGBookViewController.m */; };
@@ -947,6 +949,8 @@
 		668D659417BF025700109886 /* SGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGAppDelegate.h; sourceTree = "<group>"; };
 		668D659517BF025700109886 /* SGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGAppDelegate.m; sourceTree = "<group>"; };
 		668D65B917BF0F7400109886 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		66960B4517D81E3D003A2D07 /* button_fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_fw.png; sourceTree = "<group>"; };
+		66960B4717D82475003A2D07 /* button_dw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_dw.png; sourceTree = "<group>"; };
 		6698DC0017C3B452006E486B /* SGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGViewController.h; sourceTree = "<group>"; };
 		6698DC0117C3B452006E486B /* SGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGViewController.m; sourceTree = "<group>"; };
 		6698DC0217C3B452006E486B /* SGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGViewController.xib; sourceTree = "<group>"; };
@@ -1351,6 +1355,8 @@
 		6640FAE917C86EAC00474152 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66960B4717D82475003A2D07 /* button_dw.png */,
+				66960B4517D81E3D003A2D07 /* button_fw.png */,
 				66D772FF17D18E6800DCB3D3 /* button_mapback.png */,
 				6640FAEA17C86EAC00474152 /* button_bottom.png */,
 				6640FAEB17C86EAC00474152 /* icon_address.png */,
@@ -2715,6 +2721,8 @@
 				669C7D0117D78A9C00F0442C /* n0015-5.jpg in Resources */,
 				669C7D0217D78A9C00F0442C /* n0015-6.jpg in Resources */,
 				669C7D0317D78A9C00F0442C /* n0015-7.jpg in Resources */,
+				66960B4617D81E3D003A2D07 /* button_fw.png in Resources */,
+				66960B4817D82475003A2D07 /* button_dw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

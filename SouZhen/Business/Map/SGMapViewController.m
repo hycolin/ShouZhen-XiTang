@@ -17,12 +17,18 @@
 #import <AddressBook/AddressBook.h>
 #import "SGHotelHouseTypeViewController.h"
 #import "SGHotelDetailViewController.h"
+#import "SGEntertainmentDetailViewController.h"
 
 @interface SGMapViewController () <MKMapViewDelegate, SGPinContentViewDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @property (nonatomic, retain) CalloutMapAnnotation *calloutAnnotation;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (weak, nonatomic) IBOutlet UIView *toolbarLayout;
+@property (weak, nonatomic) IBOutlet UIButton *locateButton;
+
+
 @property (nonatomic, retain) MKAnnotationView *selectedAnnotationView;
 
 
@@ -49,11 +55,23 @@
     self.navigationBarHidden = YES;
     self.title = @"地图";
     self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
     
     NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"SGPinContentView" owner:nil options:nil];
     _pinContentView = [views objectAtIndex:0];
     _pinContentView.delegate = self;
 
+    if (self.mapType == MapTypeAll) {
+        self.resetButton.hidden = NO;
+        self.toolbarLayout.hidden = YES;
+        self.mapView.frame = self.view.bounds;
+        
+        CGRect frame = self.locateButton.frame;
+        frame.origin.y += CGRectGetHeight(self.toolbarLayout.frame);
+        self.locateButton.frame = frame;
+    } else {
+        self.resetButton.hidden = YES;
+    }
     [self refreshMap];
 }
 
@@ -62,7 +80,7 @@
     CLLocationCoordinate2D leftUpLocation = CLLocationCoordinate2DMake(0, 180);
     CLLocationCoordinate2D rightDownLocation = CLLocationCoordinate2DMake(90, 0);
     for (SGAnnotation *data in _annotations) {
-        if (data.coordinate.latitude == 0 || data.coordinate.longitude == 0) {
+        if (data.coordinate.latitude == 0 || data.coordinate.longitude == 0 || [data.uid isEqualToString:@"s0023"]) {
             continue;
         }
         leftUpLocation.latitude = MAX(ABS(leftUpLocation.latitude),ABS(data.coordinate.latitude));
@@ -71,8 +89,8 @@
         rightDownLocation.latitude = MIN(ABS(rightDownLocation.latitude),ABS(data.coordinate.latitude));
         rightDownLocation.longitude = MAX(rightDownLocation.longitude, data.coordinate.longitude);
     }
-    MKCoordinateSpan span = MKCoordinateSpanMake(2*ABS(rightDownLocation.latitude - leftUpLocation.latitude),
-                                                 2*ABS(rightDownLocation.longitude - leftUpLocation.longitude));
+    MKCoordinateSpan span = MKCoordinateSpanMake(ABS(rightDownLocation.latitude - leftUpLocation.latitude),
+                                                 ABS(rightDownLocation.longitude - leftUpLocation.longitude));
     if (span.latitudeDelta == 0 || span.longitudeDelta == 0) {
         span.latitudeDelta = 0.01f;
         span.longitudeDelta = 0.01f;
@@ -118,10 +136,19 @@
     [alerView show];
 }
 
+- (IBAction)locateAction:(id)sender {
+    MKUserLocation *userLocation = self.mapView.userLocation;
+    [self.mapView setCenterCoordinate:userLocation.coordinate];
+}
+
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex != alertView.cancelButtonIndex) {
         SGAnnotation *anno = _pinContentView.annotation;
+        if (_pinContentView.annotation == nil) {
+            anno = [_annotations objectAtIndex:0];
+        }
         Class itemClass = [MKMapItem class];
         if (IPHONE_OS_6() && itemClass && [itemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
                 //kABPersonAddressStreetKey : @"Street"
@@ -254,6 +281,10 @@
             viewController.hotelData = hotel;
             [self.navigationController pushViewController:viewController animated:YES];
         }
+    } else if (annotation.type == AnnotationTypeEntertainment) {
+        SGEntertainmentDetailViewController *viewController = [[SGEntertainmentDetailViewController alloc] init];
+        viewController.entertainmentData = [[SGFakeDataHelper instance] getEntertainmentByID:annotation.uid];
+        [self.navigationController pushViewController:viewController animated:YES];
     }
     if (viewController) {
         if (self.navigationController == nil) {
@@ -272,6 +303,9 @@
 
 - (void)viewDidUnload {
     [self setMapView:nil];
+    [self setResetButton:nil];
+    [self setToolbarLayout:nil];
+    [self setLocateButton:nil];
     [super viewDidUnload];
 }
 @end

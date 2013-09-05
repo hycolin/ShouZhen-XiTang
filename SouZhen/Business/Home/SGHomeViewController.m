@@ -64,7 +64,7 @@ typedef enum {
                                  [NSDictionary dictionaryWithObjectsAndKeys:@"banner_1.png", @"image", @"s0014", @"uid", nil],
                                  [NSDictionary dictionaryWithObjectsAndKeys:@"banner_2.png", @"image", @"s0003", @"uid", nil],
                                  [NSDictionary dictionaryWithObjectsAndKeys:@"banner_3.png", @"image", @"s0002", @"uid", nil],
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_4.png", @"image", @"s0004", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_4.png", @"image", @"s0012", @"uid", nil],
                                  nil];
     [self.bannerView setSelectedTarget:self selector:@selector(bannerSelected:)];
     

@@ -9,7 +9,14 @@
 #import "SGBaseHomeViewController.h"
 #import "SGAnnotation.h"
 
+typedef enum {
+    MapTypeAll,
+    MapTypeSingle,
+} MapType;
+
 @interface SGMapViewController : SGViewController
+
+@property (nonatomic) MapType mapType;
 
 - (void)setAnnotations:(NSArray *)annotations;
 - (void)addAnnotation:(SGAnnotation *)annotation;

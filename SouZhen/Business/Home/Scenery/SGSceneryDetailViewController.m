@@ -54,6 +54,7 @@
 
 - (IBAction)addressAction:(id)sender {
     SGMapViewController *mapViewController = [[SGMapViewController alloc] init];
+    mapViewController.mapType = MapTypeSingle;
     NSMutableArray *list = [NSMutableArray arrayWithCapacity:1];
     [list addObject:[[SGAnnotation alloc] initWithId:self.sceneryData.uid
                                                  lat:self.sceneryData.lat

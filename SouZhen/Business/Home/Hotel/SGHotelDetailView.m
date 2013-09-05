@@ -141,6 +141,7 @@
 - (void)openAddress
 {
     SGMapViewController *mapViewController = [[SGMapViewController alloc] init];
+    mapViewController.mapType = MapTypeSingle;
     NSMutableArray *list = [NSMutableArray arrayWithCapacity:1];
     [list addObject:[[SGAnnotation alloc] initWithId:_hotelData.uid
                                                  lat:_hotelData.lat
