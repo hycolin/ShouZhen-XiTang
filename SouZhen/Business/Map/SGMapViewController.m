@@ -138,6 +138,11 @@
 
 - (IBAction)locateAction:(id)sender {
     MKUserLocation *userLocation = self.mapView.userLocation;
+    if (![CLLocationManager locationServicesEnabled] || userLocation.coordinate.latitude == 0 || userLocation.coordinate.longitude == 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位未开启" message:@"请在系统设置中开启定位服务" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
     [self.mapView setCenterCoordinate:userLocation.coordinate];
 }
 
