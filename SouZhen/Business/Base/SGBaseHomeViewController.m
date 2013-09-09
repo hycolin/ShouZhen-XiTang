@@ -18,12 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+    customView.backgroundColor = [UIColor clearColor];
+    
     UIImage *menuImage = [UIImage imageNamed:@"icon_menu"];
     UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    menuButton.frame = CGRectMake(0, 0, 50, 44);
+    menuButton.frame = CGRectMake(0, 7, 50, 30);
     [menuButton setImage:menuImage forState:UIControlStateNormal];
     [menuButton addTarget:self action:@selector(menuAction) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
+
+    [customView addSubview:menuButton];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
 }
 
 - (void)menuAction

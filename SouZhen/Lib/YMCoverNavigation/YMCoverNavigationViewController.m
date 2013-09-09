@@ -19,12 +19,16 @@
 @implementation YMCoverNavigationViewController
 {
     UIPanGestureRecognizer * _panGestureRecognizer;
+    BOOL _isPushFinished;
+    BOOL _isPopFinished;
 }
 
 - (id)initWithRootViewController:(UIViewController *)rootViewController
 {
     if (self =[super init]) {
         [self addChildViewController:rootViewController];
+        _isPushFinished = YES;
+        _isPopFinished = YES;
     }
     return self;
 }
@@ -48,6 +52,11 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    if (!_isPushFinished) {
+        return;
+    }
+    _isPushFinished = NO;
+    
     [self.topViewController viewWillDisappear:NO];
     [self.topViewController viewDidDisappear:NO];
    
@@ -58,11 +67,15 @@
     if ([self.childViewControllers count] > 1) {
         
         UIImage *backImage = [UIImage imageNamed:@"icon_back"];
+        UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+        customView.backgroundColor = [UIColor clearColor];
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        backButton.frame = CGRectMake(0, 0, 50, 44);
+        backButton.frame = CGRectMake(0, 7, 50, 30);
         [backButton setImage:backImage forState:UIControlStateNormal];
         [backButton addTarget:self action:@selector(backToPreviousController) forControlEvents:UIControlEventTouchUpInside];
-        [((YMCoverViewController *)viewController).navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:backButton]];
+        
+        [customView addSubview:backButton];
+        [((YMCoverViewController *)viewController).navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:customView]];
     }
     
     
@@ -93,6 +106,7 @@
          if ([self.childViewControllers count] > 1) {
              [self.view addGestureRecognizer:_panGestureRecognizer];
          }
+         _isPushFinished = YES;
      }];
 }
 
@@ -112,9 +126,10 @@
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
-    if (self.childViewControllers.count == 1) {
+    if (self.childViewControllers.count == 1 || !_isPopFinished) {
         return nil;
     }
+    _isPopFinished = NO;
     UIViewController *popViewController = [self.childViewControllers lastObject];
     CGRect newFrame = self.view.bounds;
     newFrame.origin.x = CGRectGetMaxX(newFrame);
@@ -148,6 +163,8 @@
              }
              [self.topViewController viewWillAppear:NO];
              [self.topViewController viewDidAppear:NO];
+             
+             _isPopFinished = YES;
          }];
     }
 
