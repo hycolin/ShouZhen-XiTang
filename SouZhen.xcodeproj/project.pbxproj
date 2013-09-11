@@ -2955,11 +2955,15 @@
 		668D65A017BF025800109886 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2967,11 +2971,15 @@
 		668D65A117BF025800109886 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

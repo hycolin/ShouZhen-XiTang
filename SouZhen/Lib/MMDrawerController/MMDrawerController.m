@@ -780,6 +780,9 @@ static CAKeyframeAnimation * bounceKeyFrameAnimationForDistanceOnView(CGFloat di
         case UIGestureRecognizerStateChanged:{
             CGRect newFrame = self.startingPanRect;
             CGPoint translatedPoint = [panGesture translationInView:self.centerContainerView];
+            if (ABS(translatedPoint.y) >= 50 ||  (ABS(translatedPoint.y) >= 10 && ABS(translatedPoint.x) <= 10)) {
+                return;
+            }
             newFrame.origin.x = [self roundedOriginXForDrawerConstriants:CGRectGetMinX(self.startingPanRect)+translatedPoint.x];
             newFrame = CGRectIntegral(newFrame);
             CGFloat xOffset = newFrame.origin.x;
