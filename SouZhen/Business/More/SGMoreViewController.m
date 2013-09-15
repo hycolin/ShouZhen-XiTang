@@ -9,6 +9,7 @@
 #import "SGMoreViewController.h"
 #import "SGAboutusViewController.h"
 #import "SGEmergencyPhoneViewController.h"
+#import "SGHelpViewController.h"
 
 @interface SGMoreViewController ()
 
@@ -44,6 +45,8 @@
     self.versionLabel.text = [NSString stringWithFormat:@"版本号：v%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
     
     [self.boxButton setBackgroundImage:[[UIImage imageNamed:@"bg_bar.png"] stretchableImageWithLeftCapWidth:25 topCapHeight:25] forState:UIControlStateNormal];
+    [self.boxButton setBackgroundImage:[[UIImage imageNamed:@"bg_bar.png"] stretchableImageWithLeftCapWidth:25 topCapHeight:25] forState:UIControlStateHighlighted];
+
     [self.aboutusButton setBackgroundImage:[[UIImage imageNamed:@"bg_bar.png"] stretchableImageWithLeftCapWidth:25 topCapHeight:25] forState:UIControlStateNormal];
     
     self.boxLayout.clipsToBounds = YES;
@@ -60,11 +63,11 @@
         self.boxLayout.frame = frame;
     } else {
         CGRect frame = self.boxLayout.frame;
-        frame.size.height = 87;
+        frame.size.height = 127;
         self.boxLayout.frame = frame;
     }
     CGRect frame = self.aboutusLayout.frame;
-    frame.origin.y = CGRectGetMaxY(self.boxButton.frame) + 23;
+    frame.origin.y = CGRectGetMaxY(self.boxLayout.frame) + 23;
     self.aboutusLayout.frame = frame;
     
     if (!_foldBox) {
@@ -88,6 +91,12 @@
 - (IBAction)phoneAction:(id)sender {
     SGEmergencyPhoneViewController *viewController = [[SGEmergencyPhoneViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)helpAction:(id)sender {
+    SGHelpViewController *viewController = [[SGHelpViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

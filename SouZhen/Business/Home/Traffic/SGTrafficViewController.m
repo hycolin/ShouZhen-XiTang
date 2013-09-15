@@ -9,6 +9,7 @@
 #import "SGTrafficViewController.h"
 #import "SGTrafficCell.h"
 #import "SGTrafficDetailViewController.h"
+#import "SGTrafficDriveDetailViewController.h"
 
 typedef enum {
     TrafficTypeDrive = 0,
@@ -94,23 +95,30 @@ typedef enum {
     TrafficType type = ((NSNumber *)[_typeList objectAtIndex:indexPath.row]).integerValue;
     switch (type) {
         case TrafficTypeDrive:
+            detailViewController = [[SGTrafficDriveDetailViewController alloc] init];
             detailViewController.title = @"自驾";
             detailViewController.viewBundleName = @"TrafficDriveView";
+            detailViewController.titleIcon = @"icon_drive.png";
             break;
         case TrafficTypeHighway:
+            detailViewController = [[SGTrafficDetailViewController alloc] init];
             detailViewController.title = @"公路";
-            detailViewController.viewBundleName = @"TrafficDefaultView";
-            detailViewController.content = @"为方便游客出行，目前上海旅游集散中心（天天发班）、杭州旅游集散中心（周末发班）已开设西塘旅游专线车，上海、浙江、江苏的各大旅社均已开通西塘旅游线路。";
+            detailViewController.viewBundleName = @"TrafficHighwayView";
+            detailViewController.titleIcon = @"icon_highway.png";
+            detailViewController.contentSize = CGSizeMake(320, 1335);
             break;
         case TrafficTypePlane:
+            detailViewController = [[SGTrafficDetailViewController alloc] init];
             detailViewController.title = @"航空";
-            detailViewController.viewBundleName = @"TrafficDefaultView";
-            detailViewController.content = @"西塘距离上海浦东国际机场、杭州萧山国际机场、上海虹桥机场都在2小时车程之内，全程高速，道路通畅。";
+            detailViewController.viewBundleName = @"TrafficPlaneView";
+            detailViewController.titleIcon = @"icon_plane.png";
             break;
         case TrafficTypeTrain:
+            detailViewController = [[SGTrafficDetailViewController alloc] init];
             detailViewController.title = @"火车";
-            detailViewController.viewBundleName = @"TrafficDefaultView";
-            detailViewController.content = @"西塘地处上海、杭州、苏州的中心，全国各地到三地的火车班次密集，沪杭铁路途径嘉兴站及嘉善站，两地都有公交车直达西塘。";
+            detailViewController.viewBundleName = @"TrafficTrainView";
+            detailViewController.titleIcon = @"icon_train.png";
+            detailViewController.contentSize = CGSizeMake(320, 496);
             break;
         default:
             break;

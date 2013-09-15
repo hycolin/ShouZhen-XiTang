@@ -10,8 +10,9 @@
 
 @interface SGOrderViewController : SGViewController
 
-@property (nonatomic, strong) NSDate *bookDate;
+@property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *orderId;
 @property (nonatomic, strong) NSString *phone;
 @property (nonatomic) double price;
 @property (nonatomic) double discount;

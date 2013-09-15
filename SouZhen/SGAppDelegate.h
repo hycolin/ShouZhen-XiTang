@@ -13,6 +13,7 @@
 #import "SGFavoriteViewController.h"
 #import "SGMapViewController.h"
 #import "SGMoreViewController.h"
+#import "Reachability.h"
 
 @interface SGAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -25,5 +26,7 @@
 @property (nonatomic, strong) SGMoreViewController *moreController;
 
 + (SGAppDelegate *)instance;
+// 当前网络连接状况
+- (NetworkStatus)netStatus;
 
 @end

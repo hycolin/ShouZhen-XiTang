@@ -8,8 +8,10 @@
 
 #import "SGOrderViewController.h"
 #import "SGOrderStatusViewController.h"
+#import "AlixPay.h"
+#import "SGPayWebViewController.h"
 
-@interface SGOrderViewController () <UITextFieldDelegate>
+@interface SGOrderViewController () <UITextFieldDelegate, ASIHTTPRequestDelegate>
 
 @property (weak, atomic) IBOutlet UIImageView *bgTopImageView;
 
@@ -26,12 +28,15 @@
 @end
 
 @implementation SGOrderViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    ASIHTTPRequest *_payOrderRequest;
+}
+
+- (id)init
+{
+    self = [super init];
     if (self) {
-        // Custom initialization
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(alipayFinished:) name:@"alipayFinished" object:nil];
     }
     return self;
 }
@@ -65,6 +70,14 @@
     self.bookCountTextField.text = [NSString stringWithFormat:@"%d", 1];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction)]];
+    
+    if ([[AlixPay shared] checkAvaliable]) {
+        self.aliClientPayButton.selected = YES;
+        self.aliWebPayButton.selected = NO;
+    } else {
+        self.aliClientPayButton.selected = NO;
+        self.aliWebPayButton.selected = YES;
+    }
 }
 
 - (void)tapGestureAction
@@ -92,17 +105,51 @@
         [self showAlert:@"您还未指定预订数目"];
         return;
     }
-    [self showWaiting:@"正在支付..."];
-    [self performSelector:@selector(paySuccess) withObject:nil afterDelay:1];
+    _payOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://xitang.com.cn/dingpiao/payorder.aspx?orderid=%@&count=%d&paytype=%d", self.orderId, [self.bookCountTextField.text integerValue], self.aliClientPayButton.selected?0:1]]];
+    _payOrderRequest.delegate = self;
+    [_payOrderRequest startAsynchronous];
 }
 
 - (void)paySuccess
 {
-    [self hideWaiting];
-    SGOrderStatusViewController *viewController = [[SGOrderStatusViewController alloc] init];
-    viewController.amount = [self.amountLabel.text doubleValue];
-    [self.navigationController pushViewController:viewController animated:YES];
+    }
+
+- (void)requestStarted:(ASIHTTPRequest *)request
+{
+    [self showWaiting:@"正在支付..."];
 }
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    [self hideWaiting];
+    NSDictionary *dict = [request.responseString JSONValue];
+    NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
+    if (errorCode < 0) {
+        NSString *errMsg = [dict objectForKey:@"errormsg"];
+        [self showAlert:errMsg];
+        return;
+    }
+    
+    if (request == _payOrderRequest) {
+        NSString *content = [dict objectForKey:@"content"];
+        NSInteger type = [[dict objectForKey:@"type"] integerValue];
+//        content = @"http://wappaygw.alipay.com/service/rest.htm?format=xml&partner=2088301426069753&req_data=%3Cauth_and_execute_req%3E%3Crequest_token%3E2013091476283de7af18a29ac384cecec316cca9%3C%2Frequest_token%3E%3C%2Fauth_and_execute_req%3E&sec_id=MD5&service=alipay.wap.auth.authAndExecute&sign=6f22a40e96ded846eaf97a12f8d60054&v=2.0";
+//        type = 1;
+        if (type == 0) {
+            [[AlixPay shared] pay:content applicationScheme:@"xitang"];
+        } else {
+            SGPayWebViewController *viewController = [[SGPayWebViewController alloc] init];
+            viewController.url = [NSURL URLWithString:content];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+    }
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [self hideWaiting];
+}
+
 
 - (void)action:(id)sender
 {
@@ -112,10 +159,48 @@
 
 
 - (IBAction)selectPayTypeAction:(id)sender {
+    if (sender == self.aliClientPayButton) {
+        if (![[AlixPay shared] checkAvaliable]) {
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                                 message:@"您还没有安装支付宝的客户端，或版本太低。1.建议您点击返回，选择支付宝网页支付！2.下载或更新支付宝客户端，可能需要较长时间。"
+                                                                delegate:self
+                                                       cancelButtonTitle:@"返回"
+                                                       otherButtonTitles:@"安装", nil];
+            [alertView setTag:123];
+            [alertView show];
+            return;
+        }
+    }
     self.aliClientPayButton.selected = (self.aliClientPayButton == sender);
     self.aliWebPayButton.selected = (self.aliWebPayButton == sender);
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (alertView.tag == 123) {
+        if (buttonIndex == alertView.firstOtherButtonIndex) {
+            NSString * URLString = @"http://itunes.apple.com/cn/app/id333206289?mt=8";
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URLString]];
+        }
+	}
+}
+
+- (void)alipayFinished:(NSNotification *)notification
+{
+    [self hideWaiting];
+    AlixPayResult *result = notification.object;
+    if (9000 == result.statusCode) { //支付成功
+        SGOrderStatusViewController *viewController = [[SGOrderStatusViewController alloc] init];
+        viewController.amount = [self.amountLabel.text doubleValue];
+        [self.navigationController pushViewController:viewController animated:YES];
+    } else {
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                             message:result.statusMessage
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"确定"
+                                                   otherButtonTitles:nil];
+        [alertView show];
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {

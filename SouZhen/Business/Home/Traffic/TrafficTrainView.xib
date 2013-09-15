@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGTrafficDetailViewController">
+            <connections>
+                <outlet property="scrollView" destination="ccx-Ic-b4o" id="HJT-We-pP3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ccx-Ic-b4o">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="496"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrainTitle.png" id="4oW-dQ-QA0">
+                    <rect key="frame" x="8" y="8" width="304" height="165"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aA9-L0-N3y">
+                    <rect key="frame" x="8" y="178" width="304" height="298"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                    <mutableString key="text">1、嘉善南站（高铁动车），换乘公交702至嘉善客运中心，然后乘215或216或210到西塘车站。
+
+2、高铁嘉兴南站下车后，可以乘坐K93路公交车直达嘉兴汽车北站，然后在嘉兴汽车北站换乘城乡公交K152公交车到达古镇西塘。（注：K93路公交车高铁嘉兴南站首末班车时间为：7：00-22：40。K152路公交车嘉兴汽车北站及西塘首末班车时间均为6：30-17：25。到西塘的公交、快客末班为18：00）。
+
+3、嘉兴火车站，乘坐4路、5路、22路、32路、87路、55路夜等公交车直达嘉兴汽车北站，在嘉兴汽车北站换乘城乡公交K152路到达西塘。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="TrainTitle.png" width="610" height="330"/>
+    </resources>
+</document>

@@ -10,18 +10,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import <MapKit/MKAnnotation.h>
-#import <MapKit/MKReverseGeocoder.h>
 
 // notification
 #define LocationChanged		@"locationChanged"
 
-@interface LocationManager : NSObject <CLLocationManagerDelegate, MKReverseGeocoderDelegate> {
+@interface LocationManager : NSObject <CLLocationManagerDelegate> {
 	CLLocationManager *locationManager;
 	CLLocationCoordinate2D _coord;  
 	MKPlacemark *_mPlacemark;
 	
-	MKReverseGeocoder *_geoCoder;
-    
 	CLLocationCoordinate2D choosedCoord;
     BOOL isLocationOk;
     
@@ -29,6 +26,7 @@
 }
 
 @property (nonatomic, readonly) BOOL isLocationOk;
+@property (nonatomic, readonly) BOOL locationServiceDisable;
 @property (nonatomic, readonly) CLLocationCoordinate2D coord;  
 @property (nonatomic, readonly) BOOL locationFaked;
 

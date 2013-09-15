@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGTrafficDetailViewController">
+            <connections>
+                <outlet property="scrollView" destination="utq-9N-sx0" id="3Wg-8e-aRW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="utq-9N-sx0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1335"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighwayTitle.png" id="j6U-1a-DSl">
+                    <rect key="frame" x="8" y="8" width="304" height="165"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="qVQ-Cj-MDO" userLabel="从嘉善前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="172" width="320" height="142"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="1aq-KN-9xj">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从嘉善前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O7l-SY-cge">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="嘉善客运中心，换乘售票快客直达西塘（售票窗口10元，首班车6：30，末班车17：30，每15分钟一班，约25分钟到达西塘）。或下车后往右手边进入公交站，坐公交215至西塘迎秀桥下。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GjE-fv-Ow0">
+                            <rect key="frame" x="10" y="39" width="301" height="103"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="1aq-KN-9xj" id="zpf-Cr-f4C"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="HWa-ek-ZwS" userLabel="从嘉兴前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="308" width="320" height="270"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="Hrf-Om-ast">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从嘉兴前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mXi-jH-Vcc">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9sb-kW-G8J">
+                            <rect key="frame" x="10" y="39" width="301" height="231"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <string key="text">1）嘉兴汽车北站每天都有开往西塘的班车，首班车6：40，末班车16：30，40分钟一趟，车程约1小时，票价7元/人。
+2）可以在嘉兴汽车北站乘坐K152城乡公交直达西塘古镇，也可乘坐城乡公交K151到达嘉善后转车去古镇西塘。
+3）嘉兴汽车西站（即将搬迁新址，名为嘉兴高速客运中心）乘坐城乡公交K151到达嘉善，然后在嘉善乘车前往西塘，也可在嘉兴汽车西站乘坐15路，15路夜，20路，23路，55路夜等多路公交车前往嘉兴汽车北站换乘k152直达西塘古镇。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="Hrf-Om-ast" id="wvR-hK-3h5"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="2Bk-af-mXs" userLabel="从杭州前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="571" width="320" height="220"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="88E-ew-jHb">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从杭州前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b6T-na-mmj">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DDd-Ey-GBf">
+                            <rect key="frame" x="10" y="39" width="301" height="181"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <string key="text">九堡客运中心直接有快客到西塘，一天四班，约2个小时车程，车票39元。还可以从九堡客运中心乘快客到嘉善，约30分钟一班，1个半小时车程，车费35元，再在嘉善客运中心换乘售票快客直达西塘（售票窗口5元）。
+注意：杭州的客运站很多，如果你是在杭州要前往西塘，一定要在九堡客运站，才能乘坐到西塘的汽车。如果是在杭州转车的朋友一定要注意了，在这里提醒大家。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="88E-ew-jHb" id="B1R-Qt-FRt"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="V6A-D5-1dX" userLabel="从上海前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="784" width="320" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="h9u-ri-Dic">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从上海前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2vP-Ja-oqJ">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sFh-VO-GVf">
+                            <rect key="frame" x="10" y="39" width="301" height="281"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <mutableString key="text">1）徐家汇上海体育馆5号大门旁每周六、日9：00有车直达西塘。联系电话：021-64265555。
+2）上海旅游集散中心（上海八万人体育场12号门五号扶梯下）每天9：15有发往西塘的旅游专线车，当天16：30返回，票价140元/人，带导游服务（含景点套票）。
+3）上海客运南站每天都有开往嘉善的班车，首班车7：10，末班车18：30，40分钟一趟，票价24元/人，从嘉善乘坐快客直达西塘。
+4）上海长途汽车客运总站每天都有开往嘉善的班车，首班车6：50，末班车18：00，40分钟一趟，票价27元/人，从嘉善乘坐快客直达西塘。</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="h9u-ri-Dic" id="gBi-3E-XBR"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="FnY-gC-MwN" userLabel="从苏州前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="1099" width="320" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="occ-6B-GAL">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从苏州前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hFM-dL-BDQ">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="苏州汽车北站和汽车南站每天分别有4趟开往西塘的班车，从苏州汽车南站到西塘只要50分钟。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GXO-rG-tl5">
+                            <rect key="frame" x="10" y="39" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="occ-6B-GAL" id="cRQ-Eq-Wwc"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="8Ib-MG-jLq" userLabel="从南京前往西塘" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="1198" width="320" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="V3V-hX-gJg">
+                            <rect key="frame" x="0.0" y="13" width="120" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从南京前往西塘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hze-sc-ROL">
+                            <rect key="frame" x="3" y="15" width="106" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="南京长途汽车东站每天14：40有一趟开往嘉善的班车，票价97元/人，再从嘉善乘坐快客直达西塘。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F23-43-Alv">
+                            <rect key="frame" x="10" y="39" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="V3V-hX-gJg" id="zkX-fc-vOU"/>
+                    </connections>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="HighwayTitle.png" width="610" height="331"/>
+        <image name="bg_btl.png" width="77" height="26"/>
+    </resources>
+</document>

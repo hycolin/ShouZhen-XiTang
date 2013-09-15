@@ -14,6 +14,7 @@ static LocationManager *gLocationManager = nil;
 @synthesize isLocationOk;
 @synthesize coord = _coord;
 @synthesize locationFaked;
+@synthesize locationServiceDisable = _locationServiceDisable;
 
 + (LocationManager *)instance {
 	if (gLocationManager == nil) {
@@ -44,6 +45,7 @@ static LocationManager *gLocationManager = nil;
 }
 
 - (void)start {
+    _locationServiceDisable = ![CLLocationManager locationServicesEnabled];
 	locationManager.delegate = self;
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	locationManager.distanceFilter = 1;
@@ -53,7 +55,6 @@ static LocationManager *gLocationManager = nil;
 	_coord.latitude = 31.215866;
     isLocationOk = YES;
 //    [[NSNotificationCenter defaultCenter] postNotificationName:LocationChanged object:nil];
-    [self performSelector:@selector(startGeoCoder) withObject:nil afterDelay:1.0];
 #else
 	[locationManager startUpdatingLocation];
 #endif
@@ -72,17 +73,6 @@ static LocationManager *gLocationManager = nil;
 	[self start];
 }
 
-- (void)startGeoCoder {
-	if (_geoCoder) {
-		_geoCoder.delegate = nil;
-		[_geoCoder cancel];
-		[_geoCoder release];
-	}
-	
-	_geoCoder = [[MKReverseGeocoder alloc] initWithCoordinate:_coord];
-	_geoCoder.delegate=self;
-	[_geoCoder start];
-}
 
 - (void)setChoosedCoord:(CLLocationCoordinate2D)c {
 	[self stop];
@@ -93,7 +83,6 @@ static LocationManager *gLocationManager = nil;
 	[NSObject cancelPreviousPerformRequestsWithTarget:self];
 	[_mPlacemark release];
 	_mPlacemark = nil;
-	[self startGeoCoder];
 }
 
 #pragma mark -
@@ -106,23 +95,13 @@ static LocationManager *gLocationManager = nil;
 	_coord.latitude = newLocation.coordinate.latitude;
 	dlog(@"loction: (%.6f, %.6f)", _coord.longitude, _coord.latitude);
     isLocationOk = YES;
-	
-//	// 需要尽量少的调用google geocoder，否则可能会导致解析失败。
-	[NSObject cancelPreviousPerformRequestsWithTarget:self];
-	[self performSelector:@selector(startGeoCoder) withObject:nil afterDelay:1.0];
-	
-//	[[NSNotificationCenter defaultCenter] postNotificationName:LocationChanged object:nil];
+    _locationServiceDisable = NO;
 }
 
 - (void) locationManager: (CLLocationManager *) manager didFailWithError: (NSError *) error {
     dlog(@"locationManager error : %@",error);
 	if ([error code] == kCLErrorDenied) {
-        if(!isShow){
-           isShow=YES;
-		   UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"错误" message:@"GPS未打开，请在设置中打开GPS设置" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确认", nil];
-		   [av show];
-		   [av release];
-        }
+        _locationServiceDisable = YES;
 	}
 	
 	isLocationOk = NO;
@@ -141,35 +120,6 @@ static LocationManager *gLocationManager = nil;
     return _mPlacemark.locality;
 }
 
-#pragma mark -
-#pragma mark MKReverseGeocoderDelegate methods
-
-- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark {
-	dlog(@"reverse finished...");
-    dlog(@"country:%@",placemark.country);
-	dlog(@"countryCode:%@",placemark.countryCode);
-	dlog(@"locality:%@",placemark.locality);
-	dlog(@"subLocality:%@",placemark.subLocality);
-	dlog(@"postalCode:%@",placemark.postalCode);
-	dlog(@"subThoroughfare:%@",placemark.subThoroughfare);
-	dlog(@"thoroughfare:%@",placemark.thoroughfare);
-	dlog(@"administrativeArea:%@",placemark.administrativeArea);
-	[_mPlacemark release];
-    _mPlacemark = [placemark retain];
-	
-	[[NSNotificationCenter defaultCenter] postNotificationName:LocationChanged object:nil];
-}
-
-- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error {
-	dlog(@"error %@" , error);
-	geocoder.delegate = nil;
-
-	[_mPlacemark release];
-	_mPlacemark = nil;
-//	[[NSNotificationCenter defaultCenter] postNotificationName:LocationChanged object:nil];
-    [self performSelector:@selector(startGeoCoder) withObject:nil afterDelay:1.0]; //3秒后重试
-}
-
 -(NSString*)locationString{
     if (_mPlacemark && [_mPlacemark isKindOfClass:[MKPlacemark class]]) {
         return [NSString stringWithFormat:@"%@%@%@%@"
@@ -180,7 +130,6 @@ static LocationManager *gLocationManager = nil;
     } else {
         return @"获取当前位置失败";
     }
-//    return [NSString stringWithFormat:@"%.6f %.6f",[self latitude],[self longitude]];
 }
 
 - (double_t)distanceFrom:(CLLocationCoordinate2D)fromCoord {
@@ -229,13 +178,6 @@ static LocationManager *gLocationManager = nil;
 		locationManager = nil;
 	}
 
-	if (_geoCoder) {
-		_geoCoder.delegate = nil;
-		[_geoCoder cancel];
-		[_geoCoder release];
-		_geoCoder = nil;
-	}
-	
 	[_mPlacemark release];
 	[super dealloc];
 }

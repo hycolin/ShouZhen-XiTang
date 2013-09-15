@@ -10,6 +10,7 @@
 
 @interface SGTrafficDetailViewController : SGViewController
 
-@property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSString *titleIcon;
+@property (nonatomic) CGSize contentSize;
 
 @end

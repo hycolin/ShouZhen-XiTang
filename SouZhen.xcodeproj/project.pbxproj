@@ -162,7 +162,13 @@
 		664BDA7317CFACA700E968AD /* icon_dbyl.png in Resources */ = {isa = PBXBuildFile; fileRef = 664BDA7017CFACA700E968AD /* icon_dbyl.png */; };
 		664BDA7517CFAD4400E968AD /* TrafficDriveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664BDA7417CFAD4400E968AD /* TrafficDriveView.xib */; };
 		664BDA7717CFADAC00E968AD /* bg_btl.png in Resources */ = {isa = PBXBuildFile; fileRef = 664BDA7617CFADAC00E968AD /* bg_btl.png */; };
-		664BDA7917CFB17C00E968AD /* TrafficDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664BDA7817CFB17C00E968AD /* TrafficDefaultView.xib */; };
+		66545BD817E4AF2B00F8B3A0 /* AlixPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BD317E4AF2B00F8B3A0 /* AlixPay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		66545BD917E4AF2B00F8B3A0 /* AlixPayOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BD517E4AF2B00F8B3A0 /* AlixPayOrder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		66545BDA17E4AF2B00F8B3A0 /* AlixPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BD717E4AF2B00F8B3A0 /* AlixPayResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		66545BEA17E4B34B00F8B3A0 /* SimpleWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66545BE517E4B34B00F8B3A0 /* SimpleWebView.xib */; };
+		66545BEB17E4B34B00F8B3A0 /* YMSimpleWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BE717E4B34B00F8B3A0 /* YMSimpleWebViewController.m */; };
+		66545BEC17E4B34B00F8B3A0 /* YMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BE917E4B34B00F8B3A0 /* YMWebViewController.m */; };
+		66545BEF17E4B3C200F8B3A0 /* SGPayWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66545BEE17E4B3C200F8B3A0 /* SGPayWebViewController.m */; };
 		6662BE4B17D378AB0038ACD5 /* SGEntertainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6662BE4917D378AB0038ACD5 /* SGEntertainmentViewController.m */; };
 		6662BE4C17D378AB0038ACD5 /* SGEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6662BE4A17D378AB0038ACD5 /* SGEntertainmentViewController.xib */; };
 		6662BE5317D3795E0038ACD5 /* SGEntertainmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6662BE4E17D3795E0038ACD5 /* SGEntertainmentCell.m */; };
@@ -444,6 +450,33 @@
 		669C7D0117D78A9C00F0442C /* n0015-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD717D78A9C00F0442C /* n0015-5.jpg */; };
 		669C7D0217D78A9C00F0442C /* n0015-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD817D78A9C00F0442C /* n0015-6.jpg */; };
 		669C7D0317D78A9C00F0442C /* n0015-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD917D78A9C00F0442C /* n0015-7.jpg */; };
+		66AAFCF317E44B990037338C /* TrafficHighwayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF217E44B990037338C /* TrafficHighwayView.xib */; };
+		66AAFCF517E44BB80037338C /* TrafficPlaneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */; };
+		66AAFCF717E44BCC0037338C /* TrafficTrainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */; };
+		66AAFD0117E44C0F0037338C /* HighwayTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCFB17E44C0F0037338C /* HighwayTitle.png */; };
+		66AAFD0217E44C0F0037338C /* PlaneTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCFC17E44C0F0037338C /* PlaneTitle.png */; };
+		66AAFD0317E44C0F0037338C /* TrainTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCFD17E44C0F0037338C /* TrainTitle.png */; };
+		66AAFD0617E456300037338C /* SGTrafficHighwayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAFD0517E456300037338C /* SGTrafficHighwayView.m */; };
+		66AAFD0817E457450037338C /* bg_btl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0717E457450037338C /* bg_btl@2x.png */; };
+		66AAFD1217E459270037338C /* HangzhouDrive1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0917E459270037338C /* HangzhouDrive1.png */; };
+		66AAFD1317E459270037338C /* HangzhouDrive2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0A17E459270037338C /* HangzhouDrive2.png */; };
+		66AAFD1417E459270037338C /* HangzhouDrive3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0B17E459270037338C /* HangzhouDrive3.png */; };
+		66AAFD1517E459270037338C /* ShanghaiDrive1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0C17E459270037338C /* ShanghaiDrive1.png */; };
+		66AAFD1617E459270037338C /* ShanghaiDrive2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0D17E459270037338C /* ShanghaiDrive2.png */; };
+		66AAFD1717E459270037338C /* ShanghaiDrive3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0E17E459270037338C /* ShanghaiDrive3.png */; };
+		66AAFD1817E459270037338C /* SuzhouDrive1.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD0F17E459270037338C /* SuzhouDrive1.png */; };
+		66AAFD1917E459270037338C /* SuzhouDrive2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD1017E459270037338C /* SuzhouDrive2.png */; };
+		66AAFD1A17E459270037338C /* SuzhouDrive3.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD1117E459270037338C /* SuzhouDrive3.png */; };
+		66AAFD1D17E45DA30037338C /* SGTrafficDriveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAFD1C17E45DA30037338C /* SGTrafficDriveDetailViewController.m */; };
+		66AAFD2117E4698C0037338C /* SGHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAFD1F17E4698C0037338C /* SGHelpViewController.m */; };
+		66AAFD2217E4698C0037338C /* SGHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2017E4698C0037338C /* SGHelpViewController.xib */; };
+		66AAFD2417E46CA60037338C /* HelpDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2317E46CA60037338C /* HelpDetailView.xib */; };
+		66AAFD2817E46CE60037338C /* gprshelper.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2517E46CE60037338C /* gprshelper.png */; };
+		66AAFD2917E46CE60037338C /* locatehelper.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2617E46CE60037338C /* locatehelper.png */; };
+		66AAFD2A17E46CE60037338C /* wifihelper.png in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2717E46CE60037338C /* wifihelper.png */; };
+		66AAFD2D17E46E5E0037338C /* SGHelpDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAFD2C17E46E5E0037338C /* SGHelpDetailViewController.m */; };
+		66AAFD2F17E4724F0037338C /* HelpNetworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFD2E17E4724F0037338C /* HelpNetworkView.xib */; };
+		66AAFD3217E473420037338C /* SGHelpNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AAFD3117E473420037338C /* SGHelpNetworkViewController.m */; };
 		66ADC69517CE424200685296 /* bg_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 66ADC69317CE424200685296 /* bg_90.png */; };
 		66ADC69617CE424200685296 /* bg_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 66ADC69417CE424200685296 /* bg_120.png */; };
 		66B51DB217DCBD6E00F8D7C3 /* s0025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66B51DB117DCBD6E00F8D7C3 /* s0025.jpg */; };
@@ -771,7 +804,19 @@
 		664BDA7017CFACA700E968AD /* icon_dbyl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dbyl.png; sourceTree = "<group>"; };
 		664BDA7417CFAD4400E968AD /* TrafficDriveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficDriveView.xib; sourceTree = "<group>"; };
 		664BDA7617CFADAC00E968AD /* bg_btl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_btl.png; sourceTree = "<group>"; };
-		664BDA7817CFB17C00E968AD /* TrafficDefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficDefaultView.xib; sourceTree = "<group>"; };
+		66545BD217E4AF2B00F8B3A0 /* AlixPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlixPay.h; sourceTree = "<group>"; };
+		66545BD317E4AF2B00F8B3A0 /* AlixPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlixPay.m; sourceTree = "<group>"; };
+		66545BD417E4AF2B00F8B3A0 /* AlixPayOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlixPayOrder.h; sourceTree = "<group>"; };
+		66545BD517E4AF2B00F8B3A0 /* AlixPayOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlixPayOrder.m; sourceTree = "<group>"; };
+		66545BD617E4AF2B00F8B3A0 /* AlixPayResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlixPayResult.h; sourceTree = "<group>"; };
+		66545BD717E4AF2B00F8B3A0 /* AlixPayResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlixPayResult.m; sourceTree = "<group>"; };
+		66545BE517E4B34B00F8B3A0 /* SimpleWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleWebView.xib; sourceTree = "<group>"; };
+		66545BE617E4B34B00F8B3A0 /* YMSimpleWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSimpleWebViewController.h; sourceTree = "<group>"; };
+		66545BE717E4B34B00F8B3A0 /* YMSimpleWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSimpleWebViewController.m; sourceTree = "<group>"; };
+		66545BE817E4B34B00F8B3A0 /* YMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMWebViewController.h; sourceTree = "<group>"; };
+		66545BE917E4B34B00F8B3A0 /* YMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMWebViewController.m; sourceTree = "<group>"; };
+		66545BED17E4B3C200F8B3A0 /* SGPayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPayWebViewController.h; sourceTree = "<group>"; };
+		66545BEE17E4B3C200F8B3A0 /* SGPayWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPayWebViewController.m; sourceTree = "<group>"; };
 		6662BE4817D378AB0038ACD5 /* SGEntertainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGEntertainmentViewController.h; sourceTree = "<group>"; };
 		6662BE4917D378AB0038ACD5 /* SGEntertainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGEntertainmentViewController.m; sourceTree = "<group>"; };
 		6662BE4A17D378AB0038ACD5 /* SGEntertainmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGEntertainmentViewController.xib; sourceTree = "<group>"; };
@@ -1075,6 +1120,38 @@
 		669C7CD717D78A9C00F0442C /* n0015-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-5.jpg"; sourceTree = "<group>"; };
 		669C7CD817D78A9C00F0442C /* n0015-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-6.jpg"; sourceTree = "<group>"; };
 		669C7CD917D78A9C00F0442C /* n0015-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-7.jpg"; sourceTree = "<group>"; };
+		66AAFCF217E44B990037338C /* TrafficHighwayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficHighwayView.xib; sourceTree = "<group>"; };
+		66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficPlaneView.xib; sourceTree = "<group>"; };
+		66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficTrainView.xib; sourceTree = "<group>"; };
+		66AAFCFB17E44C0F0037338C /* HighwayTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighwayTitle.png; sourceTree = "<group>"; };
+		66AAFCFC17E44C0F0037338C /* PlaneTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaneTitle.png; sourceTree = "<group>"; };
+		66AAFCFD17E44C0F0037338C /* TrainTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrainTitle.png; sourceTree = "<group>"; };
+		66AAFD0417E456300037338C /* SGTrafficHighwayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTrafficHighwayView.h; sourceTree = "<group>"; };
+		66AAFD0517E456300037338C /* SGTrafficHighwayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTrafficHighwayView.m; sourceTree = "<group>"; };
+		66AAFD0717E457450037338C /* bg_btl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_btl@2x.png"; sourceTree = "<group>"; };
+		66AAFD0917E459270037338C /* HangzhouDrive1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HangzhouDrive1.png; sourceTree = "<group>"; };
+		66AAFD0A17E459270037338C /* HangzhouDrive2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HangzhouDrive2.png; sourceTree = "<group>"; };
+		66AAFD0B17E459270037338C /* HangzhouDrive3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HangzhouDrive3.png; sourceTree = "<group>"; };
+		66AAFD0C17E459270037338C /* ShanghaiDrive1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShanghaiDrive1.png; sourceTree = "<group>"; };
+		66AAFD0D17E459270037338C /* ShanghaiDrive2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShanghaiDrive2.png; sourceTree = "<group>"; };
+		66AAFD0E17E459270037338C /* ShanghaiDrive3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShanghaiDrive3.png; sourceTree = "<group>"; };
+		66AAFD0F17E459270037338C /* SuzhouDrive1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuzhouDrive1.png; sourceTree = "<group>"; };
+		66AAFD1017E459270037338C /* SuzhouDrive2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuzhouDrive2.png; sourceTree = "<group>"; };
+		66AAFD1117E459270037338C /* SuzhouDrive3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SuzhouDrive3.png; sourceTree = "<group>"; };
+		66AAFD1B17E45DA30037338C /* SGTrafficDriveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTrafficDriveDetailViewController.h; sourceTree = "<group>"; };
+		66AAFD1C17E45DA30037338C /* SGTrafficDriveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTrafficDriveDetailViewController.m; sourceTree = "<group>"; };
+		66AAFD1E17E4698C0037338C /* SGHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHelpViewController.h; sourceTree = "<group>"; };
+		66AAFD1F17E4698C0037338C /* SGHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHelpViewController.m; sourceTree = "<group>"; };
+		66AAFD2017E4698C0037338C /* SGHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGHelpViewController.xib; sourceTree = "<group>"; };
+		66AAFD2317E46CA60037338C /* HelpDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpDetailView.xib; sourceTree = "<group>"; };
+		66AAFD2517E46CE60037338C /* gprshelper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gprshelper.png; sourceTree = "<group>"; };
+		66AAFD2617E46CE60037338C /* locatehelper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locatehelper.png; sourceTree = "<group>"; };
+		66AAFD2717E46CE60037338C /* wifihelper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifihelper.png; sourceTree = "<group>"; };
+		66AAFD2B17E46E5E0037338C /* SGHelpDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHelpDetailViewController.h; sourceTree = "<group>"; };
+		66AAFD2C17E46E5E0037338C /* SGHelpDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHelpDetailViewController.m; sourceTree = "<group>"; };
+		66AAFD2E17E4724F0037338C /* HelpNetworkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpNetworkView.xib; sourceTree = "<group>"; };
+		66AAFD3017E473420037338C /* SGHelpNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHelpNetworkViewController.h; sourceTree = "<group>"; };
+		66AAFD3117E473420037338C /* SGHelpNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHelpNetworkViewController.m; sourceTree = "<group>"; };
 		66ADC69317CE424200685296 /* bg_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_90.png; sourceTree = "<group>"; };
 		66ADC69417CE424200685296 /* bg_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_120.png; sourceTree = "<group>"; };
 		66B51DB117DCBD6E00F8D7C3 /* s0025.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s0025.jpg; sourceTree = "<group>"; };
@@ -1339,8 +1416,14 @@
 				6640FAD017C854CF00474152 /* SGTrafficCell.xib */,
 				6640FAD917C85E4900474152 /* SGTrafficDetailViewController.h */,
 				6640FADA17C85E4900474152 /* SGTrafficDetailViewController.m */,
-				664BDA7817CFB17C00E968AD /* TrafficDefaultView.xib */,
+				66AAFD1B17E45DA30037338C /* SGTrafficDriveDetailViewController.h */,
+				66AAFD1C17E45DA30037338C /* SGTrafficDriveDetailViewController.m */,
 				664BDA7417CFAD4400E968AD /* TrafficDriveView.xib */,
+				66AAFCF217E44B990037338C /* TrafficHighwayView.xib */,
+				66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */,
+				66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */,
+				66AAFD0417E456300037338C /* SGTrafficHighwayView.h */,
+				66AAFD0517E456300037338C /* SGTrafficHighwayView.m */,
 				6640FAC417C8529700474152 /* Images */,
 			);
 			path = Traffic;
@@ -1349,7 +1432,20 @@
 		6640FAC417C8529700474152 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66AAFD0917E459270037338C /* HangzhouDrive1.png */,
+				66AAFD0A17E459270037338C /* HangzhouDrive2.png */,
+				66AAFD0B17E459270037338C /* HangzhouDrive3.png */,
+				66AAFD0C17E459270037338C /* ShanghaiDrive1.png */,
+				66AAFD0D17E459270037338C /* ShanghaiDrive2.png */,
+				66AAFD0E17E459270037338C /* ShanghaiDrive3.png */,
+				66AAFD0F17E459270037338C /* SuzhouDrive1.png */,
+				66AAFD1017E459270037338C /* SuzhouDrive2.png */,
+				66AAFD1117E459270037338C /* SuzhouDrive3.png */,
+				66AAFCFB17E44C0F0037338C /* HighwayTitle.png */,
+				66AAFCFC17E44C0F0037338C /* PlaneTitle.png */,
+				66AAFCFD17E44C0F0037338C /* TrainTitle.png */,
 				664BDA7617CFADAC00E968AD /* bg_btl.png */,
+				66AAFD0717E457450037338C /* bg_btl@2x.png */,
 				6640FAC517C8529700474152 /* icon_drive.png */,
 				6640FAC617C8529700474152 /* icon_highway.png */,
 				6640FAC717C8529700474152 /* icon_plane.png */,
@@ -1629,9 +1725,37 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		66545BD117E4AF2B00F8B3A0 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				66545BD217E4AF2B00F8B3A0 /* AlixPay.h */,
+				66545BD317E4AF2B00F8B3A0 /* AlixPay.m */,
+				66545BD417E4AF2B00F8B3A0 /* AlixPayOrder.h */,
+				66545BD517E4AF2B00F8B3A0 /* AlixPayOrder.m */,
+				66545BD617E4AF2B00F8B3A0 /* AlixPayResult.h */,
+				66545BD717E4AF2B00F8B3A0 /* AlixPayResult.m */,
+			);
+			path = Alipay;
+			sourceTree = "<group>";
+		};
+		66545BE417E4B34B00F8B3A0 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				66545BE517E4B34B00F8B3A0 /* SimpleWebView.xib */,
+				66545BE617E4B34B00F8B3A0 /* YMSimpleWebViewController.h */,
+				66545BE717E4B34B00F8B3A0 /* YMSimpleWebViewController.m */,
+				66545BE817E4B34B00F8B3A0 /* YMWebViewController.h */,
+				66545BE917E4B34B00F8B3A0 /* YMWebViewController.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		6662BE8F17D39C7E0038ACD5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66AAFD2517E46CE60037338C /* gprshelper.png */,
+				66AAFD2617E46CE60037338C /* locatehelper.png */,
+				66AAFD2717E46CE60037338C /* wifihelper.png */,
 				6662BE9217D39CA50038ACD5 /* icon_jty@2x.png */,
 				6662BE9017D39C7E0038ACD5 /* icon_jty.png */,
 			);
@@ -1997,6 +2121,7 @@
 				66D7743217D2CBA900DCB3D3 /* SGFavoriteHelper.m */,
 				669C7C9317D7784200F0442C /* EGORefreshTableHeaderView.h */,
 				669C7C9417D7784200F0442C /* EGORefreshTableHeaderView.m */,
+				66545BE417E4B34B00F8B3A0 /* WebView */,
 				6698DC5E17C3C2E8006E486B /* Images */,
 			);
 			path = Base;
@@ -2014,6 +2139,8 @@
 				66F6630917D8D4B0008384E6 /* SGOrderStatusViewController.h */,
 				66F6630A17D8D4B0008384E6 /* SGOrderStatusViewController.m */,
 				66F6630B17D8D4B0008384E6 /* SGOrderStatusViewController.xib */,
+				66545BED17E4B3C200F8B3A0 /* SGPayWebViewController.h */,
+				66545BEE17E4B3C200F8B3A0 /* SGPayWebViewController.m */,
 				6640FC3C17CD10B400474152 /* Images */,
 			);
 			path = Book;
@@ -2082,6 +2209,15 @@
 				6662BE9917D3A1220038ACD5 /* SGAboutusViewController.h */,
 				6662BE9A17D3A1220038ACD5 /* SGAboutusViewController.m */,
 				6662BE9B17D3A1230038ACD5 /* SGAboutusViewController.xib */,
+				66AAFD1E17E4698C0037338C /* SGHelpViewController.h */,
+				66AAFD1F17E4698C0037338C /* SGHelpViewController.m */,
+				66AAFD2017E4698C0037338C /* SGHelpViewController.xib */,
+				66AAFD2B17E46E5E0037338C /* SGHelpDetailViewController.h */,
+				66AAFD2C17E46E5E0037338C /* SGHelpDetailViewController.m */,
+				66AAFD3017E473420037338C /* SGHelpNetworkViewController.h */,
+				66AAFD3117E473420037338C /* SGHelpNetworkViewController.m */,
+				66AAFD2317E46CA60037338C /* HelpDetailView.xib */,
+				66AAFD2E17E4724F0037338C /* HelpNetworkView.xib */,
 				6662BE8F17D39C7E0038ACD5 /* Images */,
 			);
 			path = More;
@@ -2110,6 +2246,7 @@
 				6640FB5A17C8A1BB00474152 /* NSString+Util.m */,
 				6640FB5B17C8A1BB00474152 /* UI */,
 				6640FB7117C8A1BB00474152 /* YMCoverNavigation */,
+				66545BD117E4AF2B00F8B3A0 /* Alipay */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -2328,6 +2465,11 @@
 				CLASSPREFIX = SG;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = songguo;
+				TargetAttributes = {
+					668D658117BF025700109886 = {
+						DevelopmentTeam = T78GX8TJ57;
+					};
+				};
 			};
 			buildConfigurationList = 668D657D17BF025700109886 /* Build configuration list for PBXProject "SouZhen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2376,18 +2518,22 @@
 				6698DC6B17C3C831006E486B /* banner_2.png in Resources */,
 				6698DC6C17C3C831006E486B /* banner_3.png in Resources */,
 				6698DC6D17C3C831006E486B /* banner_4.png in Resources */,
+				66AAFD1417E459270037338C /* HangzhouDrive3.png in Resources */,
 				6698DC6E17C3C831006E486B /* icon_menu.png in Resources */,
 				6698DC7017C3C9AD006E486B /* icon_menu@2x.png in Resources */,
 				6698DC7917C3CD85006E486B /* icon_gl.png in Resources */,
 				6698DC7A17C3CD85006E486B /* icon_jd.png in Resources */,
+				66AAFD1317E459270037338C /* HangzhouDrive2.png in Resources */,
 				6698DC7B17C3CD85006E486B /* icon_jt.png in Resources */,
 				6698DC7C17C3CD85006E486B /* icon_kz.png in Resources */,
 				6698DC7D17C3CD85006E486B /* icon_ms.png in Resources */,
 				6698DC7E17C3CD85006E486B /* icon_xl.png in Resources */,
 				6698DC7F17C3CD85006E486B /* icon_yl.png in Resources */,
 				6698DC8017C3CD85006E486B /* icon_zx.png in Resources */,
+				66AAFCF317E44B990037338C /* TrafficHighwayView.xib in Resources */,
 				6698DC8817C3D109006E486B /* SGFavoriteViewController.xib in Resources */,
 				6698DC8D17C3D133006E486B /* SGMapViewController.xib in Resources */,
+				66AAFD1A17E459270037338C /* SuzhouDrive3.png in Resources */,
 				6698DC9217C3D13C006E486B /* SGMoreViewController.xib in Resources */,
 				6640FAA717C8500F00474152 /* bg_bry.png in Resources */,
 				6640FAA817C8500F00474152 /* bg_dian@2x.png in Resources */,
@@ -2411,6 +2557,7 @@
 				6640FAE817C868B700474152 /* SGSceneryViewController.xib in Resources */,
 				6640FAF217C86EAC00474152 /* button_bottom.png in Resources */,
 				6640FAF317C86EAC00474152 /* icon_address.png in Resources */,
+				66AAFCF717E44BCC0037338C /* TrafficTrainView.xib in Resources */,
 				6640FAF417C86EAC00474152 /* icon_dbjd@2x.png in Resources */,
 				6640FAF517C86EAC00474152 /* icon_dbkz@2x.png in Resources */,
 				6640FAF617C86EAC00474152 /* icon_dbyl@2x.png in Resources */,
@@ -2427,6 +2574,7 @@
 				6640FBBF17C8A9B100474152 /* bg_paopao.png in Resources */,
 				6640FBC417C8E94D00474152 /* SGSceneryCell.xib in Resources */,
 				6640FBC717C8EAD800474152 /* icon_star_d.png in Resources */,
+				66AAFD1217E459270037338C /* HangzhouDrive1.png in Resources */,
 				6640FBC817C8EAD800474152 /* icon_star_u.png in Resources */,
 				6640FBD417C8F42400474152 /* SGSceneryDetailViewController.xib in Resources */,
 				6640FBD817C8F65200474152 /* icon_building.png in Resources */,
@@ -2438,6 +2586,7 @@
 				6640FBE317C8FF5400474152 /* icon_map@2x.png in Resources */,
 				6640FBEA17C9048A00474152 /* SGTextViewController.xib in Resources */,
 				6640FC1817CCFB0000474152 /* SGStrategyViewController.xib in Resources */,
+				66AAFD2917E46CE60037338C /* locatehelper.png in Resources */,
 				6640FC2117CCFC6800474152 /* bg_bt.png in Resources */,
 				6640FC2217CCFC6800474152 /* bg_tab1.png in Resources */,
 				6640FC2317CCFC6800474152 /* bg_tab2.png in Resources */,
@@ -2455,6 +2604,7 @@
 				6640FC4517CD10B400474152 /* bar_b@2x.png in Resources */,
 				6640FC4617CD10B400474152 /* bg_huang@2x.png in Resources */,
 				6640FC4717CD10B400474152 /* bg_title@2x.png in Resources */,
+				66AAFD1717E459270037338C /* ShanghaiDrive3.png in Resources */,
 				6640FC4817CD10B400474152 /* button_radio1.png in Resources */,
 				6640FC4917CD10B400474152 /* button_radio2.png in Resources */,
 				6640FC4A17CD10B400474152 /* button_xiadan.png in Resources */,
@@ -2468,7 +2618,6 @@
 				664BDA7317CFACA700E968AD /* icon_dbyl.png in Resources */,
 				664BDA7517CFAD4400E968AD /* TrafficDriveView.xib in Resources */,
 				664BDA7717CFADAC00E968AD /* bg_btl.png in Resources */,
-				664BDA7917CFB17C00E968AD /* TrafficDefaultView.xib in Resources */,
 				66D772D417D0F5CB00DCB3D3 /* SGRouteNightView.xib in Resources */,
 				66D772D817D0F76700DCB3D3 /* SGRouteYSYView.xib in Resources */,
 				66D772DC17D0F9E100DCB3D3 /* SGExperienceView.xib in Resources */,
@@ -2483,6 +2632,7 @@
 				66D772EE17D0FB1E00DCB3D3 /* pic_ex_route.png in Resources */,
 				66D772F617D0FE1700DCB3D3 /* SGExperienceRouteViewController.xib in Resources */,
 				66D772FA17D1015900DCB3D3 /* SGExperienceEatViewController.xib in Resources */,
+				66AAFD1917E459270037338C /* SuzhouDrive2.png in Resources */,
 				66D772FB17D1015900DCB3D3 /* SGExperienceGouViewController.xib in Resources */,
 				66D772FC17D1015900DCB3D3 /* SGExperienceLiveViewController.xib in Resources */,
 				66D772FE17D18AD600DCB3D3 /* bg_xl.png in Resources */,
@@ -2490,6 +2640,7 @@
 				66D7739117D1F7DB00DCB3D3 /* SGHotelViewController.xib in Resources */,
 				66D7739617D1F7F100DCB3D3 /* SGHotelHouseTypeViewController.xib in Resources */,
 				66D7739B17D1FD7B00DCB3D3 /* SGHotelCell.xib in Resources */,
+				66AAFD0817E457450037338C /* bg_btl@2x.png in Resources */,
 				66D7739D17D2022900DCB3D3 /* SGHouseCell.xib in Resources */,
 				66D773A717D21E3600DCB3D3 /* SGHotelDetailViewController.xib in Resources */,
 				66D773AF17D224C000DCB3D3 /* SGHouseTypeDetailView.xib in Resources */,
@@ -2499,6 +2650,7 @@
 				66D773BB17D2270900DCB3D3 /* icon_hoteldetail.png in Resources */,
 				66D773BC17D2270900DCB3D3 /* icon_size.png in Resources */,
 				66D773C117D22D0000DCB3D3 /* SGHotelDetailView.xib in Resources */,
+				66AAFD0317E44C0F0037338C /* TrainTitle.png in Resources */,
 				66D773C417D2323F00DCB3D3 /* icon_arrow_down.png in Resources */,
 				66D773C517D2323F00DCB3D3 /* icon_arrow_down@2x.png in Resources */,
 				66D7740617D2693100DCB3D3 /* bg_tableviewline.png in Resources */,
@@ -2532,9 +2684,12 @@
 				66D7744E17D2E71300DCB3D3 /* vline.png in Resources */,
 				6662BE4C17D378AB0038ACD5 /* SGEntertainmentViewController.xib in Resources */,
 				6662BE5417D3795E0038ACD5 /* SGEntertainmentCell.xib in Resources */,
+				66AAFD0217E44C0F0037338C /* PlaneTitle.png in Resources */,
 				6662BE5617D3795E0038ACD5 /* SGEntertainmentDetailViewController.xib in Resources */,
 				6662BE5D17D381F20038ACD5 /* SGNewsViewController.xib in Resources */,
+				66AAFD2217E4698C0037338C /* SGHelpViewController.xib in Resources */,
 				6662BE6217D384C40038ACD5 /* SGNewsCell.xib in Resources */,
+				66AAFD2F17E4724F0037338C /* HelpNetworkView.xib in Resources */,
 				6662BE6717D388C70038ACD5 /* SGNewsDetailViewController.xib in Resources */,
 				6662BE9117D39C7E0038ACD5 /* icon_jty.png in Resources */,
 				6662BE9317D39CA50038ACD5 /* icon_jty@2x.png in Resources */,
@@ -2545,6 +2700,7 @@
 				66400DA417D5B957002DADB7 /* Icon@2x.png in Resources */,
 				66400DA617D5C09B002DADB7 /* Default@2x.png in Resources */,
 				66D60B2D17D6183300D183C6 /* pageCtrlGrey.png in Resources */,
+				66AAFD0117E44C0F0037338C /* HighwayTitle.png in Resources */,
 				66D60B2E17D6183300D183C6 /* pageCtrlGrey@2x.png in Resources */,
 				66D60B2F17D6183300D183C6 /* pageCtrlOrg.png in Resources */,
 				66D60B3017D6183300D183C6 /* pageCtrlOrg@2x.png in Resources */,
@@ -2558,6 +2714,7 @@
 				667D661517D63577002FCEC4 /* h0001.jpg in Resources */,
 				667D661617D63577002FCEC4 /* h0002-1.jpg in Resources */,
 				667D661717D63577002FCEC4 /* h0002-2.jpg in Resources */,
+				66AAFCF517E44BB80037338C /* TrafficPlaneView.xib in Resources */,
 				667D661817D63577002FCEC4 /* h0002-3.jpg in Resources */,
 				667D661917D63577002FCEC4 /* h0002-4.jpg in Resources */,
 				667D661A17D63577002FCEC4 /* h0002-5.jpg in Resources */,
@@ -2575,6 +2732,7 @@
 				667D662617D63577002FCEC4 /* h0004-5.jpg in Resources */,
 				667D662717D63577002FCEC4 /* h0004.jpg in Resources */,
 				667D662817D63577002FCEC4 /* h0005.jpg in Resources */,
+				66AAFD2417E46CA60037338C /* HelpDetailView.xib in Resources */,
 				667D662917D63577002FCEC4 /* h0006-1.jpg in Resources */,
 				667D662A17D63577002FCEC4 /* h0006-2.jpg in Resources */,
 				667D662B17D63577002FCEC4 /* h0006-3.jpg in Resources */,
@@ -2620,6 +2778,7 @@
 				667D665317D63577002FCEC4 /* 垂钓.png in Resources */,
 				667D665417D63577002FCEC4 /* 提供常用药品.png in Resources */,
 				667D665517D63577002FCEC4 /* 桌游.png in Resources */,
+				66AAFD1617E459270037338C /* ShanghaiDrive2.png in Resources */,
 				667D665617D63577002FCEC4 /* 棋牌.png in Resources */,
 				667D665717D63577002FCEC4 /* 水果采摘.png in Resources */,
 				667D665817D63577002FCEC4 /* 海鲜加工.png in Resources */,
@@ -2663,6 +2822,7 @@
 				667D667E17D63577002FCEC4 /* s0016.jpg in Resources */,
 				667D667F17D63577002FCEC4 /* s0017.jpg in Resources */,
 				667D668017D63577002FCEC4 /* s0018.jpg in Resources */,
+				66AAFD2A17E46CE60037338C /* wifihelper.png in Resources */,
 				667D668117D63577002FCEC4 /* s0019.jpg in Resources */,
 				667D668217D63577002FCEC4 /* s0020.jpg in Resources */,
 				667D668317D63577002FCEC4 /* s0021.jpg in Resources */,
@@ -2689,6 +2849,7 @@
 				667D66B517D64B98002FCEC4 /* e0002.jpg in Resources */,
 				667D66B617D64B98002FCEC4 /* e0003.jpg in Resources */,
 				667D66B717D64B98002FCEC4 /* e0004.jpg in Resources */,
+				66AAFD1517E459270037338C /* ShanghaiDrive1.png in Resources */,
 				667D66B817D64B98002FCEC4 /* e0005.jpg in Resources */,
 				667D66B917D64B98002FCEC4 /* e0006.jpg in Resources */,
 				667D66BA17D64B98002FCEC4 /* e0007.jpg in Resources */,
@@ -2698,7 +2859,9 @@
 				667D66BE17D64B98002FCEC4 /* e0011.jpg in Resources */,
 				667D66BF17D64B98002FCEC4 /* e0012.jpg in Resources */,
 				667D66C017D64B98002FCEC4 /* e0013.jpg in Resources */,
+				66AAFD1817E459270037338C /* SuzhouDrive1.png in Resources */,
 				669C7C8E17D76F9300F0442C /* DownArrow.png in Resources */,
+				66AAFD2817E46CE60037338C /* gprshelper.png in Resources */,
 				669C7C8F17D76F9300F0442C /* DownArrow@2x.png in Resources */,
 				669C7C9817D778CD00F0442C /* UpArrow.png in Resources */,
 				669C7C9917D778CD00F0442C /* UpArrow@2x.png in Resources */,
@@ -2718,6 +2881,7 @@
 				669C7CDC17D78A9C00F0442C /* n0008-3.jpg in Resources */,
 				669C7CDD17D78A9C00F0442C /* n0008-4.jpg in Resources */,
 				669C7CDE17D78A9C00F0442C /* n0012-1.jpg in Resources */,
+				66545BEA17E4B34B00F8B3A0 /* SimpleWebView.xib in Resources */,
 				669C7CDF17D78A9C00F0442C /* n0012-2.jpg in Resources */,
 				669C7CE017D78A9C00F0442C /* n0012-3.jpg in Resources */,
 				669C7CE117D78A9C00F0442C /* n0012-4.jpg in Resources */,
@@ -2790,6 +2954,7 @@
 				6640FAB417C8500F00474152 /* SGRouteUIInfo.m in Sources */,
 				6640FAB517C8500F00474152 /* SGRouteDetailViewController.m in Sources */,
 				6640FAB717C8500F00474152 /* SGRouteViewController.m in Sources */,
+				66545BEC17E4B34B00F8B3A0 /* YMWebViewController.m in Sources */,
 				6640FAC217C8518B00474152 /* SGTrafficViewController.m in Sources */,
 				6640FACF17C854BC00474152 /* SGTrafficCell.m in Sources */,
 				6640FADC17C85E4900474152 /* SGTrafficDetailViewController.m in Sources */,
@@ -2797,6 +2962,7 @@
 				6640FB0217C894F200474152 /* SGAnnotation.m in Sources */,
 				6640FB7817C8A1BB00474152 /* ASIAuthenticationDialog.m in Sources */,
 				6640FB7917C8A1BB00474152 /* ASIDataCompressor.m in Sources */,
+				66AAFD2117E4698C0037338C /* SGHelpViewController.m in Sources */,
 				6640FB7A17C8A1BB00474152 /* ASIDataDecompressor.m in Sources */,
 				6640FB7B17C8A1BB00474152 /* ASIDownloadCache.m in Sources */,
 				6640FB7C17C8A1BB00474152 /* ASIFormDataRequest.m in Sources */,
@@ -2810,6 +2976,7 @@
 				6640FB8417C8A1BB00474152 /* UIImage+Utility.m in Sources */,
 				6640FB8517C8A1BB00474152 /* CalloutMapAnnotation.m in Sources */,
 				6640FB8617C8A1BB00474152 /* CalloutMapAnnotationView.m in Sources */,
+				66AAFD2D17E46E5E0037338C /* SGHelpDetailViewController.m in Sources */,
 				6640FB8717C8A1BB00474152 /* Compatible.m in Sources */,
 				6640FB8817C8A1BB00474152 /* NSObject+SBJSON.m in Sources */,
 				6640FB8917C8A1BB00474152 /* NSString+SBJSON.m in Sources */,
@@ -2818,6 +2985,7 @@
 				6640FB8C17C8A1BB00474152 /* SBJsonParser.m in Sources */,
 				6640FB8D17C8A1BB00474152 /* SBJsonWriter.m in Sources */,
 				6640FB8E17C8A1BB00474152 /* LocationManager.m in Sources */,
+				66545BD917E4AF2B00F8B3A0 /* AlixPayOrder.m in Sources */,
 				6640FB8F17C8A1BB00474152 /* MBProgressHUD.m in Sources */,
 				6640FB9017C8A1BB00474152 /* MMDrawerBarButtonItem.m in Sources */,
 				6640FB9117C8A1BB00474152 /* MMDrawerController.m in Sources */,
@@ -2837,6 +3005,7 @@
 				6640FBA117C8A1BB00474152 /* YMImageView.m in Sources */,
 				6640FBA217C8A1BB00474152 /* YMMailComposeViewController.m in Sources */,
 				6640FBA317C8A1BB00474152 /* YMPageHorizontalView.m in Sources */,
+				66545BDA17E4AF2B00F8B3A0 /* AlixPayResult.m in Sources */,
 				6640FBA417C8A1BB00474152 /* YMTableHorizontalView.m in Sources */,
 				6640FBA517C8A1BB00474152 /* YMTableViewController.m in Sources */,
 				6640FBA617C8A1BB00474152 /* YMViewController.m in Sources */,
@@ -2863,20 +3032,26 @@
 				66D7741F17D2BD9400DCB3D3 /* SGFoodCell.m in Sources */,
 				66D7742717D2C11300DCB3D3 /* SGFoodDetailViewController.m in Sources */,
 				66D7743317D2CBA900DCB3D3 /* SGFavoriteHelper.m in Sources */,
+				66AAFD1D17E45DA30037338C /* SGTrafficDriveDetailViewController.m in Sources */,
 				6662BE4B17D378AB0038ACD5 /* SGEntertainmentViewController.m in Sources */,
 				6662BE5317D3795E0038ACD5 /* SGEntertainmentCell.m in Sources */,
 				6662BE5517D3795E0038ACD5 /* SGEntertainmentDetailViewController.m in Sources */,
+				66545BEF17E4B3C200F8B3A0 /* SGPayWebViewController.m in Sources */,
 				6662BE5C17D381F20038ACD5 /* SGNewsViewController.m in Sources */,
 				6662BE6017D384B40038ACD5 /* SGNewsCell.m in Sources */,
 				6662BE6617D388C70038ACD5 /* SGNewsDetailViewController.m in Sources */,
+				66AAFD0617E456300037338C /* SGTrafficHighwayView.m in Sources */,
 				6662BE9717D3A1140038ACD5 /* SGEmergencyPhoneViewController.m in Sources */,
 				6662BE9C17D3A1230038ACD5 /* SGAboutusViewController.m in Sources */,
+				66545BD817E4AF2B00F8B3A0 /* AlixPay.m in Sources */,
 				66D60B2017D6130100D183C6 /* SimpleFliperView.m in Sources */,
 				66D60B2117D6130100D183C6 /* SimpleFliperViewCell.m in Sources */,
 				66D60B2417D6135800D183C6 /* SGBannerViewCell.m in Sources */,
 				66D60B3317D6187A00D183C6 /* YMPageControl.m in Sources */,
+				66AAFD3217E473420037338C /* SGHelpNetworkViewController.m in Sources */,
 				669C7C8A17D76EBB00F0442C /* SGTableViewController.m in Sources */,
 				669C7C9517D7784300F0442C /* EGORefreshTableHeaderView.m in Sources */,
+				66545BEB17E4B34B00F8B3A0 /* YMSimpleWebViewController.m in Sources */,
 				66F6630317D8C759008384E6 /* SGOrderViewController.m in Sources */,
 				66F6630C17D8D4B0008384E6 /* SGOrderStatusViewController.m in Sources */,
 			);
@@ -2955,15 +3130,15 @@
 		668D65A017BF025800109886 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen wang (96B7HH3E4Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen wang (96B7HH3E4Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
+				PROVISIONING_PROFILE = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2971,14 +3146,14 @@
 		668D65A117BF025800109886 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen wang (96B7HH3E4Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
+				PROVISIONING_PROFILE = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				WRAPPER_EXTENSION = app;
 			};

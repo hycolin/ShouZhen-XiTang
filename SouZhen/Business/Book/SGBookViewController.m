@@ -9,7 +9,7 @@
 #import "SGBookViewController.h"
 #import "SGOrderViewController.h"
 
-@interface SGBookViewController () <UITextFieldDelegate>
+@interface SGBookViewController () <UITextFieldDelegate, ASIHTTPRequestDelegate>
 
 @property (weak, atomic) IBOutlet UIImageView *bgTitleImageView;
 @property (weak, atomic) IBOutlet UIImageView *bgTitleTopImageView;
@@ -20,6 +20,10 @@
 @property (strong, nonatomic) IBOutlet UIView *datePickerView;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *discountLabel;
+
+
 - (IBAction)doneDatePickerAction:(id)sender;
 
 @end
@@ -28,6 +32,9 @@
 {
     UIActionSheet *_datePickerActionSheet;
     NSDate *_bookDate;
+    
+    ASIHTTPRequest *_getBookingInfoRequest;
+    ASIHTTPRequest *_createOrderRequest;
 }
 
 - (id)init
@@ -105,7 +112,63 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction)]];
+    
+    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://xitang.com.cn/dingpiao/getscenerypriceinfo.aspx"]];
+    request.delegate = self;
+    _getBookingInfoRequest = request;
+    [request startAsynchronous];
 }
+
+- (void)requestStarted:(ASIHTTPRequest *)request
+{
+    [self showWaiting:@"正在加载..."];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    [self hideWaiting];
+    NSDictionary *dict = [request.responseString JSONValue];
+    NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
+    if (errorCode < 0) {
+        NSString *errMsg = [dict objectForKey:@"errormsg"];
+        [self showAlert:errMsg];
+        return;
+    }
+
+    if (request == _getBookingInfoRequest) {
+        NSString *_price = [dict objectForKey:@"price"];
+        NSString *_discount = [dict objectForKey:@"discount"];
+        if (_price.length > 0) {
+            self.priceLabel.text = _price;
+        }
+        if (_discount.length > 0) {
+            self.discountLabel.text = _discount;
+        }
+    } else if (request == _createOrderRequest) {
+        NSString *orderId = [dict objectForKey:@"orderid"];
+        orderId = @"201309121219313905";
+        if (orderId.length == 0) {
+            [self showAlert:@"创建订单失败"];
+            return;
+        }
+        SGOrderViewController *viewController = [[SGOrderViewController alloc] init];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"yyyyMMdd";
+        viewController.date = [dateFormatter stringFromDate:_bookDate];
+        viewController.name = self.nameTextField.text;
+        viewController.phone = self.phoneTextField.text;
+        viewController.price = [self.priceLabel.text doubleValue];
+        viewController.discount = [self.discountLabel.text doubleValue];
+        viewController.orderId = orderId;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [self hideWaiting];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -140,13 +203,11 @@
         }
         return;
     }
-    SGOrderViewController *viewController = [[SGOrderViewController alloc] init];
-    viewController.bookDate = _bookDate;
-    viewController.name = name;
-    viewController.phone = phone;
-    viewController.price = 100;
-    viewController.discount = 70;
-    [self.navigationController pushViewController:viewController animated:YES];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyyMMdd";
+    _createOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://xitang.com.cn/dingpiao/createorder.aspx?date=%@&name=%@&phone=%@", [dateFormatter stringFromDate:_bookDate], name, phone]]];
+    _createOrderRequest.delegate = self;
+    [_createOrderRequest startAsynchronous];
 }
 
 - (void)tapGestureAction

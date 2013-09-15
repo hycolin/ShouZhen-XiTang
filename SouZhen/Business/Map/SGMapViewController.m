@@ -18,6 +18,9 @@
 #import "SGHotelHouseTypeViewController.h"
 #import "SGHotelDetailViewController.h"
 #import "SGEntertainmentDetailViewController.h"
+#import "LocationManager.h"
+#import "SGHelpDetailViewController.h"
+#import "SGHelpNetworkViewController.h"
 
 @interface SGMapViewController () <MKMapViewDelegate, SGPinContentViewDelegate, UIAlertViewDelegate>
 
@@ -133,18 +136,26 @@
 
 - (IBAction)showRouteAction:(id)sender {
     UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:nil message:@"即将打开苹果内置地图显示路线，确认吗？" delegate:self cancelButtonTitle:@"暂不" otherButtonTitles:@"好", nil];
+    alerView.tag = 999;
     [alerView show];
 }
 
 - (IBAction)locateAction:(id)sender {
-    MKUserLocation *userLocation = self.mapView.userLocation;
-    if (![CLLocationManager locationServicesEnabled]) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位未开启" message:@"请在系统设置中开启定位服务" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    if ([LocationManager instance].locationServiceDisable) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位失败" message:@"请开启位置定位服务" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:@"帮助", nil];
+        alertView.tag = 1000;
         [alertView show];
         return;
     }
+    if (![LocationManager instance].isLocationOk && [SGAppDelegate instance].netStatus == kNotReachable) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位失败" message:@"请检查或设置网络" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:@"帮助", nil];
+        alertView.tag = 1001;
+        [alertView show];
+        return;
+    }
+    MKUserLocation *userLocation = self.mapView.userLocation;
     if (userLocation.coordinate.latitude <= 0 || userLocation.coordinate.longitude <= 0) {
-        [self showAlert:@"定位失败，请稍后重试"];
+        [self showAlert:@"系统正在定位，请稍后重试"];
         return;
     }
     [self.mapView setCenterCoordinate:userLocation.coordinate];
@@ -153,32 +164,46 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex != alertView.cancelButtonIndex) {
-        SGAnnotation *anno = _pinContentView.annotation;
-        if (_pinContentView.annotation == nil) {
-            anno = [_annotations objectAtIndex:0];
-        }
-        Class itemClass = [MKMapItem class];
-        if (IPHONE_OS_6() && itemClass && [itemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
+    if (alertView.tag == 999) {
+        if (buttonIndex != alertView.cancelButtonIndex) {
+            SGAnnotation *anno = _pinContentView.annotation;
+            if (_pinContentView.annotation == nil) {
+                anno = [_annotations objectAtIndex:0];
+            }
+            Class itemClass = [MKMapItem class];
+            if (IPHONE_OS_6() && itemClass && [itemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
                 //kABPersonAddressStreetKey : @"Street"
-            NSDictionary *addressDict = [NSDictionary dictionaryWithObject:anno.address
-                                                                    forKey:(NSString *)kABPersonAddressStreetKey];
-            
-            MKPlacemark *tPlacement = [[MKPlacemark alloc] initWithCoordinate:anno.coordinate
-                                                            addressDictionary:addressDict];
-            
-            MKMapItem *tMapItem = [[MKMapItem alloc] initWithPlacemark:tPlacement];
-            
-            [MKMapItem openMapsWithItems:[NSArray arrayWithObject:tMapItem]
+                NSDictionary *addressDict = [NSDictionary dictionaryWithObject:anno.address
+                                                                        forKey:(NSString *)kABPersonAddressStreetKey];
+                
+                MKPlacemark *tPlacement = [[MKPlacemark alloc] initWithCoordinate:anno.coordinate
+                                                                addressDictionary:addressDict];
+                
+                MKMapItem *tMapItem = [[MKMapItem alloc] initWithPlacemark:tPlacement];
+                
+                [MKMapItem openMapsWithItems:[NSArray arrayWithObject:tMapItem]
                                launchOptions:nil];
-        } else {
+            } else {
                 // show pin directly
-            NSString *str = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%f,%f(%@)",
-                             anno.coordinate.latitude, anno.coordinate.longitude,
-                             [anno.address stringByAddingPercentEscapesUsingEncodingExt:NSUTF8StringEncoding]];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+                NSString *str = [NSString stringWithFormat:@"http://maps.google.com/maps?q=%f,%f(%@)",
+                                 anno.coordinate.latitude, anno.coordinate.longitude,
+                                 [anno.address stringByAddingPercentEscapesUsingEncodingExt:NSUTF8StringEncoding]];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+            }
         }
-
+    } else if (alertView.tag == 1000) {
+        if (buttonIndex == alertView.firstOtherButtonIndex) {
+            SGHelpDetailViewController *viewController = [[SGHelpDetailViewController alloc] init];
+            viewController.contentImage = @"locatehelper";
+            viewController.title = @"如何开启位置服务？";
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+    } else if (alertView.tag == 1001) {
+        if (buttonIndex == alertView.firstOtherButtonIndex) {
+            SGHelpNetworkViewController *viewController = [[SGHelpNetworkViewController alloc] init];
+            viewController.title = @"如何开启网络？";
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
     }
 }
 

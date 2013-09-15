@@ -1,563 +1,526 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUIScrollView</string>
-			<string>IBUIView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIScrollView" id="161023172">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIView" id="976843845">
-						<reference key="NSNextResponder" ref="161023172"/>
-						<int key="NSvFlags">274</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIImageView" id="315224682">
-								<reference key="NSNextResponder" ref="976843845"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 13}, {76, 25}}</string>
-								<reference key="NSSuperview" ref="976843845"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="943571640"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<object class="NSCustomResource" key="IBUIImage" id="600703854">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">bg_btl.png</string>
-								</object>
-							</object>
-							<object class="IBUILabel" id="943571640">
-								<reference key="NSNextResponder" ref="976843845"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{3, 15}, {63, 21}}</string>
-								<reference key="NSSuperview" ref="976843845"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="755310462"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">上海方向</string>
-								<object class="NSColor" key="IBUITextColor" id="80351545">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-								</object>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="231329765">
-									<int key="type">1</int>
-									<double key="pointSize">15</double>
-								</object>
-								<object class="NSFont" key="IBUIFont" id="415224453">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">15</double>
-									<int key="NSfFlags">16</int>
-								</object>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-							</object>
-							<object class="IBUILabel" id="755310462">
-								<reference key="NSNextResponder" ref="976843845"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 44}, {287, 382}}</string>
-								<reference key="NSSuperview" ref="976843845"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="353706909"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<object class="NSMutableString" key="IBUIText">
-									<bytes key="NS.bytes">ICDil4cg5rKq5p2t6auY6YCf5ZiJ5ZaE5aSn5LqR5Ye65Y+j5LiL4oaS5rK/5ZaE5rGf5YWs6Lev5oyJ
-6KW/5aGY6Lev5qCH6KGM6am24oaS5LiL6auY6YCf5ZCO5byA6L2m57qm5Y2B5LqU5YiG6ZKf5Y+v5Yiw
-6L6+6KW/5aGY5Y+k6ZWH44CC77yI5oC76L2m56iL57qm5LiA5Liq5Y2K5bCP5pe277yJ44CCCiAg4peH
-IO+8p++8le+8kOayqua4nemrmOmAn+KAlOKAlOS4i++8p++8k++8ke+8mOayqumdkuW5s+WFrOi3ry/l
-roHms6Iv5Y2X6YCaL++8p++8ke+8leayiOa1t+mrmOmAn++8iOWYiemHke+8iSDlh7rlj6PvvIzliY3l
-voDvvKfvvJHvvJXmsojmtbfpq5jpgJ/igJTigJTvvKfvvJHvvJXmsojmtbfpq5jpgJ8g4oCU4oCU5LiL
-5rWm5Lic5py65Zy6L+WYieWFtC/vvLPvvJPvvJLnlLPlmInmuZYg5Ye65Y+j77yM5YmN5b6A77yz77yT
-77yS55Sz5ZiJ5rmW6auY6YCf4oCU4oCU5LiLIO+8s++8k++8ki/lmInlhbTmlrnlkJEg5Ye65Y+j6LWw
-77yz77yT77yS55Sz5ZiJ5rmW6auY6YCfIOKAlOKAlCDkuIvlmInlloQv6KW/5aGYIOWHuuWPo+KAlOKA
-lOi9puihjOe6pjPlhazph4zliLDopb/loZjjgIIgCiAg4peHIO+8p++8lu+8kOayquaYhumrmOmAn+KA
-lOKAlOS4i++8p++8ke+8leayiOa1t+mrmOmAn++8iOWYiemHke+8iS/ph5HlsbHljasv5aSq5LuTL+aW
-sOahpSDlh7rlj6PvvIzliY3lvoDvvKfvvJHvvJXmsojmtbfpq5jpgJ/igJTigJTkuIvlt6bkvqfnmoQg
-6YeR5bGx5Y2r5pa55ZCRL+aWsOahpS/vvKfvvJHvvJXmsojmtbfpq5jpgJ/vvIjlmInph5HvvIkg5Ye6
-5Y+j77yM6LWw77yn77yR77yV5rKI5rW36auY6YCf4oCU4oCU5LiL5rWm5Lic5py65Zy6L+WYieWFtC/v
-vLPvvJPvvJLnlLPlmInmuZYg5Ye65Y+j77yM5YmN5b6A77yz77yT77yS55Sz5ZiJ5rmW6auY6YCf4oCU
-4oCU5LiLIO+8s++8k++8ki/lmInlhbTmlrnlkJEg5Ye65Y+j6LWw77yz77yT77yS55Sz5ZiJ5rmW6auY
-6YCfIOKAlOKAlCDkuIvlmInlloQv6KW/5aGYIOWHuuWPo+KAlOKAlOi9puihjOe6pjPlhazph4zliLDo
-pb/loZjjgIIgCiAg4peHIO+8s++8lOayqumHkemrmOmAn+KAlOKAlOS4i+WJkeW3nei3ry/vvLPvvJPv
-vJLnlLPlmInmuZbpq5jpgJ8v5rWm5Lic5py65Zy6L+WYieWFtCDlh7rlj6PvvIzliY3lvoDvvLPvvJPv
-vJLnlLPlmInmuZbpq5jpgJ/igJTigJTkuIvmtabkuJzmnLrlnLov5ZiJ5YW0L++8s++8k++8kueUs+WY
-iea5liDlh7rlj6PvvIzliY3lvoDvvLPvvJPvvJLnlLPlmInmuZbpq5jpgJ/igJTigJTkuIsg77yz77yT
-77ySL+WYieWFtOaWueWQkSDlh7rlj6PotbDvvLPvvJPvvJLnlLPlmInmuZbpq5jpgJ8g4oCU4oCUIOS4
-i+WYieWWhC/opb/loZgg5Ye65Y+j4oCU4oCU6L2m6KGM57qmM+WFrOmHjOWIsOilv+WhmOOAgiA</bytes>
-								</object>
-								<object class="NSColor" key="IBUITextColor" id="88046702">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MCAwIDAAA</bytes>
-									<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
-								</object>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<int key="IBUINumberOfLines">0</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="457342263">
-									<int key="type">1</int>
-									<double key="pointSize">13</double>
-								</object>
-								<object class="NSFont" key="IBUIFont" id="65651257">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">13</double>
-									<int key="NSfFlags">16</int>
-								</object>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-								<double key="preferredMaxLayoutWidth">287</double>
-							</object>
-						</array>
-						<string key="NSFrameSize">{320, 438}</string>
-						<reference key="NSSuperview" ref="161023172"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="315224682"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="669947007">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MCAwAA</bytes>
-						</object>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<object class="IBUIScreenMetrics" key="IBUISimulatedDestinationMetrics" id="392604146">
-							<string key="IBUISimulatedSizeMetricsClass">IBUIScreenMetrics</string>
-							<object class="NSMutableDictionary" key="IBUINormalizedOrientationToSizeMap">
-								<bool key="EncodedWithXMLCoder">YES</bool>
-								<array key="dict.sortedKeys">
-									<integer value="1"/>
-									<integer value="3"/>
-								</array>
-								<array key="dict.values">
-									<string>{320, 568}</string>
-									<string>{568, 320}</string>
-								</array>
-							</object>
-							<string key="IBUITargetRuntime">IBCocoaTouchFramework</string>
-							<string key="IBUIDisplayName">Retina 4 Full Screen</string>
-							<int key="IBUIType">2</int>
-						</object>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-					<object class="IBUIView" id="353706909">
-						<reference key="NSNextResponder" ref="161023172"/>
-						<int key="NSvFlags">274</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIImageView" id="944097467">
-								<reference key="NSNextResponder" ref="353706909"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 13}, {76, 25}}</string>
-								<reference key="NSSuperview" ref="353706909"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="1041165814"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIImage" ref="600703854"/>
-							</object>
-							<object class="IBUILabel" id="1041165814">
-								<reference key="NSNextResponder" ref="353706909"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{3, 15}, {63, 21}}</string>
-								<reference key="NSSuperview" ref="353706909"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="96532896"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">杭州方向</string>
-								<reference key="IBUITextColor" ref="80351545"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<reference key="IBUIFontDescription" ref="231329765"/>
-								<reference key="IBUIFont" ref="415224453"/>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-							</object>
-							<object class="IBUILabel" id="96532896">
-								<reference key="NSNextResponder" ref="353706909"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 44}, {287, 183}}</string>
-								<reference key="NSSuperview" ref="353706909"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="353577700"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string type="base64-UTF8" key="IBUIText">IOKXhyBB77ya5rKq5p2t6auY6YCf5ZiJ5ZaE5aSn5LqR5Ye65Y+j5LiL4oaS5rK/5ZaE5rGf5YWs6Lev
-5oyJ6KW/5aGY6Lev5qCH6KGM6am24oaS5LiL6auY6YCf5ZCO5byA6L2m57qm5Y2B5LqU5YiG6ZKf5Y+v
-5Yiw6L6+6KW/5aGY5Y+k6ZWH77yI5oC76L2m56iL57qm5LiA5bCP5pe25Zub5Y2B5LqU5YiG77yJ77yb
-Qu+8mjMyMOWbvemBk+ihjOmptuKGkuWYieWWhOi9puWfjui3r+WPo+W3puaLkOKGkuW+gOW5s+m7juWF
-rOi3r+aWueWQkee6puihjOmptuWNgeS6lOWIhumSn+WNs+WPr+WIsOi+vuOAggogIOKXhyDmsqrmna3p
-q5jpgJ/vvIhH77yW77yQ5rKq5piG6auY6YCf77yJ4oCU4oCU5LiLIOS5nem+meWxseW6puWBh+WMui/l
-jZfmuZYv5Y2X5YyX5rmWL+S4nOa5luaZr+WMuiDlh7rlj6PvvIzliY3lvoDvvKfvvJHvvJXvvLfluLjl
-j7Dpq5jpgJ/igJTigJTvvKfvvJHvvJXvvLfluLjlj7Dpq5jpgJ/igJTigJTkuIsg55Sz5ZiJ5rmW6auY
-6YCfL+a5luW3ni/lmInlhbQv5LiK5rW3L+S5jOmVh+WPpOmVhyDlh7rlj6PvvIzliY3lvoDvvLMz77yS
-55Sz5ZiJ5rmW6auY6YCf4oCU4oCU77yzM++8kueUs+WYiea5lumrmOmAn+KAlOKAlOS4iyDopb/loZgv
-5ZiJ5ZaEIOWHuuWPo+KAlOKAlOi9puihjOe6pjPlhazph4zliLDopb/loZjjgII</string>
-								<reference key="IBUITextColor" ref="88046702"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<int key="IBUINumberOfLines">0</int>
-								<reference key="IBUIFontDescription" ref="457342263"/>
-								<reference key="IBUIFont" ref="65651257"/>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-								<double key="preferredMaxLayoutWidth">287</double>
-							</object>
-						</array>
-						<string key="NSFrame">{{0, 436}, {320, 247}}</string>
-						<reference key="NSSuperview" ref="161023172"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="944097467"/>
-						<reference key="IBUIBackgroundColor" ref="669947007"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<reference key="IBUISimulatedDestinationMetrics" ref="392604146"/>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-					<object class="IBUIView" id="353577700">
-						<reference key="NSNextResponder" ref="161023172"/>
-						<int key="NSvFlags">274</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIImageView" id="885534948">
-								<reference key="NSNextResponder" ref="353577700"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 13}, {76, 25}}</string>
-								<reference key="NSSuperview" ref="353577700"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="406168417"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIImage" ref="600703854"/>
-							</object>
-							<object class="IBUILabel" id="406168417">
-								<reference key="NSNextResponder" ref="353577700"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{3, 15}, {63, 21}}</string>
-								<reference key="NSSuperview" ref="353577700"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="304165402"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">苏州方向</string>
-								<reference key="IBUITextColor" ref="80351545"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<reference key="IBUIFontDescription" ref="231329765"/>
-								<reference key="IBUIFont" ref="415224453"/>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-							</object>
-							<object class="IBUILabel" id="304165402">
-								<reference key="NSNextResponder" ref="353577700"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{17, 44}, {287, 133}}</string>
-								<reference key="NSSuperview" ref="353577700"/>
-								<reference key="NSWindow"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string type="base64-UTF8" key="IBUIText">ICDil4cg77yz77yV77yY5rKq5bi46auY6YCf4oCU4oCU5LiLIOiLj+W3ni/ljZfpgJov77yn77yR77yV
-77y3L+adreW3niDlh7rlj6PvvIzliY3lvoDvvKfvvJHvvJXvvLfluLjlj7Dpq5jpgJ/igJTigJTkuIsg
-55Sz5ZiJ5rmW6auY6YCfL+S4iua1ty/muZblt54v5LmM6ZWH5Y+k6ZWHIOWHuuWPo++8jOWJjeW+gO+8
-szPvvJLnlLPlmInmuZbpq5jpgJ/igJTigJTvvLMz77yS55Sz5ZiJ5rmW6auY6YCf4oCU4oCU5LiLIOil
-v+WhmC/lmInlloQg5Ye65Y+j4oCU4oCU6L2m6KGM57qmM+WFrOmHjOWIsOilv+WhmOOAggogIOKXhyDo
-i4/lmInmna3pq5jpgJ/ihpLlmInlhbTovaznlLPlmInmuZbpq5jpgJ/lvoDkuIrmtbfmlrnlkJHmjIni
-hpLopb/loZjlh7rlj6PkuIvihpLopb/loZjot6/moIfnuqbooYzpqbbkuozljYHliIbpkp/lt6blj7Pl
-jbPlj6/liLDovr7vvIjmgLvovabnqIvnuqbkuIDlsI/ml7bvvInjgII</string>
-								<reference key="IBUITextColor" ref="88046702"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<int key="IBUINumberOfLines">0</int>
-								<reference key="IBUIFontDescription" ref="457342263"/>
-								<reference key="IBUIFont" ref="65651257"/>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-								<double key="preferredMaxLayoutWidth">287</double>
-							</object>
-						</array>
-						<string key="NSFrame">{{0, 667}, {320, 188}}</string>
-						<reference key="NSSuperview" ref="161023172"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="885534948"/>
-						<reference key="IBUIBackgroundColor" ref="669947007"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<reference key="IBUISimulatedDestinationMetrics" ref="392604146"/>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 855}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="976843845"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="IBUIClipsSubviews">YES</bool>
-				<bool key="IBUIMultipleTouchEnabled">YES</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">scrollView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="161023172"/>
-					</object>
-					<int key="connectionID">21</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">8</int>
-						<reference key="object" ref="161023172"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="976843845"/>
-							<reference ref="353706909"/>
-							<reference ref="353577700"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">9</int>
-						<reference key="object" ref="976843845"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="755310462"/>
-							<reference ref="943571640"/>
-							<reference ref="315224682"/>
-						</array>
-						<reference key="parent" ref="161023172"/>
-						<string key="objectName">上海方向</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="755310462"/>
-						<reference key="parent" ref="976843845"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="943571640"/>
-						<reference key="parent" ref="976843845"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">12</int>
-						<reference key="object" ref="315224682"/>
-						<reference key="parent" ref="976843845"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="353706909"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="944097467"/>
-							<reference ref="1041165814"/>
-							<reference ref="96532896"/>
-						</array>
-						<reference key="parent" ref="161023172"/>
-						<string key="objectName">杭州方向</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="944097467"/>
-						<reference key="parent" ref="353706909"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="1041165814"/>
-						<reference key="parent" ref="353706909"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="96532896"/>
-						<reference key="parent" ref="353706909"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">17</int>
-						<reference key="object" ref="353577700"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="304165402"/>
-							<reference ref="406168417"/>
-							<reference ref="885534948"/>
-						</array>
-						<reference key="parent" ref="161023172"/>
-						<string key="objectName">苏州方向</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">18</int>
-						<reference key="object" ref="304165402"/>
-						<reference key="parent" ref="353577700"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">19</int>
-						<reference key="object" ref="406168417"/>
-						<reference key="parent" ref="353577700"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">20</int>
-						<reference key="object" ref="885534948"/>
-						<reference key="parent" ref="353577700"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">SGTrafficDetailViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="20.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">21</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">SGTrafficDetailViewController</string>
-					<string key="superclassName">SGViewController</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="scrollView">UIScrollView</string>
-						<string key="textView">UITextView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="scrollView">
-							<string key="name">scrollView</string>
-							<string key="candidateClassName">UIScrollView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="textView">
-							<string key="name">textView</string>
-							<string key="candidateClassName">UITextView</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SGTrafficDetailViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SGViewController</string>
-					<string key="superclassName">YMCoverViewController</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="contentView">UIView</string>
-						<string key="navigationBar">UINavigationBar</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="contentView">
-							<string key="name">contentView</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="navigationBar">
-							<string key="name">navigationBar</string>
-							<string key="candidateClassName">UINavigationBar</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SGViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">YMCoverViewController</string>
-					<string key="superclassName">YMViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/YMCoverViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">YMViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/YMViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">bg_btl.png</string>
-			<string key="NS.object.0">{153, 51}</string>
-		</object>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGTrafficDriveDetailViewController">
+            <connections>
+                <outlet property="button1" destination="Zak-80-oqH" id="AXh-bO-pDh"/>
+                <outlet property="button2" destination="eWr-7f-hX4" id="yDi-yH-rLi"/>
+                <outlet property="button3" destination="yIO-GT-39U" id="oZQ-TO-YVl"/>
+                <outlet property="contentLayout" destination="0YG-tB-4KX" id="6X0-0J-vxq"/>
+                <outlet property="driveView1" destination="ESG-jz-e4k" id="DIr-D2-t1N"/>
+                <outlet property="driveView2" destination="mBI-FS-wFv" id="4p7-54-5aa"/>
+                <outlet property="driveView3" destination="4MA-PB-Dfq" id="OgC-Kd-cRJ"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="bt7-eR-B7k">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="9ZZ-Zo-ZEX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zak-80-oqH">
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="0.0" height="2"/>
+                            <state key="normal" title="上海方向" backgroundImage="bg_tab2.png">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="segmentedAction:" destination="-1" eventType="touchUpInside" id="s5R-sS-mDK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eWr-7f-hX4">
+                            <rect key="frame" x="107" y="0.0" width="107" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="0.0" height="2"/>
+                            <state key="normal" title="杭州方向" backgroundImage="bg_tab2.png">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="segmentedAction:" destination="-1" eventType="touchUpInside" id="MnJ-iy-P6o"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yIO-GT-39U">
+                            <rect key="frame" x="214" y="0.0" width="107" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="0.0" height="2"/>
+                            <state key="normal" title="苏州方向" backgroundImage="bg_tab2.png">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="bg_tab1.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="segmentedAction:" destination="-1" eventType="touchUpInside" id="7es-tE-FOn"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vline.png" id="EN8-tQ-jkN">
+                            <rect key="frame" x="106" y="0.0" width="1" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vline.png" id="wur-lA-rqJ">
+                            <rect key="frame" x="214" y="0.0" width="1" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="0YG-tB-4KX">
+                    <rect key="frame" x="0.0" y="39" width="320" height="529"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ESG-jz-e4k" userLabel="上海方向">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="0Bs-wd-lbd" userLabel="最少时间" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="444"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="AKr-YK-xHq">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最少时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kaq-7X-swG">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约31.7公里/33分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x3z-t9-Gxj">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到南北高架路->南北高架路->内环高架路->沪闵高架路->虹梅路立交桥->沪闵高架路->A8到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jme-EQ-kEb">
+                            <rect key="frame" x="10" y="61" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive1.png" id="JDG-IA-1VW">
+                            <rect key="frame" x="25" y="130" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="AKr-YK-xHq" id="Ptd-G3-GYk"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="ncE-F1-53H" userLabel="最短路程" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="433" width="320" height="444"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="Xaf-EW-wxv">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最短路程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4KI-b0-0bN">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约30.3公里/36分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bnC-Uq-28i">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到淮海中路->淮海中路->衡山路->沪闵高架路->虹梅路立交桥->沪闵高架路->A8到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m8H-Lh-QH6">
+                            <rect key="frame" x="10" y="61" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive2.png" id="xaj-RG-1Tb">
+                            <rect key="frame" x="25" y="130" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="Xaf-EW-wxv" id="B2P-rb-UJe"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="4Qf-yc-ngP" userLabel="不走高速" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="865" width="320" height="444"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="6qE-BC-DAC">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="不走高速" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40x-Ld-alP">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约32.2公里/44分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kDK-Er-FKw">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到南北高架路->南北高架路->内环高架路->沪闵高架路->虹梅路立交桥->沪闵高架路->沪闵公路->202专用道->光华路到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cY5-Ax-l96">
+                            <rect key="frame" x="10" y="61" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive3.png" id="rE5-Lf-aQw">
+                            <rect key="frame" x="25" y="130" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="6qE-BC-DAC" id="Z7x-gT-DoJ"/>
+                    </connections>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mBI-FS-wFv" userLabel="杭州方向">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="QNM-5a-WnX" userLabel="最少时间" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="446"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="wWf-0b-0az">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最少时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4XU-Yn-ami">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约126.4公里/1小时32分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yil-hM-86p">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="杭州市内驾车方案->练杭高速公路->申嘉湖高速公路->嘉兴市内驾车" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EEn-Gs-01O">
+                            <rect key="frame" x="10" y="63" width="301" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive1.png" id="qH7-C7-1Bh">
+                            <rect key="frame" x="25" y="112" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="wWf-0b-0az" id="XJQ-1x-rJw"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="mvA-vN-ncj" userLabel="最短路程" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="415" width="320" height="446"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="lIn-R4-nGs">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最短路程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="scl-fa-zuq">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约116.6公里/1小时39分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x4H-bp-8eS">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="杭州市内驾车->杭甬高速公路->沪昆高速公路->杭州湾环绕高速公路->嘉兴市内驾车方案" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GFG-7q-v1q">
+                            <rect key="frame" x="10" y="61" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive2.png" id="4b9-qM-ouY">
+                            <rect key="frame" x="25" y="130" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="lIn-R4-nGs" id="9fw-tV-gBB"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="tWb-3R-76V" userLabel="不走高速" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="865" width="320" height="435"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="HUD-MQ-lfI">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="不走高速" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N8f-AX-4JS">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约127.4公里/2小时15分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3iM-Ct-bhA">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="杭州市内驾车方案->G320->嘉兴市内驾车方案" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qGt-CX-C6x">
+                            <rect key="frame" x="10" y="56" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive3.png" id="JtJ-kw-Ejw">
+                            <rect key="frame" x="25" y="113" width="270" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="HUD-MQ-lfI" id="1zb-NZ-2GN"/>
+                    </connections>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4MA-PB-Dfq" userLabel="苏州方向">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="990"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="uJr-fZ-s57" userLabel="最少时间" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="354"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="Czv-WY-V2F">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最少时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PrL-92-8ag">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约42.5公里/40分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ygC-C6-CkH">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到南环路高架->南环路高架->常台高速公路->绕城南线->沪常高速公路->甫澄南路到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K1S-qC-Daw">
+                            <rect key="frame" x="10" y="61" width="301" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive1.png" id="Rm8-IL-pCU">
+                            <rect key="frame" x="25" y="130" width="270" height="203"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="Czv-WY-V2F" id="wBI-DA-sHv"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="SlL-Mj-Cgm" userLabel="最短路程" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="337" width="320" height="337"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="Eke-6X-Bfe">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最短路程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dz4-qH-h1w">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约37.9公里/56分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="46s-1L-RPa">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到干将西路->干将西路->机场路->甫澄南路到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8sc-BV-jS9">
+                            <rect key="frame" x="10" y="61" width="301" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive2.png" id="XCg-TB-tQT">
+                            <rect key="frame" x="25" y="113" width="270" height="203"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="Eke-6X-Bfe" id="6Dr-fg-G5z"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="rZy-g7-xct" userLabel="不走高速" customClass="SGTrafficHighwayView">
+                    <rect key="frame" x="0.0" y="655" width="320" height="335"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_btl.png" id="KTd-WT-Vmx">
+                            <rect key="frame" x="0.0" y="13" width="77" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="不走高速" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ldS-F5-w3F">
+                            <rect key="frame" x="3" y="15" width="64" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="约39.2公里/51分钟" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EIx-0U-kIf">
+                            <rect key="frame" x="10" y="44" width="301" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.58039215690000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="从起点到南环路高架->南环路高架->机场路->甫澄南路到终点" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C22-Yt-2Q9">
+                            <rect key="frame" x="10" y="63" width="301" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive3.png" id="H07-x8-GZm">
+                            <rect key="frame" x="25" y="111" width="270" height="203"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="markImageView" destination="KTd-WT-Vmx" id="hNF-sR-gQQ"/>
+                    </connections>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="HangzhouDrive1.png" width="541" height="601"/>
+        <image name="HangzhouDrive2.png" width="541" height="601"/>
+        <image name="HangzhouDrive3.png" width="541" height="601"/>
+        <image name="ShanghaiDrive1.png" width="540" height="601"/>
+        <image name="ShanghaiDrive2.png" width="540" height="601"/>
+        <image name="ShanghaiDrive3.png" width="540" height="601"/>
+        <image name="SuzhouDrive1.png" width="541" height="407"/>
+        <image name="SuzhouDrive2.png" width="541" height="407"/>
+        <image name="SuzhouDrive3.png" width="541" height="407"/>
+        <image name="bg_btl.png" width="77" height="26"/>
+        <image name="bg_tab1.png" width="320" height="78"/>
+        <image name="bg_tab2.png" width="320" height="78"/>
+        <image name="vline.png" width="4" height="57"/>
+    </resources>
+</document>

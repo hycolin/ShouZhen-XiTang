@@ -29,6 +29,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor clearColor];
+    
+    if (IPHONE_OS_7()) {
+        self.navigationBar.frame = CGRectMake(0, 0, 320, 64);
+        CGRect frame = self.contentView.frame;
+        frame.origin.y = CGRectGetHeight(self.navigationBar.frame);
+        frame.size.height = CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.navigationBar.frame);
+        self.contentView.frame = frame;
+    }
     self.contentView.backgroundColor = [UIColor colorWithRed:239/255.f green:239/255.f blue:239/255.f alpha:1];
     
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_title-bar"] forBarMetrics:UIBarMetricsDefault];

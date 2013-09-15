@@ -1,442 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUIScrollView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIScrollView" id="318046058">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="95752235">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{3, 22}, {19, 17}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="141821167"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="61340779">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bg_bt.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="141821167">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 20}, {288, 107}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="555419035"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string type="base64-UTF8" key="IBUIText">MS4J6IGU56WoMTAw5YWDL+S9je+8iOivt+WHuuihjOWJjeWSqOivouaZr+WMuuaOpeW+hemDqOaIluiQ
-pemUgOmDqOmXqOelqOS7t+agvOacieWQpuWPmOWKqO+8ie+8jOWQq+WPpOmVh+aZr+WMuuWPiuWNgeS4
-gOS4quaZr+eCue+8iOilv+WbreOAgeW8oOato+aguemblemmhuOAgeaxn+WNl+eTpuW9k+mZiOWIl+mm
-huOAgeS4reWbvemSruaJo+WNmueJqemmhuOAgeWAquWkqeWinuelluWxhemZiOWIl+mmhuOAgeWco+Wg
-guOAgeaYjua4heacqOmblemmhuOAgeS4reWbvemFkuaWh+WMluWNmueJqemmhuOAgemGieWbreOAgeen
-jeemj+WgguOAgeS4g+iAgeeIt+W6me+8ieOAgg</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMyAwLjEzMzMzMzMzMzMAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="527926709">
-							<int key="type">1</int>
-							<double key="pointSize">14</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="995365756">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">14</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">288</double>
-					</object>
-					<object class="IBUIImageView" id="555419035">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{21, 147}, {284, 1}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="821083095"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="9742194">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">line_xu.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="821083095">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{3, 166}, {19, 17}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="280112969"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="61340779"/>
-					</object>
-					<object class="IBUIImageView" id="500996586">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{21, 381}, {284, 1}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="594246877"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="9742194"/>
-					</object>
-					<object class="IBUILabel" id="596120573">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{27, 163}, {288, 40}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="500996586"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string type="base64-UTF8" key="IBUIText">Mi4g6IGU56Wo6Zeo5biC5LyY5oOg5a+56LGhDeWFjeelqO+8iOWHreacrOS6uuS7peS4i+acieaViOiv
-geS7tuWNs+WPr+i/m+WFpe+8ie+8mg</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMyAwLjEzMzMzMzMzMzMAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="527926709"/>
-						<reference key="IBUIFont" ref="995365756"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">288</double>
-					</object>
-					<object class="IBUILabel" id="280112969">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{25, 201}, {281, 165}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="596120573"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string type="base64-UTF8" key="IBUIText">Me+8ieWbveWutuaXhea4uOWxgOmigeWPkeeahOWbveWvvOivge+8iElD5Y2h77yJ44CB6aKG6Zif6K+B
-44CB5peF6KGM56S+57uP55CG6LWE5qC86K+B77ybDTLvvInlm73liqHpmaLjgIHkuK3lpK7lhpvlp5Tp
-ooHlj5HnmoTogIHlubLpg6jnprvkvJHor4HvvJsNM++8ieaui+eWvuivge+8iOS4reWkruaui+eWvuS6
-uuiBlOWQiOS8muWItuWPke+8ieOAgeaui+eWvuWGm+S6uuivge+8iOS4reWNjuS6uuawkeWFseWSjOWb
-veawkeaUv+mDqOWItuWPke+8ie+8mw0077yJNzDlkajlsoHku6XkuIrogIHlubTkurrlh63ogIHlubTo
-r4HmiJbouqvku73or4HvvJsNNe+8iei6q+mrmDEuMuexs+S7peS4i+WEv+erpe+8mw0277yJ5Yab5a6Y
-6K+B44CB5aOr5YW16K+B77ybDTfvvInml4XooYznpL7pmo/lm6LnmoTpqb7pqbZB44CBQTHor4HvvIjp
-mZDmr4/lm6LkuIDlkI3vvInvvJsNOO+8ieS4reWkruaWsOmXu+aAu+e9sumigeWPkeeahOaWsOmXu+iu
-sOiAheivgeOAgg</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4yIDAuMiAwLjIAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">13</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">13</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">281</double>
-					</object>
-					<object class="IBUIImageView" id="594246877">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{3, 400}, {19, 17}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="702672958"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="61340779"/>
-					</object>
-					<object class="IBUIImageView" id="5464132">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{21, 502}, {284, 1}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="108464311"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="9742194"/>
-					</object>
-					<object class="IBUILabel" id="702672958">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{29, 398}, {275, 91}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="5464132"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string type="base64-UTF8" key="IBUIText">5Lmd5oqY6Zeo56Wo77yaDTHvvInlh63lm73lrrbmlZnogrLpg6jpooHlj5HnmoTmlZnluIjotYTmoLzo
-r4HvvJvvvIjpobvliLDkuLvlhaXlj6PllK7npajlpKfljoXotK3npajvvIkNMu+8iTEy5Lq65oiWMTLk
-urrku6XkuIrmlaPlrqLjgILvvIjpobvliLDkuLvlhaXlj6PllK7npajlpKfljoXotK3npajvvIk</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMyAwLjEzMzMzMzMzMzMAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="527926709"/>
-						<reference key="IBUIFont" ref="995365756"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">275</double>
-					</object>
-					<object class="IBUIImageView" id="108464311">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 518}, {19, 17}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="217373359"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUIImage" ref="61340779"/>
-					</object>
-					<object class="IBUILabel" id="217373359">
-						<reference key="NSNextResponder" ref="318046058"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{27, 516}, {278, 128}}</string>
-						<reference key="NSSuperview" ref="318046058"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string type="base64-UTF8" key="IBUIText">5a+55oqY6Zeo56Wo77yaDTHvvIk2MH42OeWRqOWygeiAgeW5tOS6uuWHreiAgeW5tOivgeaIlui6q+S7
-veivge+8mw0y77yJ6Lqr6auYMS4y57GzfjEuNOexs+eahOWEv+erpe+8mw0z77yJMzDlubTku6XkuIrl
-m73lrrbpooHlj5HmlZnpvaHor4HvvJvvvIjpobvliLDkuLvlhaXlj6PllK7npajlpKfljoXotK3npajv
-vIkNNO+8ieWkp+WtpueUn+aIluS4reOAgeWwj+WtpueUn+WHreacieaViOWtpueUn+ivgeS7tu+8iOWF
-qOaXpeWItu+8ieOAgg</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xMzMzMzMzMzMzIDAuMTMzMzMzMzMzMyAwLjEzMzMzMzMzMzMAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<reference key="IBUIFontDescription" ref="527926709"/>
-						<reference key="IBUIFont" ref="995365756"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">278</double>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 664}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="95752235"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="IBUIClipsSubviews">YES</bool>
-				<bool key="IBUIMultipleTouchEnabled">YES</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords"/>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="318046058"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="95752235"/>
-							<reference ref="141821167"/>
-							<reference ref="555419035"/>
-							<reference ref="821083095"/>
-							<reference ref="500996586"/>
-							<reference ref="596120573"/>
-							<reference ref="280112969"/>
-							<reference ref="594246877"/>
-							<reference ref="5464132"/>
-							<reference ref="702672958"/>
-							<reference ref="108464311"/>
-							<reference ref="217373359"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">28</int>
-						<reference key="object" ref="95752235"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">29</int>
-						<reference key="object" ref="141821167"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">30</int>
-						<reference key="object" ref="555419035"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">31</int>
-						<reference key="object" ref="821083095"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">32</int>
-						<reference key="object" ref="500996586"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">33</int>
-						<reference key="object" ref="596120573"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">34</int>
-						<reference key="object" ref="280112969"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">35</int>
-						<reference key="object" ref="594246877"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">36</int>
-						<reference key="object" ref="5464132"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">37</int>
-						<reference key="object" ref="702672958"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">41</int>
-						<reference key="object" ref="108464311"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">43</int>
-						<reference key="object" ref="217373359"/>
-						<reference key="parent" ref="318046058"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">SGSceneryPriceViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="29.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="30.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="31.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="32.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="33.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="34.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="35.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="36.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="37.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="41.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">43</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="bg_bt.png">{38, 34}</string>
-			<string key="line_xu.png">{568, 2}</string>
-		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGSceneryPriceViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="27">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="664"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_bt.png" id="28">
+                    <rect key="frame" x="3" y="22" width="19" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="29">
+                    <rect key="frame" x="30" y="20" width="288" height="107"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">1.	联票100元/位（请出行前咨询景区接待部或营销部门票价格有否变动），含古镇景区及十一个景点（西园、张正根雕馆、江南瓦当陈列馆、中国钮扣博物馆、倪天增祖居陈列馆、圣堂、明清木雕馆、中国酒文化博物馆、醉园、种福堂、七老爷庙）。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line_xu.png" id="30">
+                    <rect key="frame" x="21" y="147" width="284" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_bt.png" id="31">
+                    <rect key="frame" x="3" y="166" width="19" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line_xu.png" id="32">
+                    <rect key="frame" x="21" y="381" width="284" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="33">
+                    <rect key="frame" x="27" y="163" width="288" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">2. 联票门市优惠对象免票（凭本人以下有效证件即可进入）：</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34">
+                    <rect key="frame" x="25" y="201" width="281" height="165"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">1）国家旅游局颁发的国导证（IC卡）、领队证、旅行社经理资格证；2）国务院、中央军委颁发的老干部离休证；3）残疾证（中央残疾人联合会制发）、残疾军人证（中华人民共和国民政部制发）；4）70周岁以上老年人凭老年证或身份证；5）身高1.2米以下儿童；6）军官证、士兵证；7）旅行社随团的驾驶A、A1证（限每团一名）；8）中央新闻总署颁发的新闻记者证。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_bt.png" id="35">
+                    <rect key="frame" x="3" y="400" width="19" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line_xu.png" id="36">
+                    <rect key="frame" x="21" y="502" width="284" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="37">
+                    <rect key="frame" x="29" y="398" width="275" height="91"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">九折门票：1）凭国家教育部颁发的教师资格证；（须到主入口售票大厅购票）2）12人或12人以上散客。（须到主入口售票大厅购票）</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_bt.png" id="41">
+                    <rect key="frame" x="0.0" y="518" width="19" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43">
+                    <rect key="frame" x="27" y="516" width="278" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">对折门票：1）60~69周岁老年人凭老年证或身份证；2）身高1.2米~1.4米的儿童；3）30年以上国家颁发教齡证；（须到主入口售票大厅购票）4）大学生或中、小学生凭有效学生证件（全日制）。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="bg_bt.png" width="38" height="34"/>
+        <image name="line_xu.png" width="568" height="2"/>
+    </resources>
+</document>

@@ -10,8 +10,7 @@
 
 @interface SGTrafficDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -31,8 +30,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollView.contentSize = CGSizeMake(320, 855);
-    self.textView.text = self.content;
+    self.scrollView.contentSize = self.contentSize;
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    view.backgroundColor = [UIColor clearColor];
+    
+    UIImageView *titleIconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.titleIcon]];
+    titleIconImageView.frame = CGRectMake(0, 0, 30, 30);
+    [view addSubview:titleIconImageView];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40, 0, 60, 30)];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont systemFontOfSize:20];
+    label.textColor = [UIColor blackColor];
+    label.text = self.title;
+    [view addSubview:label];
+    
+    self.navigationItem.titleView = view;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,8 +56,6 @@
 }
 
 - (void)viewDidUnload {
-    [self setScrollView:nil];
-    [self setTextView:nil];
     [super viewDidUnload];
 }
 @end

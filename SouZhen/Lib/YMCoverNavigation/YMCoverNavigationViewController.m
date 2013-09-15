@@ -33,6 +33,11 @@
     return self;
 }
 
+- (UINavigationBar *)navigationBar
+{
+    return nil;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,6 +48,10 @@
     
     _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
     [_panGestureRecognizer setDelegate:self];
+    
+    if(IPHONE_OS_7()) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
 }
 
 - (UIViewController *)topViewController

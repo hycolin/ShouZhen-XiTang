@@ -1,302 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUIScrollView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIScrollView" id="377925607">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="39390741">
-						<reference key="NSNextResponder" ref="377925607"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 49}, {132, 108}}</string>
-						<reference key="NSSuperview" ref="377925607"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="427035920"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">pic_ex_route.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="392078205">
-						<reference key="NSNextResponder" ref="377925607"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 159}, {293, 1447}}</string>
-						<reference key="NSSuperview" ref="377925607"/>
-						<reference key="NSWindow"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="506214768">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MCAwAA</bytes>
-						</object>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSMutableString" key="IBUIText">
-							<bytes key="NS.bytes">5bem5Y+z44CCCgrov5nph4zpnIDopoHms6jmhI/kuIDngrnvvIzopb/loZjlrqLov5Dnq5nkuZ/lj6vl
-mInlloTljJfnq5nvvIzlkozlmInlloTnq5nkuI3mmK/kuIDlm57kuovjgILlpoLkvaDmiYDlnKjnmoTl
-nLDljLrmsqHmnInliLDopb/loZjvvIjlmInlloTljJfnq5nvvInnmoTnm7Tovr7lrqLovabvvIzlj6/l
-hYjlnZDliLDlmInlloTnq5nvvIzlho3mjaLkuZjnq5nlpJbnmoTlhazkuqTmiJbnqb/moq3lt7Tlo6vv
-vIzljYrlsI/ml7blhoXljbPlj6/liLDovr7opb/loZjlrqLov5Dnq5njgIIK5aaC5oq16L6+55qE5pe2
-6Ze05aSq5pep5oiW5aSq5pma77yM5Lmf5LiN55So5ouF5b+D77yM5ZiJ5ZaE56uZ5aSW6ZW/5pyf5pyJ
-5ouJ5rS75YS/55qE6buR6L2m77yI6L2/6L2m77yJ77yM5Y+q5piv5Lu36ZKx5q+U6L6D6LS177yM5ou8
-6L2m55qE6K+d5q+P5Lq65ZyoMjDlhYPlt6blj7PvvIzljIXovabnmoTor53lnKg0MC02MOWFg+W3puWP
-s++8jOi9pueoi+WcqOS6jOWNgeWIhumSn+WGheOAggoK6K+d6K+06L+Z5bCx5Yiw5LqG6KW/5aGY5a6i
-6L+Q56uZ77yM5Ye656uZ5YmN5Y+v5Lul6ICD6JmR55u05o6l5Zyo56uZ5YaF6LSt5Lmw5Zue56iL6L2m
-56Wo77yM5aaC5p6c5LiN5piv5Zyo54m55Yir5pe655qE6IqC5YGH5pel77yM5Lmf5Y+v5Lul5LuA5LmI
-5pe25YCZ6LWw77yM5LuA5LmI5pe25YCZ5YaN5Lmw44CC5L2G5bu66K6u5o+Q5YmN55yL5LiA5LiL5pe2
-5Yi76KGo77yM6IqC55yB6L+U56iL5pe25Zyo6L2m56uZ55qE562J5b6F5pe26Ze044CCCgrlh7rkuobm
-sb3ovabnq5nvvIzlsLHog73nnIvliLDkuIDkuKrmo5XoibLlpKfniYzlrZDvvIzlhpnnnYDopb/loZjm
-ma/ljLrllK7npajlpITlt6bovaznmoTmoIfor4bvvIzmjIflvJXkvaDljrvllK7npajlpITkubDnpajl
-haXmma/ljLrjgILov5nkuKrml7blgJnkvaDmnInkuKTkuKrpgInmi6nvvIzkuIDmmK/ot5/nnYDmjIfn
-pLrniYznmoTmlrnlkJHljrvkubDnpajnhLblkI7ov5vlhaXopb/loZjmoLjlv4Pmma/ljLrvvJvkuozm
-mK/lkJHlj7Pmi5DvvIzmsr/nnYDpqazot6/kuIDot6/miZPlkKzkuIDkuKrlj6vigJjlubPmoaXigJnn
-moTlnLDmlrnvvIzmiJblubLohIblnZDkuIrkuIDovobkurrlipvkuInova7ovabvvIzoirHljYHlnZfp
-krHorqnovablpKvpgIHkvaDliLDigJjlubPmoaXigJnvvIjmraXooYzljYHmnaXliIbpkp/vvIzlnZDk
-uInova7ovabkupTlha3liIbpkp/ljbPliLDvvInjgILlubPmoaXliY3mnInkuIDkuKrlpKfoja/lupfv
-vIzoja/lupfpl6jliY3mnInkuIDmnaHmlpHpqbPnmoTlt7flrZDvvIzov5nmnaHlt7flrZDkuIDnm7To
-tbDvvIzlhbblrp7lsLHmmK/opb/loZjokZflkI3nmoTphZLlkKfooZfvvIzkuI3nlKjku4DkuYjmj5Dn
-pLrvvIzkvaDkuIDnnIvlkajlm7TnmoTlupfpnaLlsLHog73nq4vliLvmmI7nmb3ku47lk6rph4zov5vl
-jrvkuobjgILotbDov5vov5nmnaHlt7flrZDvvIzlsLHmhI/lkbPnnYDkvaDlhY3otLnov5vlhaXkuobo
-pb/loZjmma/ljLrkuobjgIIKCuWGmeWIsOi/memHjO+8jOimgeeugOWNleivtOS4gOS4i+WFs+S6juil
-v+WhmOmXqOelqOeahOS6i+aDheOAggoK5Liq5Lq66K6k5Li677yM6KW/5aGY6Zeo56Wo55qE5pS26LS5
-5a+56LGh77yM6L+Y5piv5Lul5peF5ri45Zui5Li65Li777yM5oiR5piv5ZGo5LiA5pma5LiK5oq16L6+
-6KW/5aGY77yM5ZGo5LqM5LiL5Y2I56a75byA77yM5pep5Lit5pma5ZCE5pe25q616YO95Y675pS26LS5
-5Y+j55yL5LqG5LiA55y877yM5Y+R546w5rKh5Lq65Y2W56Wo77yM5Lmf5rKh5Lq65p+l56Wo44CC5ri4
-5a6i5ZKM6KW/5aGY5pys5Zyw5bGF5rCR5LiA5qC35p2l5b6A6Ieq55Sx77yM6L+Z6L+b5LiA5q2l5Y2w
-6K+B5LqG572R5LiK5rWB5Lyg55qE5ZGo5LiA5Yiw5ZGo5Zub5LiN5pS26Zeo56Wo5Lyg6KiA55qE55yf
-5a6e5oCn44CC5L2G5ZGo5LqU5Yiw5ZGo5pel5q2j5bi45pe26Ze05YWl5pmv5Yy655qE6K+d77yM5Lyw
-6K6h6L+Y5piv6KaB5Lmw6Zeo56Wo55qE44CCCuWFtuWunuilv+WhmOaUtumXqOelqOi/meS6i+WEv+aM
-uum4oeiCi+eahO+8jOimgeW9u+W6leS4jeaUtuWQp++8jOebuOW9k+S6juecvOedgeedgeeci+edgOWb
-oumYn+a4uOi/meWdl+Wkp+iCpeiCieS7juecvOWJjei1sOi/h+WNtOWQg+S4jeWIsOOAguimgeaYr+aU
-tuWQp++8jOmcgOimgeaKleWFpeWkp+mHj+eahOS6uuWKm+WSjOeJqeWKm++8jOavleern+ilv+WhmOi/
-meS4quaZr+WMuuWSjOW+iOWkmuW3sue7j+S6uuWOu+alvOepuuWPmOaIkOe6r+eyueaZr+eCueeahOWP
-pOmVh+S4jeS4gOagt++8jOi/memHjOiHs+S7iuS7jeeEtuaYr+WxheawkeWkmuS6jua4uOWuou+8jOaJ
-gOS7peWbm+mAmuWFq+i+vueahOW3t+WtkOWSjOaYn+e9l+aji+W4g+eahOWHuuWFpeWPo+WunuWcqOaY
-r+mavuWuiOaYk+aUu+OAggoK6ICM5LiU77yM6KW/5aGY5Y+k6ZWH6YeM5aSn6YeP55qE5bCP5ZWG5oi3
-5ZKM5bCP5peF5bqX6YO96ZyA6KaB5a6i5rqQ77yM5aaC5p6c5a6I55qE5aSq5Y6J5a6z77yM5peg5byC
-5LqO5p2A6bih5Y+W5Y2177yM5b6X5LiN5YG/5aSx44CC5omA5Lul6Zeo56Wo6L+Z5Zue5LqL77yM5Z+6
-5pys5bCx5piv552B5LiA55y877yM6Zet5LiA55y877yM5aSn5a625LqS55u46YWN5ZCI5LiA5LiL5ZCn
-44CCCuWkp+mDqOWIhuS6uuWIsOilv+WhmOa4uOiniOmDveaYr+WIqeeUqOWwj+WRqOacq++8jOavlOWm
-guWRqOS6lOaZmuS4iuWIsO+8jOWRqOWFreS4i+WNiOWbnu+8jOaIluWRqOWFreS4iuWNiOWIsO+8jOWR
-qOaXpeS4i+WNiOWbnuOAguaJgOS7peWcqOi/meS4quaXtuaute+8jOWPpOmVh+eahOWQhOadoeW3t+Wt
-kOmHjOmDveWFhea7oeS6huS6uu+8jOWQg+mlreS9j+Wuv+iOq+S4jeaYr+S4gOahjOmavuaxgu+8jOS4
-gOW6iumavuaxgu+8jOawtOa2qOiIuemrmO+8jOS7t+agvOS4iuWOu+S6hu+8jOacjeWKoeWNtOS4i+ad
-peS6huOAggrmiYDku6XvvIzlpoLmnpzlj6/og73vvIzov5jmmK/lu7rorq7lpKflrrblnKjpnZ7lkajm
-nKvml7bpl7TliLDopb/loZjmuLjop4jvvIzkuI3ku4XkurrlsJHvvIzogIzkuJTku7fkvY7vvIzmnIDl
-hbPplK7nmoTmmK/lj6/ku6XnnJ/mraPkvZPkvJrliLDmsLTkuaHpgqPnp43pl7Lluq3kv6HmraXvvIzm
-gqDnhLboh6rlvpfnmoTmsZ/ljZflj6Tpo47jgILlkKbliJnvvIzml6nkuIrkuZ3ngrnkuIDliLDvvIzl
-pKfmibnml4XooYzlm6LlhYXmlqXlnKjlj6TplYfnmoTlkITmnaHooZfpgZPkuIrvvIzmuLjkurrlpoLn
-u4fvvIzmkanogqnmjqXouLXvvIzov5jku4DkuYjmsLTkuaHkuI3msLTkuaHnmoTvvIzkuIDnp5Lpkp/l
-j5jouqvkuLrkuIrmtbfkurrmsJHlub/lnLrkuIDkuozlj7fnur/lnLDpk4HmjaLkuZjnq5njgILkuI3k
-v6HkvaDlsLHljrvor5Xor5XnnIvjgIIKCuaAu+eahOadpeivtO+8jOWOu+ilv+WhmOi9rOi9rOeahOaX
-tuacuuaYr+W5s+aXtuWlveS6juWRqOacq++8jOS4gOaXqeS4gOaZmuWlveS6jueZveWkqe+8jOS4gOS4
-quS6uuWlveS6juS4gOW4ruS6uu+8jOiAjOmjmOWwj+mbqOWImeWlvei/h+Wkp+aZtOWkqeOAguS4quS4
-rea7i+WRs++8jOivt+aFouaFouS9k+S8muOAgg</bytes>
-						</object>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="23262923">
-							<int key="type">1</int>
-							<double key="pointSize">15</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="468911687">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">15</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">293</double>
-					</object>
-					<object class="IBUILabel" id="940445719">
-						<reference key="NSNextResponder" ref="377925607"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{22, 20}, {170, 21}}</string>
-						<reference key="NSSuperview" ref="377925607"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="39390741"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">先说说‘行’：</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wNDMxMzcyNTQ5IDAuNDgyMzUyOTQxMiAwLjcwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">18</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">18</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-					</object>
-					<object class="IBUILabel" id="427035920">
-						<reference key="NSNextResponder" ref="377925607"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{167, 46}, {146, 113}}</string>
-						<reference key="NSSuperview" ref="377925607"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="392078205"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="506214768"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">上海南站客运站每天都有发往西塘的客车，早七点开始，基本每小时一班，到晚六点结束，票价三十二元，车程在一小时</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">6</int>
-						<reference key="IBUIFontDescription" ref="23262923"/>
-						<reference key="IBUIFont" ref="468911687"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">146</double>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 1626}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="940445719"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="IBUIClipsSubviews">YES</bool>
-				<bool key="IBUIMultipleTouchEnabled">YES</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords"/>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="377925607"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="39390741"/>
-							<reference ref="392078205"/>
-							<reference ref="940445719"/>
-							<reference ref="427035920"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="39390741"/>
-						<reference key="parent" ref="377925607"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="392078205"/>
-						<reference key="parent" ref="377925607"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="940445719"/>
-						<reference key="parent" ref="377925607"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">17</int>
-						<reference key="object" ref="427035920"/>
-						<reference key="parent" ref="377925607"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">SGExperienceDetailViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">17</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">pic_ex_route.png</string>
-			<string key="NS.object.0">{265, 216}</string>
-		</object>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGExperienceDetailViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="13">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1626"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pic_ex_route.png" id="14">
+                    <rect key="frame" x="20" y="49" width="132" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15">
+                    <rect key="frame" x="20" y="159" width="293" height="1447"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">左右。
+
+这里需要注意一点，西塘客运站也叫嘉善北站，和嘉善站不是一回事。如你所在的地区没有到西塘（嘉善北站）的直达客车，可先坐到嘉善站，再换乘站外的公交或穿梭巴士，半小时内即可到达西塘客运站。
+如抵达的时间太早或太晚，也不用担心，嘉善站外长期有拉活儿的黑车（轿车），只是价钱比较贵，拼车的话每人在20元左右，包车的话在40-60元左右，车程在二十分钟内。
+
+话说这就到了西塘客运站，出站前可以考虑直接在站内购买回程车票，如果不是在特别旺的节假日，也可以什么时候走，什么时候再买。但建议提前看一下时刻表，节省返程时在车站的等待时间。
+
+出了汽车站，就能看到一个棕色大牌子，写着西塘景区售票处左转的标识，指引你去售票处买票入景区。这个时候你有两个选择，一是跟着指示牌的方向去买票然后进入西塘核心景区；二是向右拐，沿着马路一路打听一个叫‘平桥’的地方，或干脆坐上一辆人力三轮车，花十块钱让车夫送你到‘平桥’（步行十来分钟，坐三轮车五六分钟即到）。平桥前有一个大药店，药店门前有一条斑驳的巷子，这条巷子一直走，其实就是西塘著名的酒吧街，不用什么提示，你一看周围的店面就能立刻明白从哪里进去了。走进这条巷子，就意味着你免费进入了西塘景区了。
+
+写到这里，要简单说一下关于西塘门票的事情。
+
+个人认为，西塘门票的收费对象，还是以旅游团为主，我是周一晚上抵达西塘，周二下午离开，早中晚各时段都去收费口看了一眼，发现没人卖票，也没人查票。游客和西塘本地居民一样来往自由，这进一步印证了网上流传的周一到周四不收门票传言的真实性。但周五到周日正常时间入景区的话，估计还是要买门票的。
+其实西塘收门票这事儿挺鸡肋的，要彻底不收吧，相当于眼睁睁看着团队游这块大肥肉从眼前走过却吃不到。要是收吧，需要投入大量的人力和物力，毕竟西塘这个景区和很多已经人去楼空变成纯粹景点的古镇不一样，这里至今仍然是居民多于游客，所以四通八达的巷子和星罗棋布的出入口实在是难守易攻。
+
+而且，西塘古镇里大量的小商户和小旅店都需要客源，如果守的太厉害，无异于杀鸡取卵，得不偿失。所以门票这回事，基本就是睁一眼，闭一眼，大家互相配合一下吧。
+大部分人到西塘游览都是利用小周末，比如周五晚上到，周六下午回，或周六上午到，周日下午回。所以在这个时段，古镇的各条巷子里都充满了人，吃饭住宿莫不是一桌难求，一床难求，水涨船高，价格上去了，服务却下来了。
+所以，如果可能，还是建议大家在非周末时间到西塘游览，不仅人少，而且价低，最关键的是可以真正体会到水乡那种闲庭信步，悠然自得的江南古风。否则，早上九点一到，大批旅行团充斥在古镇的各条街道上，游人如织，摩肩接踵，还什么水乡不水乡的，一秒钟变身为上海人民广场一二号线地铁换乘站。不信你就去试试看。
+
+总的来说，去西塘转转的时机是平时好于周末，一早一晚好于白天，一个人好于一帮人，而飘小雨则好过大晴天。个中滋味，请慢慢体会。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="先说说‘行’：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16">
+                    <rect key="frame" x="22" y="20" width="170" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.043137254899999998" green="0.4823529412" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="上海南站客运站每天都有发往西塘的客车，早七点开始，基本每小时一班，到晚六点结束，票价三十二元，车程在一小时" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17">
+                    <rect key="frame" x="167" y="46" width="146" height="113"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="pic_ex_route.png" width="265" height="216"/>
+    </resources>
+</document>
