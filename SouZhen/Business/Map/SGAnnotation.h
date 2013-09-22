@@ -32,3 +32,27 @@ typedef enum {
 - (NSString *)address;
 
 @end
+
+
+@interface SGUserLocationForAnnotation : NSObject
+<MKAnnotation>
+{
+	CLLocationCoordinate2D _coordinate;
+}
+
+//require property and method for MKAnnotation
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+
+- (NSString*) title;
+
+- (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate;
+
+@end
+
+@interface SGUserLocationAnnotationView : MKAnnotationView {
+	
+}
+
+- (id) initWithAnnotation:(id <MKAnnotation>) pAnnotation;
+
+@end

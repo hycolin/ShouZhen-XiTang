@@ -31,7 +31,6 @@
 @property (nonatomic, readonly) BOOL locationFaked;
 
 + (LocationManager *)instance;
-+ (BOOL)isLocationOk;
 - (void)start;
 - (void)stop;
 - (double)latitude;

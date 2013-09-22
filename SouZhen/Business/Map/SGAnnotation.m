@@ -77,3 +77,55 @@
 }
 
 @end
+
+@implementation SGUserLocationForAnnotation
+
+@dynamic coordinate;
+
+#pragma mark MKAnnotation protocol
+- (CLLocationCoordinate2D) coordinate {
+	CLLocationCoordinate2D coordinatePoint = _coordinate;
+	return coordinatePoint;
+}
+
+- (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate {
+	_coordinate = newCoordinate;
+}
+
+- (NSString*) title {
+	return @"当前位置";
+}
+
+- (id) initWithCoordinate:(CLLocationCoordinate2D)coordinate {
+	if (self = [super init]) {
+		_coordinate = coordinate;
+	}
+	return self;
+}
+
+@end
+
+@implementation SGUserLocationAnnotationView
+
+
+- (id) initWithAnnotation:(id <MKAnnotation>) pAnnotation
+{
+	self = [super initWithAnnotation:pAnnotation reuseIdentifier:@"UserLocationAnnotation"];
+	if (self != nil) {
+		// Initialization code
+		
+		self.multipleTouchEnabled = NO;
+		self.canShowCallout = YES;
+		self.backgroundColor = [UIColor clearColor];
+		
+		self.image = [UIImage imageNamed:@"UserLocation.png"];
+		CGRect frame;
+		frame.origin = CGPointMake(0, 0);
+		frame.size = self.image.size;
+		self.frame = frame;
+		
+	}
+    return self;
+}
+@end
+

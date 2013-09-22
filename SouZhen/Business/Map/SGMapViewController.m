@@ -41,6 +41,7 @@
 {
     NSMutableArray *_annotations;
     SGPinContentView *_pinContentView;
+    SGUserLocationForAnnotation *_userAnnotation;
 }
 
 - (id)init
@@ -106,6 +107,8 @@
     [self.mapView setRegion:displayRegion animated:NO];
     [self.mapView removeAnnotations:_annotations];
     [self.mapView addAnnotations:_annotations];
+    
+    
 }
 
 - (void)setAnnotations:(NSArray *)annotations
@@ -147,18 +150,32 @@
         [alertView show];
         return;
     }
-    if (![LocationManager instance].isLocationOk && [SGAppDelegate instance].netStatus == kNotReachable) {
+    if ([SGAppDelegate instance].netStatus == kNotReachable) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"定位失败" message:@"请检查或设置网络" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:@"帮助", nil];
         alertView.tag = 1001;
         [alertView show];
         return;
     }
     MKUserLocation *userLocation = self.mapView.userLocation;
-    if (userLocation.coordinate.latitude <= 0 || userLocation.coordinate.longitude <= 0) {
-        [self showAlert:@"系统正在定位，请稍后重试"];
+    if (([LocationManager instance].latitude <= 0 || [LocationManager instance].longitude <= 0) && (userLocation.coordinate.latitude <= 0 || userLocation.coordinate.longitude <= 0)) {
+        [self showWaiting:@"正在定位..."];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationChanged:) name:LocationChanged object:nil];
         return;
     }
-    [self.mapView setCenterCoordinate:userLocation.coordinate];
+    if (!(userLocation.coordinate.latitude <= 0 || userLocation.coordinate.longitude <= 0)) {
+        [self.mapView setCenterCoordinate:userLocation.coordinate];
+    } else if (!([LocationManager instance].latitude <= 0 || [LocationManager instance].longitude <= 0)) {
+        [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake([LocationManager instance].latitude, [LocationManager instance].longitude)];
+    }
+    
+    if (_userAnnotation) {
+        [_mapView removeAnnotation:_userAnnotation];
+    }
+    if (!self.mapView.isUserLocationVisible) {
+        _userAnnotation = [[SGUserLocationForAnnotation alloc] initWithCoordinate:self.mapView.centerCoordinate];
+        id<MKAnnotation> annotation = (id<MKAnnotation>) _userAnnotation;
+        [_mapView addAnnotation:annotation];
+    }
 }
 
 
@@ -226,6 +243,21 @@
 #pragma mark - MapViewDelegate
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+		if (_userAnnotation) {
+            [self.mapView removeAnnotation:_userAnnotation];
+        }
+	}
+    
+	if ([annotation isKindOfClass:[SGUserLocationForAnnotation class]]) {
+		SGUserLocationAnnotationView *userView = (SGUserLocationAnnotationView*)[map dequeueReusableAnnotationViewWithIdentifier:@"UserLocationAnnotation"];
+		if (userView == nil) {
+			userView = [[SGUserLocationAnnotationView alloc] initWithAnnotation:annotation];
+		}
+		userView.annotation = annotation;
+		return userView;
+	}
+
     if ([annotation isKindOfClass:[SGAnnotation class]]) {
         MKAnnotationView *pin = (MKAnnotationView *)[map dequeueReusableAnnotationViewWithIdentifier:@"annotationsView"];
         if(pin == nil) {
@@ -327,6 +359,18 @@
             [self.navigationController pushViewController:viewController animated:YES];
         }        
     }
+}
+
+- (void)locationChanged:(id)n
+{
+    [self hideWaiting];
+    MKUserLocation *userLocation = self.mapView.userLocation;
+    if (!(userLocation.coordinate.latitude <= 0 || userLocation.coordinate.longitude <= 0)) {
+        [self.mapView setCenterCoordinate:userLocation.coordinate];
+    } else if (!([LocationManager instance].latitude <= 0 || [LocationManager instance].longitude <= 0)) {
+        [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake([LocationManager instance].latitude, [LocationManager instance].longitude)];
+    }
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:LocationChanged object:nil];
 }
 
 - (void)didReceiveMemoryWarning

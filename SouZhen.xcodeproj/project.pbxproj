@@ -450,6 +450,8 @@
 		669C7D0117D78A9C00F0442C /* n0015-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD717D78A9C00F0442C /* n0015-5.jpg */; };
 		669C7D0217D78A9C00F0442C /* n0015-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD817D78A9C00F0442C /* n0015-6.jpg */; };
 		669C7D0317D78A9C00F0442C /* n0015-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD917D78A9C00F0442C /* n0015-7.jpg */; };
+		66A86F3217EF3721008B0260 /* UserLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3017EF3721008B0260 /* UserLocation.png */; };
+		66A86F3317EF3721008B0260 /* UserLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3117EF3721008B0260 /* UserLocation@2x.png */; };
 		66AAFCF317E44B990037338C /* TrafficHighwayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF217E44B990037338C /* TrafficHighwayView.xib */; };
 		66AAFCF517E44BB80037338C /* TrafficPlaneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */; };
 		66AAFCF717E44BCC0037338C /* TrafficTrainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */; };
@@ -1120,6 +1122,8 @@
 		669C7CD717D78A9C00F0442C /* n0015-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-5.jpg"; sourceTree = "<group>"; };
 		669C7CD817D78A9C00F0442C /* n0015-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-6.jpg"; sourceTree = "<group>"; };
 		669C7CD917D78A9C00F0442C /* n0015-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-7.jpg"; sourceTree = "<group>"; };
+		66A86F3017EF3721008B0260 /* UserLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserLocation.png; sourceTree = "<group>"; };
+		66A86F3117EF3721008B0260 /* UserLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserLocation@2x.png"; sourceTree = "<group>"; };
 		66AAFCF217E44B990037338C /* TrafficHighwayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficHighwayView.xib; sourceTree = "<group>"; };
 		66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficPlaneView.xib; sourceTree = "<group>"; };
 		66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficTrainView.xib; sourceTree = "<group>"; };
@@ -1473,6 +1477,8 @@
 		6640FAE917C86EAC00474152 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66A86F3017EF3721008B0260 /* UserLocation.png */,
+				66A86F3117EF3721008B0260 /* UserLocation@2x.png */,
 				66960B4717D82475003A2D07 /* button_dw.png */,
 				66960B4517D81E3D003A2D07 /* button_fw.png */,
 				66D772FF17D18E6800DCB3D3 /* button_mapback.png */,
@@ -2465,11 +2471,6 @@
 				CLASSPREFIX = SG;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = songguo;
-				TargetAttributes = {
-					668D658117BF025700109886 = {
-						DevelopmentTeam = T78GX8TJ57;
-					};
-				};
 			};
 			buildConfigurationList = 668D657D17BF025700109886 /* Build configuration list for PBXProject "SouZhen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2524,6 +2525,7 @@
 				6698DC7917C3CD85006E486B /* icon_gl.png in Resources */,
 				6698DC7A17C3CD85006E486B /* icon_jd.png in Resources */,
 				66AAFD1317E459270037338C /* HangzhouDrive2.png in Resources */,
+				66A86F3217EF3721008B0260 /* UserLocation.png in Resources */,
 				6698DC7B17C3CD85006E486B /* icon_jt.png in Resources */,
 				6698DC7C17C3CD85006E486B /* icon_kz.png in Resources */,
 				6698DC7D17C3CD85006E486B /* icon_ms.png in Resources */,
@@ -2718,6 +2720,7 @@
 				667D661817D63577002FCEC4 /* h0002-3.jpg in Resources */,
 				667D661917D63577002FCEC4 /* h0002-4.jpg in Resources */,
 				667D661A17D63577002FCEC4 /* h0002-5.jpg in Resources */,
+				66A86F3317EF3721008B0260 /* UserLocation@2x.png in Resources */,
 				667D661B17D63577002FCEC4 /* h0002.jpg in Resources */,
 				667D661C17D63577002FCEC4 /* h0003-1.jpg in Resources */,
 				667D661D17D63577002FCEC4 /* h0003-2.jpg in Resources */,
@@ -3130,15 +3133,15 @@
 		668D65A017BF025800109886 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: chen wang (96B7HH3E4Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen wang (96B7HH3E4Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
+				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3146,14 +3149,14 @@
 		668D65A117BF025800109886 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: chen wang (96B7HH3E4Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiang ruidong (QA2LPUR5CZ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SouZhen/SouZhen-Prefix.pch";
 				INFOPLIST_FILE = "SouZhen/SouZhen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "FE07BAAB-445C-4E64-82B1-E3F23A273159";
+				PROVISIONING_PROFILE = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F30912B6-FF80-4613-8560-56AA9CACFB04";
 				WRAPPER_EXTENSION = app;
 			};

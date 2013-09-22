@@ -23,10 +23,6 @@ static LocationManager *gLocationManager = nil;
 	return gLocationManager;
 }
 
-+ (BOOL)isLocationOk {
-	return [[LocationManager instance] isLocationOk];
-}
-
 - (id)init
 {
     self = [super init];
@@ -96,6 +92,7 @@ static LocationManager *gLocationManager = nil;
 	dlog(@"loction: (%.6f, %.6f)", _coord.longitude, _coord.latitude);
     isLocationOk = YES;
     _locationServiceDisable = NO;
+    [[NSNotificationCenter defaultCenter] postNotificationName:LocationChanged object:nil];
 }
 
 - (void) locationManager: (CLLocationManager *) manager didFailWithError: (NSError *) error {

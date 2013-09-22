@@ -113,7 +113,7 @@
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction)]];
     
-    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://xitang.com.cn/dingpiao/getscenerypriceinfo.aspx"]];
+    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.xitang.com.cn/dingpiao/Api.ashx?apikey=v1.00000001&method=getprice"]];
     request.delegate = self;
     _getBookingInfoRequest = request;
     [request startAsynchronous];
@@ -126,6 +126,7 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    dlog(@"url: %@", request.url);
     [self hideWaiting];
     NSDictionary *dict = [request.responseString JSONValue];
     NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
@@ -136,17 +137,16 @@
     }
 
     if (request == _getBookingInfoRequest) {
-        NSString *_price = [dict objectForKey:@"price"];
-        NSString *_discount = [dict objectForKey:@"discount"];
-        if (_price.length > 0) {
-            self.priceLabel.text = _price;
+        NSNumber *_price = [dict objectForKey:@"price"];
+        NSNumber *_discount = [dict objectForKey:@"discount"];
+        if (_price) {
+            self.priceLabel.text = [NSString stringWithFormat:@"%g", [_price doubleValue]];
         }
-        if (_discount.length > 0) {
-            self.discountLabel.text = _discount;
+        if (_discount) {
+            self.discountLabel.text = [NSString stringWithFormat:@"%g", [_discount doubleValue]];
         }
     } else if (request == _createOrderRequest) {
         NSString *orderId = [dict objectForKey:@"orderid"];
-        orderId = @"201309121219313905";
         if (orderId.length == 0) {
             [self showAlert:@"创建订单失败"];
             return;
@@ -205,7 +205,7 @@
     }
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyyMMdd";
-    _createOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://xitang.com.cn/dingpiao/createorder.aspx?date=%@&name=%@&phone=%@", [dateFormatter stringFromDate:_bookDate], name, phone]]];
+    _createOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.xitang.com.cn/dingpiao/Api.ashx?apikey=v1.00000001&method=createorder&date=%@&name=%@&phone=%@", [dateFormatter stringFromDate:_bookDate], [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], phone]]];
     _createOrderRequest.delegate = self;
     [_createOrderRequest startAsynchronous];
 }

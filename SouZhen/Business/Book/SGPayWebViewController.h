@@ -10,4 +10,6 @@
 
 @interface SGPayWebViewController : YMSimpleWebViewController
 
+@property (nonatomic) double amount;
+
 @end
