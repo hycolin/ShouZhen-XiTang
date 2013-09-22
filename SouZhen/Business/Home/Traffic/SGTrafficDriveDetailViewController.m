@@ -46,10 +46,6 @@
     self.driveView1.contentSize = CGSizeMake(320, 1320);
     self.driveView2.contentSize = CGSizeMake(320, 1300);
     self.driveView3.contentSize = CGSizeMake(320, 990);
-    
-    self.driveView1.frame = self.contentLayout.bounds;
-    self.driveView2.frame = self.contentLayout.bounds;
-    self.driveView3.frame = self.contentLayout.bounds;
 }
 
 - (void)action:(id)sender
@@ -67,10 +63,13 @@
         [view removeFromSuperview];
     }
     if (self.button1.selected) {
+        self.driveView1.frame = self.contentLayout.bounds;
         [self.contentLayout addSubview:self.driveView1];
     } else if (self.button2.selected) {
+        self.driveView2.frame = self.contentLayout.bounds;
         [self.contentLayout addSubview:self.driveView2];
     } else {
+        self.driveView3.frame = self.contentLayout.bounds;
         [self.contentLayout addSubview:self.driveView3];
     }
 }

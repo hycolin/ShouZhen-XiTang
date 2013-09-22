@@ -20,13 +20,13 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aA9-L0-N3y">
-                    <rect key="frame" x="8" y="178" width="304" height="298"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
-                    <mutableString key="text">1、嘉善南站（高铁动车），换乘公交702至嘉善客运中心，然后乘215或216或210到西塘车站。
+                    <rect key="frame" x="8" y="178" width="304" height="307"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <string key="text">1、嘉善南站（高铁动车），换乘公交702至嘉善客运中心，然后乘215或216或210到西塘车站。
 
 2、高铁嘉兴南站下车后，可以乘坐K93路公交车直达嘉兴汽车北站，然后在嘉兴汽车北站换乘城乡公交K152公交车到达古镇西塘。（注：K93路公交车高铁嘉兴南站首末班车时间为：7：00-22：40。K152路公交车嘉兴汽车北站及西塘首末班车时间均为6：30-17：25。到西塘的公交、快客末班为18：00）。
 
-3、嘉兴火车站，乘坐4路、5路、22路、32路、87路、55路夜等公交车直达嘉兴汽车北站，在嘉兴汽车北站换乘城乡公交K152路到达西塘。</mutableString>
+3、嘉兴火车站，乘坐4路、5路、22路、32路、87路、55路夜等公交车直达嘉兴汽车北站，在嘉兴汽车北站换乘城乡公交K152路到达西塘。</string>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="highlightedColor"/>
                 </label>
