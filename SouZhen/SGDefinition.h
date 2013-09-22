@@ -59,5 +59,5 @@ typedef enum {
 
 #import "ECommon.h"
 #import "SGData.h"
-
+#import "NSString+Height.h"
 #endif

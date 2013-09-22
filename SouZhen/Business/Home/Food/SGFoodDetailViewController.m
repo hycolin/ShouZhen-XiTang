@@ -168,13 +168,13 @@
         self.frame = frame;
     } else {
         CGRect frame = self.frame;
-        frame.size.height = 40 + ceilf([_info sizeWithFont:self.infoLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.infoLabel.frame), 9999)].height);
+        frame.size.height = 40 + ceilf([_info sgSizeWithFont:self.infoLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.infoLabel.frame), 9999)].height);
         if (frame.size.height < 80) {
             frame.size.height = 80;
         }
         self.frame = frame;
     }
-    self.foldButton.hidden = (40 + ceilf([_info sizeWithFont:self.infoLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.infoLabel.frame), 9999)].height)) <= 80;
+    self.foldButton.hidden = (40 + ceilf([_info sgSizeWithFont:self.infoLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.infoLabel.frame), 9999)].height)) <= 80;
     if (!self.foldButton.hidden) {
         CGRect frame = self.foldButton.frame;
         frame.origin.y = CGRectGetHeight(self.frame) - CGRectGetHeight(self.foldButton.frame) - 5;

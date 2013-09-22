@@ -202,7 +202,7 @@
     [backgroundImage drawAtPoint:CGPointMake(0, 0)];
     CGContextSetRGBFillColor(cgContextRef, 1.0, 1.0, 1.0, 1.0);
     NSString *pinNumber = [NSString stringWithFormat:@"%d", routeAnno.route.index  + 1];
-    CGSize size = [pinNumber sizeWithFont:[UIFont systemFontOfSize:13]];
+    CGSize size = [pinNumber sgSizeWithFont:[UIFont systemFontOfSize:13]];
     [pinNumber drawAtPoint:CGPointMake((int)((backgroundImage.size.width - size.width)/2)+1, 6) withFont:[UIFont systemFontOfSize:13]];
     UIImage *pinImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

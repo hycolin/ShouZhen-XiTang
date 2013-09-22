@@ -35,7 +35,7 @@
     float startY = 14;
     NSString *newsTitle = self.news.title;
     UIFont *font = [UIFont systemFontOfSize:16];
-    float titleHeight = ceilf([newsTitle sizeWithFont:font constrainedToSize:CGSizeMake(width, INT_MAX)].height);
+    float titleHeight = ceilf([newsTitle sgSizeWithFont:font constrainedToSize:CGSizeMake(width, INT_MAX)].height);
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(startX, startY, width, titleHeight)];
     label.numberOfLines = 0;
     label.backgroundColor = [UIColor clearColor];
@@ -73,7 +73,7 @@
             NSString *str = [content substringToIndex:endPosition];
             
             UIFont *font = [UIFont systemFontOfSize:14];
-            float titleHeight = ceilf([str sizeWithFont:font constrainedToSize:CGSizeMake(width, INT_MAX)].height);
+            float titleHeight = ceilf([str sgSizeWithFont:font constrainedToSize:CGSizeMake(width, INT_MAX)].height);
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(startX, startY, width, titleHeight)];
             label.numberOfLines = 0;
             label.backgroundColor = [UIColor clearColor];

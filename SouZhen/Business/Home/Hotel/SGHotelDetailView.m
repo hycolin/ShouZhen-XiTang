@@ -194,7 +194,7 @@
         self.detailLabel.frame = frame;
     } else {
         CGRect frame = self.detailLabel.frame;
-        frame.size.height = ceilf([self.hotelData.intro sizeWithFont:self.detailLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.detailLabel.frame), 9999)].height);
+        frame.size.height = ceilf([self.hotelData.intro sgSizeWithFont:self.detailLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.detailLabel.frame), 9999)].height);
         self.detailLabel.frame = frame;
     }
     
@@ -336,7 +336,7 @@
     _hotelData = hotelData;
     
     UIFont *font = [UIFont systemFontOfSize:14];
-    _textHeight = ceilf([self.hotelData.way sizeWithFont:font constrainedToSize:CGSizeMake(280, 9999)].height);
+    _textHeight = ceilf([self.hotelData.way sgSizeWithFont:font constrainedToSize:CGSizeMake(280, 9999)].height);
     _textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 280, _textHeight)];
     _textLabel.numberOfLines = 0;
     _textLabel.backgroundColor = [UIColor clearColor];

@@ -46,7 +46,7 @@
     
     self.alertContentLabel.text = @"游玩当天凭预订成功短信，到取票点报确认码或手机号码换票入园。\n订单取消电话：0573-84560561";
     self.alertContentLabel.numberOfLines = 0;
-    CGSize size = [self.alertContentLabel.text sizeWithFont:self.alertContentLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.alertContentLabel.frame), INT_MAX)];
+    CGSize size = [self.alertContentLabel.text sgSizeWithFont:self.alertContentLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.alertContentLabel.frame), INT_MAX)];
     CGRect frame = self.alertContentLabel.frame;
     frame.size = size;
     self.alertContentLabel.frame = frame;
@@ -60,7 +60,7 @@
     
     self.amountLabel.text = [NSString stringWithFormat:@"%g", self.amount];
     frame = self.unitLabel.frame;
-    frame.origin.x = CGRectGetMinX(self.amountLabel.frame) + [self.amountLabel.text sizeWithFont:self.amountLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.amountLabel.frame), INT_MAX)].width + 5;
+    frame.origin.x = CGRectGetMinX(self.amountLabel.frame) + [self.amountLabel.text sgSizeWithFont:self.amountLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.amountLabel.frame), INT_MAX)].width + 5;
     self.unitLabel.frame = frame;
     
     self.navigationItem.leftBarButtonItem = nil;

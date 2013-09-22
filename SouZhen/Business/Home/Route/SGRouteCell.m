@@ -95,7 +95,7 @@
         [backgroundImage drawAtPoint:CGPointMake(0, 0)];
         CGContextSetRGBFillColor(cgContextRef, 1.0, 1.0, 1.0, 1.0);
         NSString *pinNumber = [NSString stringWithFormat:@"%d", data.index  + 1];
-        CGSize size = [pinNumber sizeWithFont:[UIFont systemFontOfSize:11]];
+        CGSize size = [pinNumber sgSizeWithFont:[UIFont systemFontOfSize:11]];
         [pinNumber drawAtPoint:CGPointMake((int)((backgroundImage.size.width - size.width)/2), 6) withFont:[UIFont systemFontOfSize:11]];
         self.markImageView.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
@@ -121,7 +121,7 @@
     CGFloat offsetTitle = 0;
     CGFloat offsetDetail = 0;
     
-    CGSize size = [data.title sizeWithFont:cell.titleLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.titleLabel.frame), INT_MAX)];
+    CGSize size = [data.title sgSizeWithFont:cell.titleLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.titleLabel.frame), INT_MAX)];
     
     if (size.height > CGRectGetHeight(cell.titleLabel.frame)) {
         data.titleHeight = size.height;
@@ -130,7 +130,7 @@
         data.titleHeight = CGRectGetHeight(cell.titleLabel.frame);
     }
 
-    size = [data.intro sizeWithFont:cell.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.descriptionLabel.frame), INT_MAX)];
+    size = [data.intro sgSizeWithFont:cell.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(cell.descriptionLabel.frame), INT_MAX)];
     if (size.height > CGRectGetHeight(cell.descriptionLabel.frame)) {
         data.showFoldButton = YES;
         if (!fold) {

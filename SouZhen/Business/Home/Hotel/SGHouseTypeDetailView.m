@@ -44,7 +44,7 @@
     self.descriptionLabel.text = data.intro;
     
     CGRect frame = self.descriptionLabel.frame;
-    frame.size.height = ceilf([data.intro sizeWithFont:self.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.descriptionLabel.frame), 9999)].height);
+    frame.size.height = ceilf([data.intro sgSizeWithFont:self.descriptionLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.descriptionLabel.frame), 9999)].height);
     self.descriptionLabel.frame = frame;
     
     self.scrollView.contentSize = CGSizeMake(320, self.descriptionLabel.frame.origin.y + CGRectGetHeight(self.descriptionLabel.frame) + 10);

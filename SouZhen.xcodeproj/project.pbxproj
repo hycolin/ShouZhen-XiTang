@@ -452,6 +452,7 @@
 		669C7D0317D78A9C00F0442C /* n0015-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669C7CD917D78A9C00F0442C /* n0015-7.jpg */; };
 		66A86F3217EF3721008B0260 /* UserLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3017EF3721008B0260 /* UserLocation.png */; };
 		66A86F3317EF3721008B0260 /* UserLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3117EF3721008B0260 /* UserLocation@2x.png */; };
+		66A86F3817EF401F008B0260 /* NSString+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A86F3717EF401F008B0260 /* NSString+Height.m */; };
 		66AAFCF317E44B990037338C /* TrafficHighwayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF217E44B990037338C /* TrafficHighwayView.xib */; };
 		66AAFCF517E44BB80037338C /* TrafficPlaneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */; };
 		66AAFCF717E44BCC0037338C /* TrafficTrainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */; };
@@ -1124,6 +1125,8 @@
 		669C7CD917D78A9C00F0442C /* n0015-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "n0015-7.jpg"; sourceTree = "<group>"; };
 		66A86F3017EF3721008B0260 /* UserLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserLocation.png; sourceTree = "<group>"; };
 		66A86F3117EF3721008B0260 /* UserLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserLocation@2x.png"; sourceTree = "<group>"; };
+		66A86F3617EF401F008B0260 /* NSString+Height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Height.h"; sourceTree = "<group>"; };
+		66A86F3717EF401F008B0260 /* NSString+Height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Height.m"; sourceTree = "<group>"; };
 		66AAFCF217E44B990037338C /* TrafficHighwayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficHighwayView.xib; sourceTree = "<group>"; };
 		66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficPlaneView.xib; sourceTree = "<group>"; };
 		66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficTrainView.xib; sourceTree = "<group>"; };
@@ -2109,6 +2112,8 @@
 		6698DBFF17C3B452006E486B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				66A86F3617EF401F008B0260 /* NSString+Height.h */,
+				66A86F3717EF401F008B0260 /* NSString+Height.m */,
 				6698DC0017C3B452006E486B /* SGViewController.h */,
 				6698DC0117C3B452006E486B /* SGViewController.m */,
 				6698DC0217C3B452006E486B /* SGViewController.xib */,
@@ -2966,6 +2971,7 @@
 				6640FB7817C8A1BB00474152 /* ASIAuthenticationDialog.m in Sources */,
 				6640FB7917C8A1BB00474152 /* ASIDataCompressor.m in Sources */,
 				66AAFD2117E4698C0037338C /* SGHelpViewController.m in Sources */,
+				66A86F3817EF401F008B0260 /* NSString+Height.m in Sources */,
 				6640FB7A17C8A1BB00474152 /* ASIDataDecompressor.m in Sources */,
 				6640FB7B17C8A1BB00474152 /* ASIDownloadCache.m in Sources */,
 				6640FB7C17C8A1BB00474152 /* ASIFormDataRequest.m in Sources */,

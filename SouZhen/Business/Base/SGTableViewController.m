@@ -28,13 +28,13 @@
     self.pageSize = 10;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
+
     refreshHeaderViewPullUp = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, self.tableView.contentSize.height, 320, 650) withStyle:EGOPullUp hiddenUpdatedStatus:YES];
     refreshHeaderViewPullUp.delegate = self;
     [self.tableView addSubview:refreshHeaderViewPullUp];
     refreshHeaderViewPullUp.hidden = YES;
     
-    [self performSelector:@selector(configRefreshHeaderView) withObject:nil afterDelay:0.001];
+    [self performSelector:@selector(configRefreshHeaderView) withObject:nil afterDelay:0.1];
 }
 
 - (void)configRefreshHeaderView {
