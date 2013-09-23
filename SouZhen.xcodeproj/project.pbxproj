@@ -453,6 +453,7 @@
 		66A86F3217EF3721008B0260 /* UserLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3017EF3721008B0260 /* UserLocation.png */; };
 		66A86F3317EF3721008B0260 /* UserLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F3117EF3721008B0260 /* UserLocation@2x.png */; };
 		66A86F3817EF401F008B0260 /* NSString+Height.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A86F3717EF401F008B0260 /* NSString+Height.m */; };
+		66A86F4217EFD21B008B0260 /* Icon-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A86F4117EFD21B008B0260 /* Icon-7@2x.png */; };
 		66AAFCF317E44B990037338C /* TrafficHighwayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF217E44B990037338C /* TrafficHighwayView.xib */; };
 		66AAFCF517E44BB80037338C /* TrafficPlaneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */; };
 		66AAFCF717E44BCC0037338C /* TrafficTrainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */; };
@@ -1127,6 +1128,7 @@
 		66A86F3117EF3721008B0260 /* UserLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UserLocation@2x.png"; sourceTree = "<group>"; };
 		66A86F3617EF401F008B0260 /* NSString+Height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Height.h"; sourceTree = "<group>"; };
 		66A86F3717EF401F008B0260 /* NSString+Height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Height.m"; sourceTree = "<group>"; };
+		66A86F4117EFD21B008B0260 /* Icon-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-7@2x.png"; sourceTree = "<group>"; };
 		66AAFCF217E44B990037338C /* TrafficHighwayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficHighwayView.xib; sourceTree = "<group>"; };
 		66AAFCF417E44BB80037338C /* TrafficPlaneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficPlaneView.xib; sourceTree = "<group>"; };
 		66AAFCF617E44BCC0037338C /* TrafficTrainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrafficTrainView.xib; sourceTree = "<group>"; };
@@ -2270,6 +2272,7 @@
 				66400DA517D5C09B002DADB7 /* Default@2x.png */,
 				66400DA017D5B951002DADB7 /* Icon.png */,
 				66400DA317D5B957002DADB7 /* Icon@2x.png */,
+				66A86F4117EFD21B008B0260 /* Icon-7@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -2728,6 +2731,7 @@
 				66A86F3317EF3721008B0260 /* UserLocation@2x.png in Resources */,
 				667D661B17D63577002FCEC4 /* h0002.jpg in Resources */,
 				667D661C17D63577002FCEC4 /* h0003-1.jpg in Resources */,
+				66A86F4217EFD21B008B0260 /* Icon-7@2x.png in Resources */,
 				667D661D17D63577002FCEC4 /* h0003-2.jpg in Resources */,
 				667D661E17D63577002FCEC4 /* h0003-3.jpg in Resources */,
 				667D661F17D63577002FCEC4 /* h0003-4.jpg in Resources */,
