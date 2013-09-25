@@ -1,267 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUIScrollView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIScrollView" id="843166630">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="858487676">
-						<reference key="NSNextResponder" ref="843166630"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 49}, {132, 108}}</string>
-						<reference key="NSSuperview" ref="843166630"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="320727753"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">pic_ex_eat.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="569849652">
-						<reference key="NSNextResponder" ref="843166630"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{17, 164}, {293, 569}}</string>
-						<reference key="NSSuperview" ref="843166630"/>
-						<reference key="NSWindow"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="163087542">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MCAwAA</bytes>
-						</object>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSMutableString" key="IBUIText">
-							<bytes key="NS.bytes">77yM5Lu35qC85Li76KaB6L+Y5piv6Lef5pmv6KeC5ZKM546v5aKD5oyC6ZKp44CC6I+c6YeP6YO95LiN
-5aSa77yM5Lu35qC85Lmf5LiN566X5piC6LS177yM5Li76KaB5ZOB55qE6L+Y5piv5LiA5Liq4oCY6bKc
-4oCZ5a2X44CC5riF6JK455m95rC06bG877yM5LiU5peg6K665Y+j5ZGz5piv5ZCm5ZCI5L2g55qE5Zi0
-77yM6LW356CB5L2g5b6X56ew6LWe5YW26aOf5p2Q5piv55yf5paw6bKc77yM6L+Z5Liq5LiN55So5oyH
-5a+85oCO5LmI6Ym05Yir5paw5LiN5paw6bKc77yM5Y+q6KaB5L2g5piv5Liq5Lit5Zu96IOD77yM5ZCD
-5LiA5Y+j5bCx5oeC5LqG44CCCgrlhbbku5bopb/loZjlkITlrrbppa3ppobpg73mnInnmoTlpoLnsono
-krjogonvvIzmpJLnm5DljZfnk5zvvIzosYbohZDnhbLkuYvnsbvnmoToj5zoibLvvIzoh6rnhLbmmK/l
-iKvlpITkuZ/mnInmr5Tov5nmm7Tlpb3nmoTvvIzkvYblsLHkuIDkuKrlj6TplYfnmoTog73lipvlj6/k
-u6Xmj5DkvpvnmoTmsLTlh4bmnaXnnIvvvIzov5jmmK/kuI3plJnnmoTjgILkuKTkuKrkurrngrnlm5vk
-upTkuKrmi5vniYzoj5zvvIzlha3kuIPljYHlnZflsLHlj6/ku6XmkJ7lrprkuobjgIIK5pep6aSQ55qE
-6YCJ5oup5bCx5pu05aSa5LqG77yM6KGX6L655bCP5pGK55qE6LGG6Iqx5rK55p2h77yM5q2j57uP5bqX
-6Z2i6YeM55qE5bCP56y85YyF77yM5pep5LiD54K56LW35p2l77yM5LiA6Lev6LWw5LiA6Lev5ZCD77yM
-5LiA5Lya5YS/5bCx6aWx5LqG44CCCgrmiJHnmoTml6nppa3mmK/lnKjng5/pm6jplb/lu4rkuIrkuIDl
-rrblj6vigJjlu4rkuq3lsI/lkIPigJnnmoTlupfph4zlkIPnmoTjgILov5nlrrblupfnmoTmi5vniYzm
-mK/lsI/nrLzljIXvvIzogIzov5nkuKrlsI/nrLzljIXnmoTmnIDlpKfnibnngrnlsLHmmK/lsI/vvIzl
-j6PlkbPmsqHop4nlvpflpJrnibnliKvvvIzlsLHmmK/kuKrlpLTlsI/nmoTln7rmnKzkuI3opoHlkqzv
-vIzkuozljYHlnZfpkrHkuIDlsYnkuozljYHkuKrvvIzov5jlvpflho3phY3nopflkrjosYboirHmiY3o
-g73lkIPppbHjgIIKCuaZmumlreWQjOWNiOmlre+8jOWPquaYr+ivtOS4gOS4i+ilv+WhmOeahOmFkuWQ
-p++8jOilv+WhmOeahOWknOW6l+S4u+imgeWIhuW4g+WcqOmVh+WhmOS4nOihl+S4iu+8jOaZmuS5neeC
-ueS4gOWIsO+8jOWHuumXqOeci+WIsOWQhOWkhOmDveaYr+e6oueBr+esvOeahOWcsOaWueWwseaYr+S6
-huOAguaIkeW9k+WkqeaKtei+vueahOaXtuWAmeW+iOe0r++8jOaJgOS7peayoei/m+WOu+a2iOi0ue+8
-jOS9hui3r+i/h+eahOaXtuWAmeeci+S6hueci+WQhOWutuaMguWHuuadpeeahOaOqOmUgOaLm+eJjO+8
-jOaEn+inieS4jeaYr+W+iOi0teOAguWQg+mlseS6humlrei/m+WOu+WFieWWnemFkueahOivne+8jOec
-i+i1t+adpeeUqOS4jeS6huWkmuWwkemSseOAguiyjOS8vOW+iOWkmuWutumDvei/mOWPr+S7peWFjei0
-ueWNoeaLiU9L44CCA</bytes>
-						</object>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="252961245">
-							<int key="type">1</int>
-							<double key="pointSize">15</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="955387011">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">15</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">293</double>
-					</object>
-					<object class="IBUILabel" id="880862014">
-						<reference key="NSNextResponder" ref="843166630"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{22, 20}, {170, 21}}</string>
-						<reference key="NSSuperview" ref="843166630"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="858487676"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">再说说‘食’：</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wNDMxMzcyNTQ5IDAuNDgyMzUyOTQxMiAwLjcwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">18</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">18</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-					</object>
-					<object class="IBUILabel" id="320727753">
-						<reference key="NSNextResponder" ref="843166630"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{167, 46}, {141, 113}}</string>
-						<reference key="NSSuperview" ref="843166630"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="569849652"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="163087542"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">西塘的饮食基本遵循了小河鲜，小野菜，小家常的江南风味。出名点的馆子如老品芳，钱塘人家等的口味差别没有多么巨大</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">6</int>
-						<reference key="IBUIFontDescription" ref="252961245"/>
-						<reference key="IBUIFont" ref="955387011"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">141</double>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 747}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="880862014"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="IBUIClipsSubviews">YES</bool>
-				<bool key="IBUIMultipleTouchEnabled">YES</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords"/>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="843166630"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="858487676"/>
-							<reference ref="569849652"/>
-							<reference ref="880862014"/>
-							<reference ref="320727753"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="858487676"/>
-						<reference key="parent" ref="843166630"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="569849652"/>
-						<reference key="parent" ref="843166630"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="880862014"/>
-						<reference key="parent" ref="843166630"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">17</int>
-						<reference key="object" ref="320727753"/>
-						<reference key="parent" ref="843166630"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">SGExperienceDetailViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="15.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">17</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">pic_ex_eat.png</string>
-			<string key="NS.object.0">{265, 216}</string>
-		</object>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGExperienceDetailViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="13">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="747"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pic_ex_eat.jpg" id="14">
+                    <rect key="frame" x="20" y="49" width="132" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15">
+                    <rect key="frame" x="17" y="164" width="293" height="569"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">，价格主要还是跟景观和环境挂钩。菜量都不多，价格也不算昂贵，主要品的还是一个‘鲜’字。清蒸白水鱼，且无论口味是否合你的嘴，起码你得称赞其食材是真新鲜，这个不用指导怎么鉴别新不新鲜，只要你是个中国胃，吃一口就懂了。
+
+其他西塘各家饭馆都有的如粉蒸肉，椒盐南瓜，豆腐煲之类的菜色，自然是别处也有比这更好的，但就一个古镇的能力可以提供的水准来看，还是不错的。两个人点四五个招牌菜，六七十块就可以搞定了。
+早餐的选择就更多了，街边小摊的豆花油条，正经店面里的小笼包，早七点起来，一路走一路吃，一会儿就饱了。
+
+我的早饭是在烟雨长廊上一家叫‘廊亭小吃’的店里吃的。这家店的招牌是小笼包，而这个小笼包的最大特点就是小，口味没觉得多特别，就是个头小的基本不要咬，二十块钱一屉二十个，还得再配碗咸豆花才能吃饱。
+
+晚饭同午饭，只是说一下西塘的酒吧，西塘的夜店主要分布在镇塘东街上，晚九点一到，出门看到各处都是红灯笼的地方就是了。我当天抵达的时候很累，所以没进去消费，但路过的时候看了看各家挂出来的推销招牌，感觉不是很贵。吃饱了饭进去光喝酒的话，看起来用不了多少钱。貌似很多家都还可以免费卡拉OK。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="再说说‘食’：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16">
+                    <rect key="frame" x="22" y="20" width="170" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.043137254899999998" green="0.4823529412" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西塘的饮食基本遵循了小河鲜，小野菜，小家常的江南风味。出名点的馆子如老品芳，钱塘人家等的口味差别没有多么巨大" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17">
+                    <rect key="frame" x="167" y="46" width="141" height="113"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="pic_ex_eat.jpg" width="265" height="216"/>
+    </resources>
+</document>

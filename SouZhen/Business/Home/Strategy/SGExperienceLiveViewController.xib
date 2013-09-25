@@ -1,278 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUIScrollView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIScrollView" id="1057616005">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="616663967">
-						<reference key="NSNextResponder" ref="1057616005"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 49}, {132, 108}}</string>
-						<reference key="NSSuperview" ref="1057616005"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="434233949"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">pic_ex_live.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="888533194">
-						<reference key="NSNextResponder" ref="1057616005"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 159}, {293, 808}}</string>
-						<reference key="NSSuperview" ref="1057616005"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="163087542">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MCAwAA</bytes>
-						</object>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSMutableString" key="IBUIText">
-							<bytes key="NS.bytes">6Ze05LiN562J77yM5ZCE5aSn5peF5ri4572R56uZ6YO96IO95p+l5Yiw77yM5oC75L2T6ICM6KiA5oCn
-5Lu35q+U5LiN6auY44CCCgrnrKzkuoznsbvmmK/mma/ljLrlhoXpnaDmsrPovrnnmoTogIHmiL/lrZDv
-vIzlpJrmmK/msJHlsYXmlLnmiJDnmoTlrrbluq3lsI/ml4XppobvvIzov5nnsbvml4XppobnmoTnibno
-ibLmmK/msLTkuaHkuLvpopjmtZPpg4HvvIzku6XkvY/lrr/nmoTlvaLlvI/mt7HliLvkvZPkvJrpnaDm
-srPogIzlsYXkurrku6znmoTlhbfkvZPnlJ/mtLvmlrnlvI/lkozmhJ/lj5fjgILkvYbpl67popjkuZ/l
-vojlpJrvvIzmr5Xnq5/pg73mmK/lh6DljYHnlJroh7PkuIrnmb7lubTnmoTogIHmiL/lrZDvvIzljavm
-tbTmnaHku7blsLHliKvmjIfmnJvkuobjgILomb3nhLbpg73or7TmnInni6znq4vljavmtbTvvIzlj6/k
-u6XmtJfmvqHvvIzkvYbov5nnp43lnKjogIHmiL/lrZDph4znlJ/ovp/lh7rkuIDlsI/lnZflnLDmlrno
-gIzmlLnlu7rnmoTljpXmiYDlkozmtbTlrqTvvIzluLjluLjmmK/mjKTlnKjkuIDotbfnmoTjgILpgJrp
-o47orr7mlr3lh6DkuY7msqHmnInvvIznlLXng63msLTlmajph4znmoTmsLTph4/kuZ/mnInpmZDvvIzl
-hrLmtJfotbfmnaXml6Lpurvng6blj4jkuI3nl5vlv6vjgILmiL/pl7Tph4zlvoDlvoDlj6rlpJ/mlL7k
-uIDlvKDlj6TlvI/nmoTpm5XoirHlpKfluorvvIzlm6DkuLrpnaDmsLTvvIzmiYDku6Xnqbrpl7TmhJ/o
-p4npmr7lhY3mva7mub/jgILov5nnsbvlrrbluq3lsI/ml4XppobmmJ/nvZfmo4vluIPlnLDlvIDlnKjo
-pb/loZjmsrPlsrjvvIzlpoLkuI3mmK/lkajmnKvmiJbml7rlraPvvIzln7rmnKzkuI3nlKjmj5DliY3p
-ooTlrprvvIzpmo/liLDpmo/mib7lsLHlj6/ku6XjgILku7fmoLzmoLnmja7lhbfkvZPmiL/lnovlkozm
-naHku7bvvIzlnKg1MC0yMDDlhYPkuYvpl7Tmta7liqjjgIIKCuaIkeS9j+eahOaYr+mFkuWQp+ihl+W7
-tuS8uOauteeahOS4gOWutuWQjeWPq+KAmOayiOmSseS6uuWutuKAmeeahOaXhemmhu+8jOaIv+mXtOmD
-veaYr+malOaWreWMuuWIhueahO+8jOaIkeS9j+eahOaYr+i/m+mXqOW3puaJi+esrOS4gOmXtO+8jOS8
-sOiuoeaYr+iAgeaIv+WtkOWOn+adpeeahOWuouWOheaUueeahOOAguS4gOmdouWimemDveaYr+eql+aI
-t++8jOehruWIh+WcsOivtOaYr+WOn+adpeeahOWkp+mXqO+8jOebtOS4iuebtOS4i+Wbm+aJh+W8gOea
-hOOAguWmguaenOi/memXqOimgeaYr+ayoeiiq+WwgeS9j+eahOivne+8jOWfuuacrOaIkeS7juihl+S4
-iuebtOaOpeWwseiDvei3s+WIsOW6iuS4iuS6huOAguaVtOS9k+aEn+inieS4gOiIrO+8jOS9huehruWu
-nui/mOaYr+W+iOacieWPpOmVh+eJueiJsueahOOAgumdnue5geW/meaXtuauteagh+mXtOaYr+S4gOeZ
-vu+8jOe5geW/meaXtuautemcgOaPkOWJjemihOe6puS4lOS7t+agvOS8muS4iua1ruOAggoK56ys5LiJ
-57G75peF6aaG5Zyo5pmv5Yy65YaF5piv5LiA5oi/6Zq+5rGC77yM5pyA6JGX5ZCN55qE5peF6aaG6KaB
-5pWw5Z2Q6JC95Zyo54Of6Zuo6ZW/5buK5LiK5LiA5Liq5bCP5be35a2Q5bC95aS055qE4oCY56eY5a+G
-6Iqx5Zut4oCZ44CC5Zug5Li65Yiw6KW/5aGY57qv5bGe5Y2z5YW077yM5rKh5YGa5Lu75L2V5YeG5aSH
-5ZKM6aKE57qm77yM5omA5Lul6L+Z6YeM5LiA5aaC5b6A5bi45Zyw5ruh5oi/44CC6L+Z57G75bCP5peF
-6aaG6LWw55qE5piv57K+5ZOB6Lev57q/77yM57uT5ZCI5LqG5Zyw55CG5L2N572u5ZKM546w5Luj55Sf
-5rS75qCH5YeG55qE5Lik5aSn5LyY5Yq/44CC5pW05qCL5oi/5a2Q6Jm954S25LiN5aSn77yM5L2G5oi/
-5a2Q5LiN566X6ICB77yM55u45b2T5LqO6JeP5Zyo5rC06L655YS/6ICB5oi/5a2Q5ZCO6Z2i55qE5paw
-5bu65L2P5a6F44CC5omA5Lul6YeM6Z2i55qE6K6+5pa96YO95pu06Z2g6L+R546w5Luj6YWS5bqX55qE
-5qih5byP77yM5YaN5Yqg5Lul5Liq5oCn5YyW55qE6KOF6aWw5ZKM5LyY6LaK55qE5Zyw55CG5L2N572u
-77yM5bCx5pi+5b6X5b6I54m55Yir44CC5Lu35qC85piv5Lik55m+5YWD6LW377yM6KaB5o+Q5YmN5b6I
-5LmF5b6I5LmF6aKE5a6a5omN5pyJ5oi/77yM5ZCE5aSn5peF5ri4572R56uZ5Y+v6K6i44CCA</bytes>
-						</object>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="252961245">
-							<int key="type">1</int>
-							<double key="pointSize">15</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="138084524">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">15</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">293</double>
-					</object>
-					<object class="IBUILabel" id="614125617">
-						<reference key="NSNextResponder" ref="1057616005"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{21, 20}, {170, 21}}</string>
-						<reference key="NSSuperview" ref="1057616005"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="616663967"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">还说说‘住’：</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wNDMxMzcyNTQ5IDAuNDgyMzUyOTQxMiAwLjcwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">18</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">18</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-					</object>
-					<object class="IBUILabel" id="434233949">
-						<reference key="NSNextResponder" ref="1057616005"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{167, 46}, {146, 113}}</string>
-						<reference key="NSSuperview" ref="1057616005"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="888533194"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="163087542"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">西塘的住宿大致分三类，一类是走低星级酒店路线，这种酒店一般都不在景区，而在西塘汽车站附近，价格在200-800元之</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMDU4ODIzNTI5IDAuMzA1ODgyMzUyOSAwLjMwNTg4MjM1MjkAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<int key="IBUINumberOfLines">6</int>
-						<reference key="IBUIFontDescription" ref="252961245"/>
-						<reference key="IBUIFont" ref="138084524"/>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<double key="preferredMaxLayoutWidth">146</double>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 982}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="614125617"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="IBUIClipsSubviews">YES</bool>
-				<bool key="IBUIMultipleTouchEnabled">YES</bool>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords"/>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">18</int>
-						<reference key="object" ref="1057616005"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="434233949"/>
-							<reference ref="614125617"/>
-							<reference ref="888533194"/>
-							<reference ref="616663967"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">19</int>
-						<reference key="object" ref="434233949"/>
-						<reference key="parent" ref="1057616005"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">20</int>
-						<reference key="object" ref="614125617"/>
-						<reference key="parent" ref="1057616005"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">21</int>
-						<reference key="object" ref="888533194"/>
-						<reference key="parent" ref="1057616005"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">22</int>
-						<reference key="object" ref="616663967"/>
-						<reference key="parent" ref="1057616005"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">SGExperienceDetailViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="20.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">22</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">pic_ex_live.png</string>
-			<string key="NS.object.0">{265, 216}</string>
-		</object>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGExperienceDetailViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="18">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="982"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pic_ex_live.jpg" id="22">
+                    <rect key="frame" x="20" y="49" width="132" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21">
+                    <rect key="frame" x="20" y="159" width="293" height="808"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">间不等，各大旅游网站都能查到，总体而言性价比不高。
+
+第二类是景区内靠河边的老房子，多是民居改成的家庭小旅馆，这类旅馆的特色是水乡主题浓郁，以住宿的形式深刻体会靠河而居人们的具体生活方式和感受。但问题也很多，毕竟都是几十甚至上百年的老房子，卫浴条件就别指望了。虽然都说有独立卫浴，可以洗澡，但这种在老房子里生辟出一小块地方而改建的厕所和浴室，常常是挤在一起的。通风设施几乎没有，电热水器里的水量也有限，冲洗起来既麻烦又不痛快。房间里往往只够放一张古式的雕花大床，因为靠水，所以空间感觉难免潮湿。这类家庭小旅馆星罗棋布地开在西塘河岸，如不是周末或旺季，基本不用提前预定，随到随找就可以。价格根据具体房型和条件，在50-200元之间浮动。
+
+我住的是酒吧街延伸段的一家名叫‘沈钱人家’的旅馆，房间都是隔断区分的，我住的是进门左手第一间，估计是老房子原来的客厅改的。一面墙都是窗户，确切地说是原来的大门，直上直下四扇开的。如果这门要是没被封住的话，基本我从街上直接就能跳到床上了。整体感觉一般，但确实还是很有古镇特色的。非繁忙时段标间是一百，繁忙时段需提前预约且价格会上浮。
+
+第三类旅馆在景区内是一房难求，最著名的旅馆要数坐落在烟雨长廊上一个小巷子尽头的‘秘密花园’。因为到西塘纯属即兴，没做任何准备和预约，所以这里一如往常地满房。这类小旅馆走的是精品路线，结合了地理位置和现代生活标准的两大优势。整栋房子虽然不大，但房子不算老，相当于藏在水边儿老房子后面的新建住宅。所以里面的设施都更靠近现代酒店的模式，再加以个性化的装饰和优越的地理位置，就显得很特别。价格是两百元起，要提前很久很久预定才有房，各大旅游网站可订。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="还说说‘住’：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="20">
+                    <rect key="frame" x="21" y="20" width="170" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.043137254899999998" green="0.4823529412" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西塘的住宿大致分三类，一类是走低星级酒店路线，这种酒店一般都不在景区，而在西塘汽车站附近，价格在200-800元之" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19">
+                    <rect key="frame" x="167" y="46" width="146" height="113"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="pic_ex_live.jpg" width="265" height="216"/>
+    </resources>
+</document>

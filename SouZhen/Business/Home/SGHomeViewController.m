@@ -60,11 +60,11 @@ typedef enum {
     self.bannerView.cellClass = [SGBannerViewCell class];
     self.bannerView.autoFliper = YES;
     self.bannerView.dataArray = [NSArray arrayWithObjects:
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_0.png", @"image", @"s0004", @"uid", nil],
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_1.png", @"image", @"s0014", @"uid", nil],
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_2.png", @"image", @"s0003", @"uid", nil],
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_3.png", @"image", @"s0002", @"uid", nil],
-                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_4.png", @"image", @"s0012", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_0.jpg", @"image", @"s0004", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_1.jpg", @"image", @"s0014", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_2.jpg", @"image", @"s0003", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_3.jpg", @"image", @"s0002", @"uid", nil],
+                                 [NSDictionary dictionaryWithObjectsAndKeys:@"banner_4.jpg", @"image", @"s0012", @"uid", nil],
                                  nil];
     [self.bannerView setSelectedTarget:self selector:@selector(bannerSelected:)];
     

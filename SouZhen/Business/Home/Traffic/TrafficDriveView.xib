@@ -150,7 +150,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive1.png" id="JDG-IA-1VW">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive1.jpg" id="JDG-IA-1VW">
                             <rect key="frame" x="25" y="130" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -191,7 +191,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive2.png" id="xaj-RG-1Tb">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive2.jpg" id="xaj-RG-1Tb">
                             <rect key="frame" x="25" y="130" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -232,7 +232,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive3.png" id="rE5-Lf-aQw">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShanghaiDrive3.jpg" id="rE5-Lf-aQw">
                             <rect key="frame" x="25" y="130" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -280,7 +280,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive1.png" id="qH7-C7-1Bh">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive1.jpg" id="qH7-C7-1Bh">
                             <rect key="frame" x="25" y="112" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -321,7 +321,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive2.png" id="4b9-qM-ouY">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive2.jpg" id="4b9-qM-ouY">
                             <rect key="frame" x="25" y="130" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -362,7 +362,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive3.png" id="JtJ-kw-Ejw">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HangzhouDrive3.jpg" id="JtJ-kw-Ejw">
                             <rect key="frame" x="25" y="113" width="270" height="300"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -410,7 +410,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive1.png" id="Rm8-IL-pCU">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive1.jpg" id="Rm8-IL-pCU">
                             <rect key="frame" x="25" y="130" width="270" height="203"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -451,7 +451,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive2.png" id="XCg-TB-tQT">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive2.jpg" id="XCg-TB-tQT">
                             <rect key="frame" x="25" y="113" width="270" height="203"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -492,7 +492,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive3.png" id="H07-x8-GZm">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuzhouDrive3.jpg" id="H07-x8-GZm">
                             <rect key="frame" x="25" y="111" width="270" height="203"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -509,15 +509,15 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="HangzhouDrive1.png" width="541" height="601"/>
-        <image name="HangzhouDrive2.png" width="541" height="601"/>
-        <image name="HangzhouDrive3.png" width="541" height="601"/>
-        <image name="ShanghaiDrive1.png" width="540" height="601"/>
-        <image name="ShanghaiDrive2.png" width="540" height="601"/>
-        <image name="ShanghaiDrive3.png" width="540" height="601"/>
-        <image name="SuzhouDrive1.png" width="541" height="407"/>
-        <image name="SuzhouDrive2.png" width="541" height="407"/>
-        <image name="SuzhouDrive3.png" width="541" height="407"/>
+        <image name="HangzhouDrive1.jpg" width="541" height="601"/>
+        <image name="HangzhouDrive2.jpg" width="541" height="601"/>
+        <image name="HangzhouDrive3.jpg" width="541" height="601"/>
+        <image name="ShanghaiDrive1.jpg" width="540" height="601"/>
+        <image name="ShanghaiDrive2.jpg" width="540" height="601"/>
+        <image name="ShanghaiDrive3.jpg" width="540" height="601"/>
+        <image name="SuzhouDrive1.jpg" width="541" height="407"/>
+        <image name="SuzhouDrive2.jpg" width="541" height="407"/>
+        <image name="SuzhouDrive3.jpg" width="541" height="407"/>
         <image name="bg_btl.png" width="77" height="26"/>
         <image name="bg_tab1.png" width="320" height="78"/>
         <image name="bg_tab2.png" width="320" height="78"/>

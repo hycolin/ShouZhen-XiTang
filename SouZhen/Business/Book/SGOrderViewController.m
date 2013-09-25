@@ -132,6 +132,10 @@
     
     if (request == _payOrderRequest) {
         NSString *content = [dict objectForKey:@"content"];
+        if (content.length == 0) {
+            [self showAlert:@"服务暂时不可用"];
+            return;
+        }
         NSInteger type = [[dict objectForKey:@"type"] integerValue];
 //        content = @"http://wappaygw.alipay.com/service/rest.htm?format=xml&partner=2088301426069753&req_data=%3Cauth_and_execute_req%3E%3Crequest_token%3E2013091476283de7af18a29ac384cecec316cca9%3C%2Frequest_token%3E%3C%2Fauth_and_execute_req%3E&sec_id=MD5&service=alipay.wap.auth.authAndExecute&sign=6f22a40e96ded846eaf97a12f8d60054&v=2.0";
 //        type = 1;

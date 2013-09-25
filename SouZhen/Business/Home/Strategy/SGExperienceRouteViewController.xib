@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="1626"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pic_ex_route.png" id="14">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pic_ex_route.jpg" id="14">
                     <rect key="frame" x="20" y="49" width="132" height="108"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -19,7 +19,7 @@
                     <rect key="frame" x="20" y="159" width="293" height="1447"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <mutableString key="text">左右。
+                    <string key="text">左右。
 
 这里需要注意一点，西塘客运站也叫嘉善北站，和嘉善站不是一回事。如你所在的地区没有到西塘（嘉善北站）的直达客车，可先坐到嘉善站，再换乘站外的公交或穿梭巴士，半小时内即可到达西塘客运站。
 如抵达的时间太早或太晚，也不用担心，嘉善站外长期有拉活儿的黑车（轿车），只是价钱比较贵，拼车的话每人在20元左右，包车的话在40-60元左右，车程在二十分钟内。
@@ -37,7 +37,7 @@
 大部分人到西塘游览都是利用小周末，比如周五晚上到，周六下午回，或周六上午到，周日下午回。所以在这个时段，古镇的各条巷子里都充满了人，吃饭住宿莫不是一桌难求，一床难求，水涨船高，价格上去了，服务却下来了。
 所以，如果可能，还是建议大家在非周末时间到西塘游览，不仅人少，而且价低，最关键的是可以真正体会到水乡那种闲庭信步，悠然自得的江南古风。否则，早上九点一到，大批旅行团充斥在古镇的各条街道上，游人如织，摩肩接踵，还什么水乡不水乡的，一秒钟变身为上海人民广场一二号线地铁换乘站。不信你就去试试看。
 
-总的来说，去西塘转转的时机是平时好于周末，一早一晚好于白天，一个人好于一帮人，而飘小雨则好过大晴天。个中滋味，请慢慢体会。</mutableString>
+总的来说，去西塘转转的时机是平时好于周末，一早一晚好于白天，一个人好于一帮人，而飘小雨则好过大晴天。个中滋味，请慢慢体会。</string>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -61,6 +61,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="pic_ex_route.png" width="265" height="216"/>
+        <image name="pic_ex_route.jpg" width="265" height="216"/>
     </resources>
 </document>

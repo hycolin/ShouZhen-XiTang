@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="1335"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighwayTitle.png" id="j6U-1a-DSl">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighwayTitle.jpg" id="j6U-1a-DSl">
                     <rect key="frame" x="8" y="8" width="304" height="165"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -132,10 +132,10 @@
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sFh-VO-GVf">
                             <rect key="frame" x="10" y="39" width="301" height="281"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <mutableString key="text">1）徐家汇上海体育馆5号大门旁每周六、日9：00有车直达西塘。联系电话：021-64265555。
+                            <string key="text">1）徐家汇上海体育馆5号大门旁每周六、日9：00有车直达西塘。联系电话：021-64265555。
 2）上海旅游集散中心（上海八万人体育场12号门五号扶梯下）每天9：15有发往西塘的旅游专线车，当天16：30返回，票价140元/人，带导游服务（含景点套票）。
 3）上海客运南站每天都有开往嘉善的班车，首班车7：10，末班车18：30，40分钟一趟，票价24元/人，从嘉善乘坐快客直达西塘。
-4）上海长途汽车客运总站每天都有开往嘉善的班车，首班车6：50，末班车18：00，40分钟一趟，票价27元/人，从嘉善乘坐快客直达西塘。</mutableString>
+4）上海长途汽车客运总站每天都有开往嘉善的班车，首班车6：50，末班车18：00，40分钟一趟，票价27元/人，从嘉善乘坐快客直达西塘。</string>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -213,7 +213,7 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="HighwayTitle.png" width="610" height="331"/>
+        <image name="HighwayTitle.jpg" width="610" height="331"/>
         <image name="bg_btl.png" width="77" height="26"/>
     </resources>
 </document>

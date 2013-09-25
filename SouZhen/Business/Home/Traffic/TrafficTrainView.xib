@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="496"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrainTitle.png" id="4oW-dQ-QA0">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrainTitle.jpg" id="4oW-dQ-QA0">
                     <rect key="frame" x="8" y="8" width="304" height="165"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -35,6 +35,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="TrainTitle.png" width="610" height="330"/>
+        <image name="TrainTitle.jpg" width="610" height="330"/>
     </resources>
 </document>
