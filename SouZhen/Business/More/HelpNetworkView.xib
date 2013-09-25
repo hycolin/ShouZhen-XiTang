@@ -79,9 +79,9 @@
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="jz3-cY-AGe">
                     <rect key="frame" x="0.0" y="39" width="320" height="529"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifihelper.png" id="wq9-uJ-Tav">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifihelper.jpg" id="wq9-uJ-Tav">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="703"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         </imageView>
@@ -97,6 +97,6 @@
         <image name="bg_tab1.png" width="320" height="78"/>
         <image name="bg_tab2.png" width="320" height="78"/>
         <image name="vline.png" width="4" height="57"/>
-        <image name="wifihelper.png" width="640" height="1407"/>
+        <image name="wifihelper.jpg" width="640" height="1407"/>
     </resources>
 </document>

@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="703"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifihelper.png" id="UzD-wf-HJ7">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locatehelper.jpg" id="UzD-wf-HJ7">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="703"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                 </imageView>
@@ -25,6 +25,6 @@
         </scrollView>
     </objects>
     <resources>
-        <image name="wifihelper.png" width="640" height="1407"/>
+        <image name="locatehelper.jpg" width="640" height="2075"/>
     </resources>
 </document>

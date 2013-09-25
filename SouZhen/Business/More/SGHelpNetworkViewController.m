@@ -53,17 +53,17 @@
 
 - (void)showWifiHelp
 {
-    self.contentImageView.image = [UIImage imageNamed:@"wifihelper.png"];
+    self.contentImageView.image = [UIImage imageNamed:@"wifihelper.jpg"];
     CGRect frame = self.contentImageView.frame;
     frame.size.height = self.contentImageView.image.size.height/2;
     self.contentImageView.frame = frame;
     
-    self.scrollView.contentSize = CGSizeMake(320, CGRectGetHeight(self.contentImageView.frame) + 20);
+    self.scrollView.contentSize = CGSizeMake(320, CGRectGetHeight(self.contentImageView.frame));
 }
 
 - (void)showGprsHelp
 {
-    self.contentImageView.image = [UIImage imageNamed:@"gprshelper.png"];
+    self.contentImageView.image = [UIImage imageNamed:@"gprshelper.jpg"];
     CGRect frame = self.contentImageView.frame;
     frame.size.height = self.contentImageView.image.size.height/2;
     self.contentImageView.frame = frame;
