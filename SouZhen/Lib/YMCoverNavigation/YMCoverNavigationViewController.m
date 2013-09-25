@@ -154,6 +154,7 @@
         }
         [self.topViewController viewWillAppear:NO];
         [self.topViewController viewDidAppear:NO];
+        _isPopFinished = YES;
     } else {
         [UIView
          animateWithDuration:animated?0.3f:0
@@ -183,6 +184,9 @@
 
 
 -(void)panGesture:(UIPanGestureRecognizer *)panGesture {
+    if ([self topViewController].navigationItem.leftBarButtonItem == nil) {
+        return;
+    }
     switch (panGesture.state) {
         case UIGestureRecognizerStateBegan:
             self.startingPanRect = [self topViewController].view.frame;

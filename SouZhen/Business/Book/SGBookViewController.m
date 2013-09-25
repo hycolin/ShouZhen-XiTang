@@ -35,6 +35,8 @@
     
     ASIHTTPRequest *_getBookingInfoRequest;
     ASIHTTPRequest *_createOrderRequest;
+    
+    UIButton *doneButton;
 }
 
 - (id)init
@@ -50,12 +52,15 @@
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keywordWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keywordWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keywordDidShow:) name:UIKeyboardDidShowNotification object:nil];
 }
 
 - (void)removeKeywordNotification
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
 }
 
 - (void)keywordWillShow:(NSNotification *)no
@@ -73,8 +78,16 @@
 	[UIView commitAnimations];
 }
 
+- (void)keywordDidShow:(NSNotification *)no
+{
+    if ([self.phoneTextField isFirstResponder]) {
+        [self addDoneButton];
+    }
+}
+
 - (void)keywordWillHide:(NSNotification *)no
 {
+    
     NSDictionary *userInfo = [no userInfo];
 	CGRect keyboardFrame;
 	[[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] getValue:&keyboardFrame];
@@ -87,10 +100,23 @@
 	[UIView commitAnimations];
 }
 
+- (void)doneButton:(id)sender
+{
+    [self.phoneTextField resignFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"订票";
+    
+    doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    doneButton.frame = CGRectMake(0, 163, 106, 53);
+    doneButton.adjustsImageWhenHighlighted = NO;
+    [doneButton setImage:[UIImage imageNamed:@"DoneUp.png"] forState:UIControlStateNormal];
+    [doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
+    [doneButton addTarget:self action:@selector(doneButton:) forControlEvents:UIControlEventTouchUpInside];
+
     
     self.bgTitleImageView.image = [[UIImage imageNamed:@"bar_b"] stretchableImageWithLeftCapWidth:20 topCapHeight:20];
     self.bgTitleTopImageView.image = [[UIImage imageNamed:@"bg_title"] stretchableImageWithLeftCapWidth:20 topCapHeight:0];
@@ -99,6 +125,10 @@
     self.phoneTextField.background = [[UIImage imageNamed:@"input-box"] stretchableImageWithLeftCapWidth:20 topCapHeight:0];
     
     self.dateTextField.delegate = self;
+    self.nameTextField.delegate = self;
+    self.phoneTextField.delegate = self;
+    
+    self.datePicker.minimumDate = [NSDate date];
     
     UIImage *orderImage = [UIImage imageNamed:@"button_xiadan.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -230,6 +260,41 @@
     return YES;
 }
 
+- (void)addDoneButton
+{
+    if ([[[UIApplication sharedApplication] windows] count] < 2) {
+        return;
+    }
+    UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
+    UIView* keyboard;
+    for(int i=0; i<[tempWindow.subviews count]; i++) {
+        keyboard = [tempWindow.subviews objectAtIndex:i];
+        // keyboard view found; add the custom button to it
+        if(([[keyboard description] hasPrefix:@"<UIPeripheralHostView"] == YES) ||(([[keyboard description] hasPrefix:@"<UIKeyboard"] == YES)))
+            [keyboard addSubview:doneButton];
+    }
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (self.phoneTextField == textField) {
+        // locate keyboard view
+        [self addDoneButton];
+    } else {
+        [doneButton removeFromSuperview];
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.nameTextField) {
+        [self.phoneTextField becomeFirstResponder];
+    } else {
+        [self tapGestureAction];
+    }
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -257,6 +322,9 @@
     [_datePickerActionSheet dismissWithClickedButtonIndex:[_datePickerActionSheet cancelButtonIndex] animated:YES];
 }
 
+- (IBAction)todayAction:(id)sender {
+    self.datePicker.date = [NSDate date];
+}
 
 
 @end
