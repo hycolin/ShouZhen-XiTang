@@ -11,5 +11,5 @@
 @interface SGPayWebViewController : YMSimpleWebViewController
 
 @property (nonatomic) double amount;
-
+@property (nonatomic) NSString *orderId;
 @end

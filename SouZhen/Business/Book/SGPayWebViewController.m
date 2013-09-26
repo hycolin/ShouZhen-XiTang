@@ -36,6 +36,7 @@
     if ([requestUrl hasPrefix:@"http://www.xitang.com.cn/dingpiao"]) {
         SGOrderStatusViewController *viewController = [[SGOrderStatusViewController alloc] init];
         viewController.amount = self.amount;
+        viewController.orderId = self.orderId;
         [self.navigationController pushViewController:viewController animated:YES];
         return NO;
     }

@@ -11,5 +11,6 @@
 @interface SGOrderStatusViewController : SGViewController
 
 @property (nonatomic) double amount;
+@property (nonatomic) NSString *orderId;
 
 @end

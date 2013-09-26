@@ -143,6 +143,7 @@
             SGPayWebViewController *viewController = [[SGPayWebViewController alloc] init];
             viewController.url = [NSURL URLWithString:content];
             viewController.amount = [_amountLabel.text doubleValue];
+            viewController.orderId = self.orderId;
             [self.navigationController pushViewController:viewController animated:YES];
         }
     }
@@ -194,6 +195,7 @@
     if (9000 == result.statusCode) { //支付成功
         SGOrderStatusViewController *viewController = [[SGOrderStatusViewController alloc] init];
         viewController.amount = [self.amountLabel.text doubleValue];
+        viewController.orderId = self.orderId;
         [self.navigationController pushViewController:viewController animated:YES];
     } else {
         UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示"

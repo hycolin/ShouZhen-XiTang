@@ -219,7 +219,7 @@
         [self showAlert:@"您还未选择预订日期"];
         return;
     }
-    NSString *name = self.nameTextField.text;
+    NSString *name = [self.nameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (name.length == 0) {
         [self showAlert:@"您还未输入取票人姓名"];
         return;
@@ -229,7 +229,7 @@
         if (phone.length == 0) {
             [self showAlert:@"您还未输入手机号码"];
         } else if (phone.length != 11) {
-            [self showAlert:@"您输入11位手机号码"];
+            [self showAlert:@"请输入合法11位手机号码"];
         }
         return;
     }
