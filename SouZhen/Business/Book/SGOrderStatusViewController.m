@@ -91,7 +91,8 @@
 
 - (void)requestStarted:(ASIHTTPRequest *)request
 {
-    self.alertView.hidden = NO;
+    [self showLoading:YES];
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request
@@ -100,13 +101,14 @@
     NSDictionary *dict = [request.responseString JSONValue];
     NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
     if (errorCode < 0) {
-//        NSString *errMsg = [dict objectForKey:@"errormsg"];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"获取订单状态失败，点击确定后重试" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-        alertView.tag = 1000;
-        [alertView show];
+        NSString *errMsg = [dict objectForKey:@"errormsg"];
+        [self showAlert:errMsg];
+        [self showLoading:NO];
+        [self showErroView:YES];
         return;
     }
-    self.alertView.hidden = YES;
+    [self showLoading:NO];
+    [self showErroView:NO];
     NSNumber *amount = [dict objectForKey:@"amount"];
     NSString *confirmId = [dict objectForKey:@"confirmid"];
     NSString *alert = [dict objectForKey:@"alert"];
@@ -115,20 +117,42 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"获取订单状态失败，点击确定后重试" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    alertView.tag = 1000;
-    [alertView show];
+    dlog(@"url: %@", request.url);
+    if (request.responseString.length > 0) {
+        NSDictionary *dict = [request.responseString JSONValue];
+        NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
+        if (errorCode < 0) {
+            NSString *errMsg = [dict objectForKey:@"errormsg"];
+            [self showAlert:errMsg];
+        }
+    } else {
+        [self showAlert:@"网络异常，请稍候重试"];
+    }
+
+    [self showLoading:NO];
+    [self showErroView:YES];
+    
+    UIImage *backImage = [UIImage imageNamed:@"icon_back"];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+    customView.backgroundColor = [UIColor clearColor];
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(0, 7, 50, 30);
+    [backButton setImage:backImage forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [customView addSubview:backButton];
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:customView]];
+
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)retryAction
 {
-    if (alertView.tag == 1000) {
-        if (buttonIndex == alertView.firstOtherButtonIndex) {
-            [self requestOrderStatus];
-        } else {
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        }        
-    }
+    [self requestOrderStatus];
+}
+
+- (void)backAction
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)bookAction:(id)sender {

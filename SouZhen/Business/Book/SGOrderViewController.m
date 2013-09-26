@@ -151,6 +151,18 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
+    dlog(@"url: %@", request.url);
+    if (request.responseString.length > 0) {
+        NSDictionary *dict = [request.responseString JSONValue];
+        NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
+        if (errorCode < 0) {
+            NSString *errMsg = [dict objectForKey:@"errormsg"];
+            [self showAlert:errMsg];
+        }
+    } else {
+        [self showAlert:@"网络异常，请稍候重试"];
+    }
+
     [self hideWaiting];
 }
 

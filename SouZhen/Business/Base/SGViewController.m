@@ -13,6 +13,14 @@
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
+@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivity;
+
+@property (strong, nonatomic) IBOutlet UIView *loadingView;
+
+
+@property (strong, nonatomic) IBOutlet UIView *errorView;
+
 @end
 
 @implementation SGViewController
@@ -85,6 +93,51 @@
     label.text = title;
     self.navigationItem.titleView = label;
 }
+
+- (void)showLoading:(BOOL)show withLoadingText:(NSString *)text
+{
+    if (show) {
+        if (self.loadingView == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"SGLoadingView" owner:self options:nil];
+            self.loadingLabel.text = text;
+            [self.loadingActivity startAnimating];
+            self.loadingView.frame = self.contentView.bounds;
+        }
+        [self.contentView addSubview:self.loadingView];
+    } else {
+        [self.loadingActivity stopAnimating];
+        [self.loadingView removeFromSuperview];
+        self.loadingActivity = nil;
+        self.loadingLabel = nil;
+        self.loadingView = nil;
+    }
+}
+
+- (void)showLoading:(BOOL)show
+{
+    [self showLoading:show withLoadingText:@"正在加载..."];
+}
+
+- (void)showErroView:(BOOL)show
+{
+    if (show) {
+        if (self.errorView == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"SGErrorView" owner:self options:nil];
+            self.errorView.frame = self.contentView.bounds;
+            [self.errorView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(retryAction)]];
+        }
+        [self.contentView addSubview:self.errorView];
+    } else {
+        [self.errorView removeFromSuperview];
+        self.errorView = nil;
+    }
+}
+
+- (void)retryAction
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

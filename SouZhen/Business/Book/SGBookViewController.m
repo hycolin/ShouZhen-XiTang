@@ -8,6 +8,7 @@
 
 #import "SGBookViewController.h"
 #import "SGOrderViewController.h"
+#import "SGAppDelegate.h"
 
 @interface SGBookViewController () <UITextFieldDelegate, ASIHTTPRequestDelegate>
 
@@ -143,6 +144,14 @@
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction)]];
     
+
+    [self requestBookInfo];
+}
+
+- (void)requestBookInfo
+{
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    
     ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.xitang.com.cn/dingpiao/Api.ashx?apikey=v1.00000001&method=getprice"]];
     request.delegate = self;
     _getBookingInfoRequest = request;
@@ -151,22 +160,34 @@
 
 - (void)requestStarted:(ASIHTTPRequest *)request
 {
-    [self showWaiting:@"正在加载..."];
+    if (request == _getBookingInfoRequest) {
+        [self showLoading:YES];
+    } else if (request == _createOrderRequest) {
+        [self showWaiting:@"正在加载..."];
+    }
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     dlog(@"url: %@", request.url);
-    [self hideWaiting];
     NSDictionary *dict = [request.responseString JSONValue];
     NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
     if (errorCode < 0) {
         NSString *errMsg = [dict objectForKey:@"errormsg"];
         [self showAlert:errMsg];
+        if (request == _getBookingInfoRequest) {
+            [self showLoading:NO];
+            [self showErroView:YES];
+        } else {
+            [self hideWaiting];
+        }
         return;
     }
 
     if (request == _getBookingInfoRequest) {
+        [self showLoading:NO];
+        [self showErroView:NO];
+        self.navigationItem.rightBarButtonItem.enabled = YES;
         NSNumber *_price = [dict objectForKey:@"price"];
         NSNumber *_discount = [dict objectForKey:@"discount"];
         if (_price) {
@@ -176,6 +197,7 @@
             self.discountLabel.text = [NSString stringWithFormat:@"%g", [_discount doubleValue]];
         }
     } else if (request == _createOrderRequest) {
+        [self hideWaiting];
         NSString *orderId = [dict objectForKey:@"orderid"];
         if (orderId.length == 0) {
             [self showAlert:@"创建订单失败"];
@@ -196,9 +218,30 @@
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-    [self hideWaiting];
+    dlog(@"url: %@", request.url);
+    if (request.responseString.length > 0) {
+        NSDictionary *dict = [request.responseString JSONValue];
+        NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
+        if (errorCode < 0) {
+            NSString *errMsg = [dict objectForKey:@"errormsg"];
+            [self showAlert:errMsg];
+        }
+    } else {
+        [self showAlert:@"网络异常，请稍候重试"];
+    }
+
+    if (request == _getBookingInfoRequest) {
+        [self showLoading:NO];
+        [self showErroView:YES];
+    } else if (request == _createOrderRequest) {
+        [self hideWaiting];
+    }
 }
 
+- (void)retryAction
+{
+    [self requestBookInfo];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
