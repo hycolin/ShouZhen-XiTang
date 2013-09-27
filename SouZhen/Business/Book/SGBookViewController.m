@@ -9,6 +9,7 @@
 #import "SGBookViewController.h"
 #import "SGOrderViewController.h"
 #import "SGAppDelegate.h"
+#import "SGDisclaimerViewController.h"
 
 @interface SGBookViewController () <UITextFieldDelegate, ASIHTTPRequestDelegate>
 
@@ -223,11 +224,15 @@
         NSDictionary *dict = [request.responseString JSONValue];
         NSInteger errorCode = [[dict objectForKey:@"errorcode"] integerValue];
         if (errorCode < 0) {
-            NSString *errMsg = [dict objectForKey:@"errormsg"];
-            [self showAlert:errMsg];
+            if (errorCode == -2) {
+                [self showAlert:@"请输入合法11位手机号码"];
+            } else {
+                NSString *errMsg = [dict objectForKey:@"errormsg"];
+                [self showAlert:errMsg];
+            }
         }
     } else {
-        [self showAlert:@"网络异常，请稍候重试"];
+        [self showAlert:@"网络异常，请确认已打开无线局域网或蜂窝移动数据设置"];
     }
 
     if (request == _getBookingInfoRequest) {
@@ -268,17 +273,21 @@
         return;
     }
     NSString *phone = self.phoneTextField.text;
-    if (phone.length < 11) {
+    if (phone.length != 11) {
         if (phone.length == 0) {
             [self showAlert:@"您还未输入手机号码"];
-        } else if (phone.length != 11) {
+        } else {
             [self showAlert:@"请输入合法11位手机号码"];
         }
+        return;
+    } else if (!([phone hasPrefix:@"13"] || [phone hasPrefix:@"14"] || [phone hasPrefix:@"15"] || [phone hasPrefix:@"18"])) {
+        [self showAlert:@"请输入合法11位手机号码"];
         return;
     }
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyyMMdd";
-    _createOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.xitang.com.cn/dingpiao/Api.ashx?apikey=v1.00000001&method=createorder&date=%@&name=%@&phone=%@", [dateFormatter stringFromDate:_bookDate], [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], phone]]];
+    NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    _createOrderRequest = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.xitang.com.cn/dingpiao/Api.ashx?apikey=v1.00000001&method=createorder&date=%@&name=%@&phone=%@", [dateFormatter stringFromDate:_bookDate], [name stringByAddingPercentEscapesUsingEncoding:enc], phone]]];
     _createOrderRequest.delegate = self;
     [_createOrderRequest startAsynchronous];
 }
@@ -368,6 +377,12 @@
 - (IBAction)todayAction:(id)sender {
     self.datePicker.date = [NSDate date];
 }
+
+- (IBAction)disclaimerClicked:(id)sender {
+    SGDisclaimerViewController *viewController = [[SGDisclaimerViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 
 
 @end

@@ -41,6 +41,8 @@
 		663B53E217F30E9F000395F4 /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 663B53E017F30E9F000395F4 /* DoneUp.png */; };
 		663B540617F46757000395F4 /* SGLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663B540517F46757000395F4 /* SGLoadingView.xib */; };
 		663B540817F46810000395F4 /* SGErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663B540717F46810000395F4 /* SGErrorView.xib */; };
+		663B540E17F5875E000395F4 /* SGDisclaimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663B540C17F5875E000395F4 /* SGDisclaimerViewController.m */; };
+		663B540F17F5875E000395F4 /* SGDisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663B540D17F5875E000395F4 /* SGDisclaimerViewController.xib */; };
 		66400DA217D5B951002DADB7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 66400DA017D5B951002DADB7 /* Icon.png */; };
 		66400DA417D5B957002DADB7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66400DA317D5B957002DADB7 /* Icon@2x.png */; };
 		6640FAA717C8500F00474152 /* bg_bry.png in Resources */ = {isa = PBXBuildFile; fileRef = 6640FA9017C8500F00474152 /* bg_bry.png */; };
@@ -618,6 +620,9 @@
 		663B53E017F30E9F000395F4 /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp.png; sourceTree = "<group>"; };
 		663B540517F46757000395F4 /* SGLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGLoadingView.xib; sourceTree = "<group>"; };
 		663B540717F46810000395F4 /* SGErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGErrorView.xib; sourceTree = "<group>"; };
+		663B540B17F5875E000395F4 /* SGDisclaimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDisclaimerViewController.h; sourceTree = "<group>"; };
+		663B540C17F5875E000395F4 /* SGDisclaimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDisclaimerViewController.m; sourceTree = "<group>"; };
+		663B540D17F5875E000395F4 /* SGDisclaimerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGDisclaimerViewController.xib; sourceTree = "<group>"; };
 		66400DA017D5B951002DADB7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		66400DA317D5B957002DADB7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		6640FA9017C8500F00474152 /* bg_bry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bry.png; sourceTree = "<group>"; };
@@ -2243,6 +2248,9 @@
 				66AAFD3117E473420037338C /* SGHelpNetworkViewController.m */,
 				66AAFD2317E46CA60037338C /* HelpDetailView.xib */,
 				66AAFD2E17E4724F0037338C /* HelpNetworkView.xib */,
+				663B540B17F5875E000395F4 /* SGDisclaimerViewController.h */,
+				663B540C17F5875E000395F4 /* SGDisclaimerViewController.m */,
+				663B540D17F5875E000395F4 /* SGDisclaimerViewController.xib */,
 				6662BE8F17D39C7E0038ACD5 /* Images */,
 			);
 			path = More;
@@ -2515,6 +2523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668D659017BF025700109886 /* InfoPlist.strings in Resources */,
+				663B540F17F5875E000395F4 /* SGDisclaimerViewController.xib in Resources */,
 				6698DC2717C3B452006E486B /* SGViewController.xib in Resources */,
 				6698DC2917C3B452006E486B /* SGBookViewController.xib in Resources */,
 				6698DC2B17C3B452006E486B /* SGHomeViewController.xib in Resources */,
@@ -2981,6 +2990,7 @@
 				6640FAB217C8500F00474152 /* SGRouteCell.m in Sources */,
 				6640FAB417C8500F00474152 /* SGRouteUIInfo.m in Sources */,
 				6640FAB517C8500F00474152 /* SGRouteDetailViewController.m in Sources */,
+				663B540E17F5875E000395F4 /* SGDisclaimerViewController.m in Sources */,
 				6640FAB717C8500F00474152 /* SGRouteViewController.m in Sources */,
 				66545BEC17E4B34B00F8B3A0 /* YMWebViewController.m in Sources */,
 				6640FAC217C8518B00474152 /* SGTrafficViewController.m in Sources */,

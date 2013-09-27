@@ -211,7 +211,7 @@
     } else if (alertView.tag == 1000) {
         if (buttonIndex == alertView.firstOtherButtonIndex) {
             SGHelpDetailViewController *viewController = [[SGHelpDetailViewController alloc] init];
-            viewController.contentImage = @"locatehelper";
+            viewController.contentImage = @"locatehelper.jpg";
             viewController.title = @"如何开启位置服务？";
             [self.navigationController pushViewController:viewController animated:YES];
         }

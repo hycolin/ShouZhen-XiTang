@@ -7,6 +7,7 @@
 //
 
 #import "SGAboutusViewController.h"
+#import "SGDisclaimerViewController.h"
 
 @interface SGAboutusViewController ()
 
@@ -37,8 +38,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)disclaimerClicked:(id)sender {
+    SGDisclaimerViewController *viewController = [[SGDisclaimerViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+
 - (void)viewDidUnload {
     [self setScrollView:nil];
     [super viewDidUnload];
 }
+
+
 @end

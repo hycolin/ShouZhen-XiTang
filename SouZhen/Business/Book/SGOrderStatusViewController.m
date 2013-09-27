@@ -126,7 +126,7 @@
             [self showAlert:errMsg];
         }
     } else {
-        [self showAlert:@"网络异常，请稍候重试"];
+        [self showAlert:@"网络异常，请确认已打开无线局域网或蜂窝移动数据设置"];
     }
 
     [self showLoading:NO];
