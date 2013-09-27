@@ -66,7 +66,7 @@
     self.alertContentLabel.frame = frame;
     
     frame = self.alertLayout.frame;
-    frame.size.height = CGRectGetHeight(self.alertContentLabel.frame) + 70;
+    frame.size.height = CGRectGetHeight(self.alertContentLabel.frame) + 40;
     self.alertLayout.frame = frame;
     
     self.alertBgImageView.frame = self.alertLayout.bounds;
