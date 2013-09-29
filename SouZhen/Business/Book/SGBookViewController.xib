@@ -156,11 +156,6 @@
                                 <action selector="cancelDatePickerAction:" destination="-1" id="53"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="今天" id="Nva-Bj-3u7">
-                            <connections>
-                                <action selector="todayAction:" destination="-1" id="1Vu-ZT-Jmb"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="47"/>
                         <barButtonItem title="确定" style="done" id="48">
                             <connections>

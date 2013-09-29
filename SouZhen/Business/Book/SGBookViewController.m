@@ -130,7 +130,7 @@
     self.nameTextField.delegate = self;
     self.phoneTextField.delegate = self;
     
-    self.datePicker.minimumDate = [NSDate date];
+    self.datePicker.minimumDate = [[NSDate date] dateByAddingTimeInterval:24*3600];
     
     UIImage *orderImage = [UIImage imageNamed:@"button_xiadan.png"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
